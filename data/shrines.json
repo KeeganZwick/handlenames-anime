@@ -1,0 +1,700 @@
+{
+  "_meta": {
+    "description": "Real Japanese shrine and temple names. Hand-curated from Wikipedia 'List of Shinto shrines' and 'List of Ichinomiya' (CC BY-SA 4.0). All entries are real cultural sites that exist independent of any anime. See ATTRIBUTIONS.md.",
+    "license_sources": [
+      "Wikipedia: List of Shinto shrines in Japan (CC BY-SA 4.0)",
+      "Wikipedia: List of Ichinomiya (CC BY-SA 4.0)"
+    ]
+  },
+  "shrines": [
+    {
+      "romaji": "hokkaido jingu",
+      "kanji": "北海道神宮",
+      "hiragana": "ほっかいどうじんぐう",
+      "type": "shrine",
+      "location": "Sapporo, Hokkaido",
+      "significance": "Ichinomiya of Hokkaido",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "hirosaki toshogu",
+      "kanji": "弘前東照宮",
+      "hiragana": "ひろさきとうしょうぐう",
+      "type": "shrine",
+      "location": "Aomori",
+      "significance": "Toshogu (Tokugawa-related)",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "iwakiyama shrine",
+      "kanji": "岩木山神社",
+      "hiragana": "いわきやまじんじゃ",
+      "type": "shrine",
+      "location": "Aomori",
+      "significance": "Tsugaru Ichinomiya",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kabushima shrine",
+      "kanji": "蕪嶋神社",
+      "hiragana": "かぶしまじんじゃ",
+      "type": "shrine",
+      "location": "Aomori",
+      "significance": "Famous for black-tailed gulls",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "morioka hachiman",
+      "kanji": "盛岡八幡宮",
+      "hiragana": "もりおかはちまんぐう",
+      "type": "shrine",
+      "location": "Iwate",
+      "significance": "Major Hachiman shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "shiogama shrine",
+      "kanji": "鹽竈神社",
+      "hiragana": "しおがまじんじゃ",
+      "type": "shrine",
+      "location": "Miyagi",
+      "significance": "Ichinomiya, maritime safety",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kinkasan shrine",
+      "kanji": "金華山神社",
+      "hiragana": "きんかさんじんじゃ",
+      "type": "shrine",
+      "location": "Miyagi",
+      "significance": "On sacred island",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "aoso shrine",
+      "kanji": "愛宕神社",
+      "hiragana": "あおそじんじゃ",
+      "type": "shrine",
+      "location": "Miyagi",
+      "significance": "Fire prevention",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "akita gujingu",
+      "kanji": "秋田県護国神社",
+      "hiragana": "あきたけんごこくじんじゃ",
+      "type": "shrine",
+      "location": "Akita",
+      "significance": "Prefectural Gokoku",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "chokaisan omonoimi",
+      "kanji": "鳥海山大物忌神社",
+      "hiragana": "ちょうかいさんおおものいみじんじゃ",
+      "type": "shrine",
+      "location": "Yamagata",
+      "significance": "Mount Chokai",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "dewa sanzan gassan",
+      "kanji": "出羽三山 月山神社",
+      "hiragana": "でわさんざん がっさんじんじゃ",
+      "type": "shrine",
+      "location": "Yamagata",
+      "significance": "Sacred mountain",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "dewa sanzan haguro",
+      "kanji": "出羽三山 羽黒山神社",
+      "hiragana": "でわさんざん はぐろさんじんじゃ",
+      "type": "shrine",
+      "location": "Yamagata",
+      "significance": "Sacred mountain",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "yudonosan shrine",
+      "kanji": "湯殿山神社",
+      "hiragana": "ゆどのさんじんじゃ",
+      "type": "shrine",
+      "location": "Yamagata",
+      "significance": "Sacred mountain (Dewa Sanzan)",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kamo shrine",
+      "kanji": "加茂神社",
+      "hiragana": "かもじんじゃ",
+      "type": "shrine",
+      "location": "Sendai, Miyagi",
+      "significance": "Historic shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "atsuta shrine",
+      "kanji": "熱田神宮",
+      "hiragana": "あつたじんぐう",
+      "type": "shrine",
+      "location": "Nagoya, Aichi",
+      "significance": "Houses sacred sword Kusanagi",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "ise jingu",
+      "kanji": "伊勢神宮",
+      "hiragana": "いせじんぐう",
+      "type": "shrine",
+      "location": "Ise, Mie",
+      "significance": "Most sacred Shinto shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "fushimi inari",
+      "kanji": "伏見稲荷大社",
+      "hiragana": "ふしみいなりたいしゃ",
+      "type": "shrine",
+      "location": "Kyoto",
+      "significance": "Famous thousand torii gates",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "yasaka shrine",
+      "kanji": "八坂神社",
+      "hiragana": "やさかじんじゃ",
+      "type": "shrine",
+      "location": "Kyoto",
+      "significance": "Gion festival",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kinkakuji",
+      "kanji": "金閣寺",
+      "hiragana": "きんかくじ",
+      "type": "temple",
+      "location": "Kyoto",
+      "significance": "Golden Pavilion (Zen)",
+      "tags": [
+        "temple",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "ginkakuji",
+      "kanji": "銀閣寺",
+      "hiragana": "ぎんかくじ",
+      "type": "temple",
+      "location": "Kyoto",
+      "significance": "Silver Pavilion (Zen)",
+      "tags": [
+        "temple",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kinkazan shrine",
+      "kanji": "金華山神社",
+      "hiragana": "きんかざんじんじゃ",
+      "type": "shrine",
+      "location": "Ishikawa",
+      "significance": "Sacred mountain",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "nikko toshogu",
+      "kanji": "日光東照宮",
+      "hiragana": "にっこうとうしょうぐう",
+      "type": "shrine",
+      "location": "Tochigi",
+      "significance": "Tokugawa Ieyasu",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "futarasan shrine",
+      "kanji": "二荒山神社",
+      "hiragana": "ふたらさんじんじゃ",
+      "type": "shrine",
+      "location": "Tochigi",
+      "significance": "Ichinomiya",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kanayama shrine",
+      "kanji": "金山神社",
+      "hiragana": "かなやまじんじゃ",
+      "type": "shrine",
+      "location": "Tochigi",
+      "significance": "Mining deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "ota shrine",
+      "kanji": "太田神社",
+      "hiragana": "おおたじんじゃ",
+      "type": "shrine",
+      "location": "Gunma",
+      "significance": "Historic",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kanda shrine",
+      "kanji": "神田明神",
+      "hiragana": "かんだみょうじん",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Famous Tokyo shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "meiji shrine",
+      "kanji": "明治神宮",
+      "hiragana": "めいじじんぐう",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Emperor Meiji",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "hie shrine",
+      "kanji": "日枝神社",
+      "hiragana": "ひえじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Sannō Ichinomiya",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "atago shrine",
+      "kanji": "愛宕神社",
+      "hiragana": "あたごじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Fire prevention (one of many)",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "nezu shrine",
+      "kanji": "根津神社",
+      "hiragana": "ねづじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Famous azalea garden",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "tsukudo shrine",
+      "kanji": "佃島神社",
+      "hiragana": "つくどじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Historic",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "yasukuni shrine",
+      "kanji": "靖国神社",
+      "hiragana": "やすくにじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "War memorial (controversial)",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "suitengu",
+      "kanji": "水天宮",
+      "hiragana": "すいてんぐう",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Water deity, fertility",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "togo shrine",
+      "kanji": "東郷神社",
+      "hiragana": "とうごうじんじゃ",
+      "type": "shrine",
+      "location": "Tokyo",
+      "significance": "Admiral Tōgō",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "tsurugaoka hachimangu",
+      "kanji": "鶴岡八幡宮",
+      "hiragana": "つるがおかはちまんぐう",
+      "type": "shrine",
+      "location": "Kamakura, Kanagawa",
+      "significance": "Famous Hachiman shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "hakone shrine",
+      "kanji": "箱根神社",
+      "hiragana": "はこねじんじゃ",
+      "type": "shrine",
+      "location": "Kanagawa",
+      "significance": "Famous mountain shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "sengen shrine",
+      "kanji": "浅間神社",
+      "hiragana": "せんげんじんじゃ",
+      "type": "shrine",
+      "location": "Shizuoka (Mt. Fuji)",
+      "significance": "Mt. Fuji deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kunozan toshogu",
+      "kanji": "久能山東照宮",
+      "hiragana": "くのうざんとうしょうぐう",
+      "type": "shrine",
+      "location": "Shizuoka",
+      "significance": "Original Tokugawa mausoleum",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "aoi aso shrine",
+      "kanji": "阿蘇神社",
+      "hiragana": "あそじんじゃ",
+      "type": "shrine",
+      "location": "Kumamoto",
+      "significance": "Volcanic deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "dazaifu tenmangu",
+      "kanji": "太宰府天満宮",
+      "hiragana": "だざいふてんまんぐう",
+      "type": "shrine",
+      "location": "Fukuoka",
+      "significance": "Sugawara no Michizane",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "hakozaki shrine",
+      "kanji": "筥崎宮",
+      "hiragana": "はこざきぐう",
+      "type": "shrine",
+      "location": "Fukuoka",
+      "significance": "Major Hachiman shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "usa shrine",
+      "kanji": "宇佐神宮",
+      "hiragana": "うさじんぐう",
+      "type": "shrine",
+      "location": "Oita",
+      "significance": "Head shrine of all Hachiman",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kashii shrine",
+      "kanji": "香椎宮",
+      "hiragana": "かしいぐう",
+      "type": "shrine",
+      "location": "Fukuoka",
+      "significance": "Emperor Chuai",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kamiizumi shrine",
+      "kanji": "上泉神社",
+      "hiragana": "かみいずみじんじゃ",
+      "type": "shrine",
+      "location": "Gunma",
+      "significance": "Sword deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "katori shrine",
+      "kanji": "香取神宮",
+      "hiragana": "かとりじんぐう",
+      "type": "shrine",
+      "location": "Chiba",
+      "significance": "Major Ise-related shrine",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "sumiyoshi shrine",
+      "kanji": "住吉大社",
+      "hiragana": "すみよしたいしゃ",
+      "type": "shrine",
+      "location": "Osaka",
+      "significance": "Sumiyoshi Sanjin",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "saito shrine",
+      "kanji": "斎藤神社",
+      "hiragana": "さいとうじんじゃ",
+      "type": "shrine",
+      "location": "Osaka",
+      "significance": "Local deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "naniwa shrine",
+      "kanji": "難波神社",
+      "hiragana": "なにわじんじゃ",
+      "type": "shrine",
+      "location": "Osaka",
+      "significance": "Osaka historic",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "taikodani shrine",
+      "kanji": "太鼓谷稲成神社",
+      "hiragana": "たいこたにいなりじんじゃ",
+      "type": "shrine",
+      "location": "Shimane",
+      "significance": "Famous Inari",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kamosu shrine",
+      "kanji": "鴨神社",
+      "hiragana": "かもすじんじゃ",
+      "type": "shrine",
+      "location": "Shimane",
+      "significance": "Local",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "shizuoka sengen",
+      "kanji": "静岡浅間神社",
+      "hiragana": "しずおかせんげんじんじゃ",
+      "type": "shrine",
+      "location": "Shizuoka",
+      "significance": "Mt. Fuji deity",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "yashima shrine",
+      "kanji": "屋島神社",
+      "hiragana": "やしまじんじゃ",
+      "type": "shrine",
+      "location": "Kagawa",
+      "significance": "Historical battle site",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    },
+    {
+      "romaji": "kotohira gu",
+      "kanji": "金刀比羅宮",
+      "hiragana": "ことひらぐう",
+      "type": "shrine",
+      "location": "Kagawa",
+      "significance": "Maritime deity (popular pilgrimage)",
+      "tags": [
+        "shrine",
+        "shrine",
+        "place"
+      ]
+    }
+  ]
+}

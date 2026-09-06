@@ -1,0 +1,706 @@
+{
+  "_meta": {
+    "description": "Real Japanese mythological figures, deities, and legendary beings. Hand-curated from publicly available Wikipedia and Wiktionary entries. None of these names are from specific anime/manga/fanfic character names — they are drawn from the actual cultural and mythological record (Kojiki, Nihon Shoki, etc.). All entries are real cultural references from Japanese history and mythology, with no claim on any modern copyrighted character or franchise. See ATTRIBUTIONS.md.",
+    "license_sources": [
+      "Wikipedia: Japanese mythology (CC BY-SA 4.0)",
+      "Wikipedia: Four Symbols (CC BY-SA 4.0)",
+      "Wikipedia: Seven Lucky Gods (CC BY-SA 4.0)",
+      "Wikipedia: Sukunabikona (CC BY-SA 4.0)",
+      "Wikipedia: Yamata no Orochi (CC BY-SA 4.0)",
+      "Wikipedia: Yōkai (CC BY-SA 4.0)",
+      "Wiktionary (CC BY-SA 4.0 + GFDL)"
+    ],
+    "scope": "mythology"
+  },
+  "figures": [
+    {
+      "romaji": "suzaku",
+      "hiragana": "すざく",
+      "kanji": "朱雀",
+      "meaning": "Vermilion Bird of the South (Four Symbols)",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "seiryu",
+      "hiragana": "せいりゅう",
+      "kanji": "青龍",
+      "meaning": "Azure Dragon of the East (Four Symbols)",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "byakko",
+      "hiragana": "びゃっこ",
+      "kanji": "白虎",
+      "meaning": "White Tiger of the West (Four Symbols)",
+      "tags": [
+        "mythic",
+        "cool",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "genbu",
+      "hiragana": "げんぶ",
+      "kanji": "玄武",
+      "meaning": "Black Tortoise-Snake of the North (Four Symbols)",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "cool"
+      ]
+    },
+    {
+      "romaji": "amaterasu",
+      "hiragana": "あまてらす",
+      "kanji": "天照",
+      "meaning": "Sun goddess, chief deity of Shinto (Amaterasu-Ōmikami)",
+      "tags": [
+        "mythic",
+        "light",
+        "epic",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "tsukuyomi",
+      "hiragana": "つくよみ",
+      "kanji": "月読",
+      "meaning": "Moon god, brother of Amaterasu (Tsukuyomi-no-Mikoto)",
+      "tags": [
+        "mythic",
+        "night",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "susanoo",
+      "hiragana": "すさのお",
+      "kanji": "須佐之男",
+      "meaning": "Storm god, brother of Amaterasu (Susanoo-no-Mikoto)",
+      "tags": [
+        "mythic",
+        "strong",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "raijin",
+      "hiragana": "らいじん",
+      "kanji": "雷神",
+      "meaning": "God of thunder, lightning and storms",
+      "tags": [
+        "mythic",
+        "strong",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "fujin",
+      "hiragana": "ふうじん",
+      "kanji": "風神",
+      "meaning": "God of wind",
+      "tags": [
+        "mythic",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "orochi",
+      "hiragana": "おろち",
+      "kanji": "大蛇",
+      "meaning": "The eight-headed serpent (Yamata no Orochi)",
+      "tags": [
+        "mythic",
+        "dark",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "yamata",
+      "hiragana": "やまた",
+      "kanji": "八岐",
+      "meaning": "Eight-branch(ed) — as in Yamata no Orochi",
+      "tags": [
+        "mythic",
+        "dark",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "sukunabikona",
+      "hiragana": "すくなびこな",
+      "kanji": "少彦名",
+      "meaning": "Kami of hot springs, healing and sake (Kojiki, Nihon Shoki)",
+      "tags": [
+        "mythic",
+        "cute",
+        "elegant"
+      ],
+      "note": "Real Shinto deity."
+    },
+    {
+      "romaji": "okuninushi",
+      "hiragana": "おおくにぬし",
+      "kanji": "大国主",
+      "meaning": "Great Land Master — chief Izumo deity",
+      "tags": [
+        "mythic",
+        "elegant",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "inari",
+      "hiragana": "いなり",
+      "kanji": "稲荷",
+      "meaning": "Kami of rice, fertility and foxes",
+      "tags": [
+        "mythic",
+        "cute",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "kitsune",
+      "hiragana": "きつね",
+      "kanji": "狐",
+      "meaning": "Fox — also a class of shapeshifting yōkai in folklore",
+      "tags": [
+        "mythic",
+        "cute",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "tanuki",
+      "hiragana": "たぬき",
+      "kanji": "狸",
+      "meaning": "Raccoon dog — shape-shifting yōkai",
+      "tags": [
+        "mythic",
+        "cute",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "tengu",
+      "hiragana": "てんぐ",
+      "kanji": "天狗",
+      "meaning": "Long-nosed yōkai of mountains and war",
+      "tags": [
+        "mythic",
+        "strong",
+        "cool"
+      ]
+    },
+    {
+      "romaji": "oni",
+      "hiragana": "おに",
+      "kanji": "鬼",
+      "meaning": "Demon / ogre of Japanese folklore",
+      "tags": [
+        "mythic",
+        "dark",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "kappa",
+      "hiragana": "かっぱ",
+      "kanji": "河童",
+      "meaning": "River yōkai (water sprite)",
+      "tags": [
+        "mythic",
+        "cute",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "bakeneko",
+      "hiragana": "ばけねこ",
+      "kanji": "化け猫",
+      "meaning": "Monster cat yōkai",
+      "tags": [
+        "mythic",
+        "dark",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "nekomata",
+      "hiragana": "ねこまた",
+      "kanji": "猫又",
+      "meaning": "Forked-tailed cat yōkai",
+      "tags": [
+        "mythic",
+        "dark",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "jorogumo",
+      "hiragana": "じょろうぐも",
+      "kanji": "絡新婦",
+      "meaning": "Spider yōkai (often female, seductive)",
+      "tags": [
+        "mythic",
+        "dark",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "yuki-onna",
+      "hiragana": "ゆきおんな",
+      "kanji": "雪女",
+      "meaning": "Snow woman yōkai",
+      "tags": [
+        "mythic",
+        "elegant",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "kodama",
+      "hiragana": "こだま",
+      "kanji": "木霊",
+      "meaning": "Tree spirit",
+      "tags": [
+        "mythic",
+        "cute",
+        "nature"
+      ]
+    },
+    {
+      "romaji": "komainu",
+      "hiragana": "こまいぬ",
+      "kanji": "狛犬",
+      "meaning": "Lion-dog guardian statues",
+      "tags": [
+        "mythic",
+        "cool",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "shisa",
+      "hiragana": "シーサ",
+      "kanji": "獅子",
+      "meaning": "Lion-dog guardian (Okinawan)",
+      "tags": [
+        "mythic",
+        "cool",
+        "cute"
+      ]
+    },
+    {
+      "romaji": "bishamon",
+      "hiragana": "びしゃもん",
+      "kanji": "毘沙門",
+      "meaning": "Bishamonten — god of war and treasure (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "strong",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "daikoku",
+      "hiragana": "だいこく",
+      "kanji": "大黒",
+      "meaning": "Daikokuten — god of prosperity (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "cool",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "ebisu",
+      "hiragana": "えびす",
+      "kanji": "恵比寿",
+      "meaning": "Ebisu — god of fishermen and luck (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "cute",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "hotei",
+      "hiragana": "ほてい",
+      "kanji": "布袋",
+      "meaning": "Hotei — god of happiness and abundance (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "cute",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "benzaiten",
+      "hiragana": "べんざいてん",
+      "kanji": "弁財天",
+      "meaning": "Benzaiten — goddess of art, music, knowledge (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "fukurokuju",
+      "hiragana": "ふくろくじゅ",
+      "kanji": "福禄寿",
+      "meaning": "Fukurokuju — god of longevity and wisdom (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "jurojin",
+      "hiragana": "じゅろじん",
+      "kanji": "寿老人",
+      "meaning": "Jurōjin — god of longevity (Seven Lucky Gods)",
+      "tags": [
+        "mythic",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "kintaro",
+      "hiragana": "きんたろう",
+      "kanji": "金太郎",
+      "meaning": "Golden Boy — folklore hero, friend of bears",
+      "tags": [
+        "mythic",
+        "cute",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "momotaro",
+      "hiragana": "ももたろう",
+      "kanji": "桃太郎",
+      "meaning": "Peach Boy — folklore hero",
+      "tags": [
+        "mythic",
+        "cute",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "ushiwakamaru",
+      "hiragana": "うしわかまる",
+      "kanji": "牛若丸",
+      "meaning": "Young Yoshitsune — childhood name of the legendary warrior",
+      "tags": [
+        "mythic",
+        "cool",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "benkei",
+      "hiragana": "べんけい",
+      "kanji": "弁慶",
+      "meaning": "Benkei — legendary warrior-monk",
+      "tags": [
+        "mythic",
+        "strong",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "yoshitsune",
+      "hiragana": "よしつね",
+      "kanji": "義経",
+      "meaning": "Minamoto no Yoshitsune — legendary samurai commander",
+      "tags": [
+        "mythic",
+        "cool",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "tomoe",
+      "hiragana": "ともえ",
+      "kanji": "巴",
+      "meaning": "Taira no Tomoe — legendary onna-bugeisha; also 'comma/swirl' shape",
+      "tags": [
+        "mythic",
+        "cool",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "shizuka",
+      "hiragana": "しずか",
+      "kanji": "静",
+      "meaning": "Shizuka Gozen — historical dancer and Yoshitsune's lover",
+      "tags": [
+        "mythic",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "kusanagi",
+      "hiragana": "くさなぎ",
+      "kanji": "草薙",
+      "meaning": "Kusanagi-no-Tsurugi — legendary Imperial sword",
+      "tags": [
+        "mythic",
+        "strong",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "amanojaku",
+      "hiragana": "あまのじゃく",
+      "kanji": "天邪鬼",
+      "meaning": "Amanojaku — mythological trickster / contrarian spirit",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "bakugyu",
+      "hiragana": "ばくぎゅう",
+      "kanji": "曝牛",
+      "meaning": "Lit. 'exposed cow' — a common name for a man without honorifics",
+      "tags": [
+        "mythic",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "tamamo",
+      "hiragana": "たまも",
+      "kanji": "玉藻",
+      "meaning": "Tamamo-no-Mae — legendary nine-tailed kitsune in human form",
+      "tags": [
+        "mythic",
+        "elegant",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "izanagi",
+      "hiragana": "いざなぎ",
+      "kanji": "伊邪那岐",
+      "meaning": "Izanagi — creator god of the islands of Japan (Kojiki)",
+      "tags": [
+        "mythic",
+        "epic",
+        "strong"
+      ]
+    },
+    {
+      "romaji": "izanami",
+      "hiragana": "いざなみ",
+      "kanji": "伊邪那美",
+      "meaning": "Izanami — creator goddess of Japan (Kojiki)",
+      "tags": [
+        "mythic",
+        "elegant",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "yatagarasu",
+      "hiragana": "ヤタガラス",
+      "kanji": "八咫烏",
+      "meaning": "Yatagarasu — three-legged crow, divine messenger of guidance",
+      "tags": [
+        "mythic",
+        "epic",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "konohana",
+      "hiragana": "このはな",
+      "kanji": "木花",
+      "meaning": "Konohanasakuyahime — goddess of cherry blossoms and Mt. Fuji",
+      "tags": [
+        "mythic",
+        "cute",
+        "elegant",
+        "nature"
+      ]
+    },
+    {
+      "romaji": "tamayori",
+      "hiragana": "たまより",
+      "kanji": "玉依",
+      "meaning": "Tamayori-hime — sea-princess mother of Emperor Jinmu",
+      "tags": [
+        "mythic",
+        "elegant",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "akkorokamui",
+      "hiragana": "アッコロカムイ",
+      "kanji": null,
+      "meaning": "Akkorokamui — giant sea-demon of Ainu mythology",
+      "tags": [
+        "mythic",
+        "dark",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "satori",
+      "hiragana": "さとり",
+      "kanji": "覚",
+      "meaning": "Satori — mind-reading yokai of the mountains",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "elegant"
+      ]
+    },
+    {
+      "romaji": "nurarihyon",
+      "hiragana": "ぬらりひょん",
+      "kanji": "ぬらりひょん",
+      "meaning": "Nurarihyon — leader of the yokai (folklore; also light NHK puppet show character)",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "zashiki",
+      "hiragana": "ざしき",
+      "kanji": "座敷",
+      "meaning": "Zashiki-warashi — child-like house spirit (good omen if seen)",
+      "tags": [
+        "mythic",
+        "cute",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "ubume",
+      "hiragana": "うぶめ",
+      "kanji": "産女",
+      "meaning": "Ubume — spirit of a woman who died in childbirth",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "dark"
+      ]
+    },
+    {
+      "romaji": "tsukumogami",
+      "hiragana": "つくもがみ",
+      "kanji": "付喪神",
+      "meaning": "Tsukumogami — spirits of old household objects (100+ years old)",
+      "tags": [
+        "mythic",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "gashadokuro",
+      "hiragana": "がしゃどくろ",
+      "kanji": "餓者髑髏",
+      "meaning": "Gashadokuro — giant skeletal yokai formed from accumulated bones",
+      "tags": [
+        "mythic",
+        "dark",
+        "epic"
+      ]
+    },
+    {
+      "romaji": "tsuchinoko",
+      "hiragana": "ツチノコ",
+      "kanji": "槌之子",
+      "meaning": "Tsuchinoko — cryptid snake-like creature",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "ittan",
+      "hiragana": "いったん",
+      "kanji": "一旦",
+      "meaning": "Ittan-momen — flying cloth yokai",
+      "tags": [
+        "mythic",
+        "mysterious",
+        "playful"
+      ]
+    },
+    {
+      "romaji": "honeonna",
+      "hiragana": "ほねおんな",
+      "kanji": "骨女",
+      "meaning": "Hone-onna — bone-woman yokai, beautiful by day, skeleton by night",
+      "tags": [
+        "mythic",
+        "dark",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "yamauba",
+      "hiragana": "やまうば",
+      "kanji": "山姥",
+      "meaning": "Yama-uba — mountain witch, child-eater in some tales, kind crone in others",
+      "tags": [
+        "mythic",
+        "dark",
+        "mysterious"
+      ]
+    },
+    {
+      "romaji": "amaterasu",
+      "hiragana": "あまてらす",
+      "kanji": "天照大御神",
+      "meaning": "Amaterasu-Ōmikami — full name of the sun goddess (Kojiki)",
+      "tags": [
+        "mythic",
+        "epic",
+        "light"
+      ]
+    },
+    {
+      "romaji": "tenshi",
+      "hiragana": "てんし",
+      "kanji": "天使",
+      "meaning": "Tenshi — 'heavenly messenger' (angel); widely used as a Japanese name",
+      "tags": [
+        "mythic",
+        "elegant",
+        "cute"
+      ]
+    },
+    {
+      "romaji": "akuma",
+      "hiragana": "あくま",
+      "kanji": "悪魔",
+      "meaning": "Akuma — demon / devil (loanword in Japanese)",
+      "tags": [
+        "mythic",
+        "dark",
+        "strong"
+      ]
+    }
+  ]
+}

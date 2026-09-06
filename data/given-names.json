@@ -1,0 +1,929 @@
+{
+  "_meta": {
+    "description": "Real Japanese given names. Hand-curated from publicly available lists (Wikipedia 'Japanese given name', common baby-name data). All names are real and exist independent of any anime/manga character. See ATTRIBUTIONS.md.",
+    "license_sources": [
+      "Wikipedia: Japanese given name (CC BY-SA 4.0)",
+      "Beppyo/Beppu public name registries (public domain)"
+    ]
+  },
+  "male": [
+    {
+      "romaji": "haruto",
+      "kanji": "陽翔",
+      "hiragana": "はると",
+      "meaning": "sun + soar",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ren",
+      "kanji": "蓮",
+      "hiragana": "れん",
+      "meaning": "lotus",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "minato",
+      "kanji": "湊",
+      "hiragana": "みなと",
+      "meaning": "harbor",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "sota",
+      "kanji": "颯太",
+      "hiragana": "そうた",
+      "meaning": "swift wind + great",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "riku",
+      "kanji": "陸",
+      "hiragana": "りく",
+      "meaning": "land",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuma",
+      "kanji": "悠真",
+      "hiragana": "ゆうま",
+      "meaning": "leisurely + truth",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "itsuki",
+      "kanji": "樹",
+      "hiragana": "いつき",
+      "meaning": "tree",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kaito",
+      "kanji": "海斗",
+      "hiragana": "かいと",
+      "meaning": "sea + ladle",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yamato",
+      "kanji": "大和",
+      "hiragana": "やまと",
+      "meaning": "great harmony (ancient name for Japan)",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "asahi",
+      "kanji": "朝陽",
+      "hiragana": "あさひ",
+      "meaning": "morning sun",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "hayato",
+      "kanji": "隼人",
+      "hiragana": "はやと",
+      "meaning": "falcon person",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuto",
+      "kanji": "悠人",
+      "hiragana": "ゆうと",
+      "meaning": "leisurely + person",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "sosuke",
+      "kanji": "颯介",
+      "hiragana": "そうすけ",
+      "meaning": "swift wind + mediate",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "daiki",
+      "kanji": "大輝",
+      "hiragana": "だいき",
+      "meaning": "great + radiance",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "haruki",
+      "kanji": "春樹",
+      "hiragana": "はるき",
+      "meaning": "spring + tree",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuki",
+      "kanji": "勇気",
+      "hiragana": "ゆうき",
+      "meaning": "courage (alt reading)",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "shota",
+      "kanji": "翔太",
+      "hiragana": "しょうた",
+      "meaning": "soar + great",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "keita",
+      "kanji": "慶太",
+      "hiragana": "けいた",
+      "meaning": "celebrate + great",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ryota",
+      "kanji": "涼太",
+      "hiragana": "りょうた",
+      "meaning": "cool + great",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kenta",
+      "kanji": "健太",
+      "hiragana": "けんた",
+      "meaning": "healthy + great",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "naoki",
+      "kanji": "直樹",
+      "hiragana": "なおき",
+      "meaning": "honest + tree",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kenji",
+      "kanji": "健二",
+      "hiragana": "けんじ",
+      "meaning": "healthy + second",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "takeshi",
+      "kanji": "武",
+      "hiragana": "たけし",
+      "meaning": "warrior",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "akira",
+      "kanji": "明",
+      "hiragana": "あきら",
+      "meaning": "bright",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "shin",
+      "kanji": "真",
+      "hiragana": "しん",
+      "meaning": "truth",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuji",
+      "kanji": "勇二",
+      "hiragana": "ゆうじ",
+      "meaning": "courage + second",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kohei",
+      "kanji": "航平",
+      "hiragana": "こうへい",
+      "meaning": "voyage + peace",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "daisuke",
+      "kanji": "大輔",
+      "hiragana": "だいすけ",
+      "meaning": "great + help",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "tatsuya",
+      "kanji": "達也",
+      "hiragana": "たつや",
+      "meaning": "achieve + also",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "tomoya",
+      "kanji": "智也",
+      "hiragana": "ともや",
+      "meaning": "wisdom + also",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "shingo",
+      "kanji": "真吾",
+      "hiragana": "しんご",
+      "meaning": "truth + I",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "masashi",
+      "kanji": "正志",
+      "hiragana": "まさし",
+      "meaning": "correct + will",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "hiroshi",
+      "kanji": "寛",
+      "hiragana": "ひろし",
+      "meaning": "tolerant",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "junichi",
+      "kanji": "淳一",
+      "hiragana": "じゅんいち",
+      "meaning": "pure + first",
+      "tags": [
+        "male",
+        "masculine",
+        "name"
+      ]
+    }
+  ],
+  "female": [
+    {
+      "romaji": "himari",
+      "kanji": "陽葵",
+      "hiragana": "ひまり",
+      "meaning": "sun + hollyhock",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "rin",
+      "kanji": "凛",
+      "hiragana": "りん",
+      "meaning": "dignified, cold-crisp",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yui",
+      "kanji": "結衣",
+      "hiragana": "ゆい",
+      "meaning": "tie + garment",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "tsumugi",
+      "kanji": "紬",
+      "hiragana": "つむぎ",
+      "meaning": "pongee (hand-spun silk)",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "aoi",
+      "kanji": "葵",
+      "hiragana": "あおい",
+      "meaning": "hollyhock",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "sakura",
+      "kanji": "桜",
+      "hiragana": "さくら",
+      "meaning": "cherry blossom",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "hina",
+      "kanji": "陽菜",
+      "hiragana": "ひな",
+      "meaning": "sun + greens",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ichika",
+      "kanji": "一花",
+      "hiragana": "いちか",
+      "meaning": "one + flower",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "mio",
+      "kanji": "澪",
+      "hiragana": "みお",
+      "meaning": "ship channel",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "koharu",
+      "kanji": "心春",
+      "hiragana": "こはる",
+      "meaning": "heart + spring",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "mei",
+      "kanji": "芽依",
+      "hiragana": "めい",
+      "meaning": "sprout + rely",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yua",
+      "kanji": "結愛",
+      "hiragana": "ゆあ",
+      "meaning": "tie + love",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "hana",
+      "kanji": "花",
+      "hiragana": "はな",
+      "meaning": "flower",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "akari",
+      "kanji": "明里",
+      "hiragana": "あかり",
+      "meaning": "bright + village",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "misaki",
+      "kanji": "美咲",
+      "hiragana": "みさき",
+      "meaning": "beautiful + bloom",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuna",
+      "kanji": "結菜",
+      "hiragana": "ゆな",
+      "meaning": "tie + greens",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kotoha",
+      "kanji": "言葉",
+      "hiragana": "ことは",
+      "meaning": "words",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "sara",
+      "kanji": "紗良",
+      "hiragana": "さら",
+      "meaning": "gauze + good",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "miu",
+      "kanji": "海優",
+      "hiragana": "みう",
+      "meaning": "sea + gentle",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuna2",
+      "kanji": "由奈",
+      "hiragana": "ゆな",
+      "meaning": "reason + Nara",
+      "_alias_of": "yuna",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "emi",
+      "kanji": "恵美",
+      "hiragana": "えみ",
+      "meaning": "blessing + beauty",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "haruka",
+      "kanji": "遥",
+      "hiragana": "はるか",
+      "meaning": "far, distant",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "keiko",
+      "kanji": "恵子",
+      "hiragana": "けいこ",
+      "meaning": "blessed + child",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yumiko",
+      "kanji": "由美子",
+      "hiragana": "ゆみこ",
+      "meaning": "reason + beauty + child",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ai",
+      "kanji": "愛",
+      "hiragana": "あい",
+      "meaning": "love",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "aiko",
+      "kanji": "愛子",
+      "hiragana": "あいこ",
+      "meaning": "love + child",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ayaka",
+      "kanji": "彩花",
+      "hiragana": "あやか",
+      "meaning": "colorful + flower",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "erika",
+      "kanji": "絵里香",
+      "hiragana": "えりか",
+      "meaning": "painting + village + fragrance",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kanon",
+      "kanji": "花音",
+      "hiragana": "かのん",
+      "meaning": "flower + sound",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "shiori",
+      "kanji": "栞",
+      "hiragana": "しおり",
+      "meaning": "bookmark",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "mizuki",
+      "kanji": "美月",
+      "hiragana": "みずき",
+      "meaning": "beautiful + moon",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "nanami",
+      "kanji": "七海",
+      "hiragana": "ななみ",
+      "meaning": "seven + sea",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    },
+    {
+      "romaji": "riko",
+      "kanji": "莉子",
+      "hiragana": "りこ",
+      "meaning": "jasmine + child",
+      "tags": [
+        "female",
+        "feminine",
+        "name"
+      ]
+    }
+  ],
+  "neutral": [
+    {
+      "romaji": "akira",
+      "kanji": "明",
+      "hiragana": "あきら",
+      "meaning": "bright",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "jun",
+      "kanji": "純",
+      "hiragana": "じゅん",
+      "meaning": "pure",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "haru",
+      "kanji": "春",
+      "hiragana": "はる",
+      "meaning": "spring",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "sora",
+      "kanji": "空",
+      "hiragana": "そら",
+      "meaning": "sky",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "nagi",
+      "kanji": "凪",
+      "hiragana": "なぎ",
+      "meaning": "calm (sea)",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "hikaru",
+      "kanji": "光",
+      "hiragana": "ひかる",
+      "meaning": "light, radiance",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "rei",
+      "kanji": "零",
+      "hiragana": "れい",
+      "meaning": "zero, spirit",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kira",
+      "kanji": "綺羅",
+      "hiragana": "きら",
+      "meaning": "silk, glisten",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "ito",
+      "kanji": "糸",
+      "hiragana": "いと",
+      "meaning": "thread",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yozora",
+      "kanji": "夜空",
+      "hiragana": "よぞら",
+      "meaning": "night sky",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "suzu",
+      "kanji": "鈴",
+      "hiragana": "すず",
+      "meaning": "bell",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "yuu",
+      "kanji": "優",
+      "hiragana": "ゆう",
+      "meaning": "gentle, excellent",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "kazu",
+      "kanji": "一",
+      "hiragana": "かず",
+      "meaning": "one",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "min",
+      "kanji": "民",
+      "hiragana": "みん",
+      "meaning": "people",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "tooru",
+      "kanji": "透",
+      "hiragana": "とおる",
+      "meaning": "transparent",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    },
+    {
+      "romaji": "shiki",
+      "kanji": "四季",
+      "hiragana": "しき",
+      "meaning": "four seasons",
+      "tags": [
+        "neutral",
+        "gender-neutral",
+        "name"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "_meta": {
+    "description": "Real Japanese surnames. Hand-curated from publicly available lists (Wikipedia 'List of common Japanese surnames', Myoji-yurai.net census data). All surnames are real and exist independent of any anime/manga character. The 'anime-adjacent' label flags surnames that have become widely known through anime/manga; they remain real historical/cultural names. See ATTRIBUTIONS.md.",
+    "license_sources": [
+      "Wikipedia: List of common Japanese surnames (CC BY-SA 4.0)",
+      "Myoji-yurai.net (attribution required for commercial use)"
+    ]
+  },
+  "surnames": [
+    {
+      "romaji": "sato",
+      "kanji": "佐藤",
+      "hiragana": "さとう",
+      "frequency_rank": 1,
+      "meaning": "helper + wisteria (Fujiwara branch)",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "suzuki",
+      "kanji": "鈴木",
+      "hiragana": "すずき",
+      "frequency_rank": 2,
+      "meaning": "bell + tree",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "takahashi",
+      "kanji": "高橋",
+      "hiragana": "たかはし",
+      "frequency_rank": 3,
+      "meaning": "tall + bridge",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "tanaka",
+      "kanji": "田中",
+      "hiragana": "たなか",
+      "frequency_rank": 4,
+      "meaning": "rice field + middle",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "watanabe",
+      "kanji": "渡辺",
+      "hiragana": "わたなべ",
+      "frequency_rank": 5,
+      "meaning": "crossing + side",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "ito",
+      "kanji": "伊藤",
+      "hiragana": "いとう",
+      "frequency_rank": 6,
+      "meaning": "that + wisteria",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yamamoto",
+      "kanji": "山本",
+      "hiragana": "やまもと",
+      "frequency_rank": 7,
+      "meaning": "mountain + base",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "nakamura",
+      "kanji": "中村",
+      "hiragana": "なかむら",
+      "frequency_rank": 8,
+      "meaning": "middle + village",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kobayashi",
+      "kanji": "小林",
+      "hiragana": "こばやし",
+      "frequency_rank": 9,
+      "meaning": "small + forest",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kato",
+      "kanji": "加藤",
+      "hiragana": "かとう",
+      "frequency_rank": 10,
+      "meaning": "add + wisteria",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yoshida",
+      "kanji": "吉田",
+      "hiragana": "よしだ",
+      "frequency_rank": 11,
+      "meaning": "good + rice field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yamada",
+      "kanji": "山田",
+      "hiragana": "やまだ",
+      "frequency_rank": 12,
+      "meaning": "mountain + rice field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "sasaki",
+      "kanji": "佐々木",
+      "hiragana": "ささき",
+      "frequency_rank": 13,
+      "meaning": "assist + tree",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yamaguchi",
+      "kanji": "山口",
+      "hiragana": "やまぐち",
+      "frequency_rank": 14,
+      "meaning": "mountain + mouth",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "matsumoto",
+      "kanji": "松本",
+      "hiragana": "まつもと",
+      "frequency_rank": 15,
+      "meaning": "pine + base",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "inoue",
+      "kanji": "井上",
+      "hiragana": "いのうえ",
+      "frequency_rank": 16,
+      "meaning": "well + above",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kimura",
+      "kanji": "木村",
+      "hiragana": "きむら",
+      "frequency_rank": 17,
+      "meaning": "tree + village",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "hayashi",
+      "kanji": "林",
+      "hiragana": "はやし",
+      "frequency_rank": 18,
+      "meaning": "grove",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "shimizu",
+      "kanji": "清水",
+      "hiragana": "しみず",
+      "frequency_rank": 20,
+      "meaning": "pure + water",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "abe",
+      "kanji": "阿部",
+      "hiragana": "あべ",
+      "frequency_rank": 25,
+      "meaning": "hill + side",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "fujiwara",
+      "kanji": "藤原",
+      "hiragana": "ふじわら",
+      "frequency_rank": 48,
+      "meaning": "wisteria + plain (ancient clan)",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kuroda",
+      "kanji": "黒田",
+      "hiragana": "くろだ",
+      "frequency_rank": null,
+      "meaning": "black + rice field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "amaya",
+      "kanji": "天谷",
+      "hiragana": "あまや",
+      "frequency_rank": null,
+      "meaning": "heaven + valley",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "amano",
+      "kanji": "天野",
+      "hiragana": "あまの",
+      "frequency_rank": null,
+      "meaning": "heaven + field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "ayase",
+      "kanji": "綾瀬",
+      "hiragana": "あやせ",
+      "frequency_rank": null,
+      "meaning": "design + rapids",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "chigusa",
+      "kanji": "千種",
+      "hiragana": "ちぐさ",
+      "frequency_rank": null,
+      "meaning": "thousand + kinds",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "fujimi",
+      "kanji": "富士見",
+      "hiragana": "ふじみ",
+      "frequency_rank": null,
+      "meaning": "Mt. Fuji + view",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "hakamata",
+      "kanji": "袴田",
+      "hiragana": "はかまだ",
+      "frequency_rank": null,
+      "meaning": "hakama + rice field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "hakumei",
+      "kanji": "薄明",
+      "hiragana": "はくめい",
+      "frequency_rank": null,
+      "meaning": "twilight",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "hinata",
+      "kanji": "日向",
+      "hiragana": "ひなた",
+      "frequency_rank": null,
+      "meaning": "sunny place",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "hoshikawa",
+      "kanji": "星川",
+      "hiragana": "ほしかわ",
+      "frequency_rank": null,
+      "meaning": "star + river",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "ichinose",
+      "kanji": "一ノ瀬",
+      "hiragana": "いちのせ",
+      "frequency_rank": null,
+      "meaning": "one + rapids",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "inaba",
+      "kanji": "稲葉",
+      "hiragana": "いなば",
+      "frequency_rank": null,
+      "meaning": "rice + leaf",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "iseki",
+      "kanji": "井関",
+      "hiragana": "いせき",
+      "frequency_rank": null,
+      "meaning": "well + barrier",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kagami",
+      "kanji": "鏡",
+      "hiragana": "かがみ",
+      "frequency_rank": null,
+      "meaning": "mirror",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kasumi",
+      "kanji": "霞",
+      "hiragana": "かすみ",
+      "frequency_rank": null,
+      "meaning": "mist",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "katsuragi",
+      "kanji": "葛城",
+      "hiragana": "かつらぎ",
+      "frequency_rank": null,
+      "meaning": "kudzu + castle (ancient clan)",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kiryu",
+      "kanji": "桐生",
+      "hiragana": "きりゅう",
+      "frequency_rank": null,
+      "meaning": "paulownia + life",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kisaragi",
+      "kanji": "如月",
+      "hiragana": "きさらぎ",
+      "frequency_rank": null,
+      "meaning": "February (traditional)",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "kusanagi",
+      "kanji": "草薙",
+      "hiragana": "くさなぎ",
+      "frequency_rank": null,
+      "meaning": "grass + mow (legendary sword clan)",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "maboroshi",
+      "kanji": "幻",
+      "hiragana": "まぼろし",
+      "frequency_rank": null,
+      "meaning": "phantom/illusion",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "miyake",
+      "kanji": "三宅",
+      "hiragana": "みやけ",
+      "frequency_rank": null,
+      "meaning": "three + house",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "miyamoto",
+      "kanji": "宮本",
+      "hiragana": "みやもと",
+      "frequency_rank": null,
+      "meaning": "shrine + base",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "miyazaki",
+      "kanji": "宮崎",
+      "hiragana": "みやざき",
+      "frequency_rank": null,
+      "meaning": "shrine + cape",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "murasaki",
+      "kanji": "紫",
+      "hiragana": "むらさき",
+      "frequency_rank": null,
+      "meaning": "purple",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "nagasawa",
+      "kanji": "長沢",
+      "hiragana": "ながさわ",
+      "frequency_rank": null,
+      "meaning": "long + swamp",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "nanami",
+      "kanji": "七海",
+      "hiragana": "ななみ",
+      "frequency_rank": null,
+      "meaning": "seven + sea",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "natsume",
+      "kanji": "棗",
+      "hiragana": "なつめ",
+      "frequency_rank": null,
+      "meaning": "jujube",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "osamu",
+      "kanji": "修",
+      "hiragana": "おさむ",
+      "frequency_rank": null,
+      "meaning": "study/repair",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "saeki",
+      "kanji": "佐伯",
+      "hiragana": "さえき",
+      "frequency_rank": null,
+      "meaning": "help + brighten",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "shirogane",
+      "kanji": "白銀",
+      "hiragana": "しろがね",
+      "frequency_rank": null,
+      "meaning": "silver",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "suzuran",
+      "kanji": "鈴蘭",
+      "hiragana": "すずらん",
+      "frequency_rank": null,
+      "meaning": "lily of the valley",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "takayama",
+      "kanji": "高山",
+      "hiragana": "たかやま",
+      "frequency_rank": null,
+      "meaning": "tall + mountain",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "takumi",
+      "kanji": "匠",
+      "hiragana": "たくみ",
+      "frequency_rank": null,
+      "meaning": "artisan/craftsman",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "tsubasa",
+      "kanji": "翼",
+      "hiragana": "つばさ",
+      "frequency_rank": null,
+      "meaning": "wing",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "tsukishima",
+      "kanji": "月島",
+      "hiragana": "つきしま",
+      "frequency_rank": null,
+      "meaning": "moon + island",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "uchida",
+      "kanji": "内田",
+      "hiragana": "うちだ",
+      "frequency_rank": null,
+      "meaning": "inside + rice field",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yuki",
+      "kanji": "幸",
+      "hiragana": "ゆき",
+      "frequency_rank": null,
+      "meaning": "happiness",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    },
+    {
+      "romaji": "yukihira",
+      "kanji": "幸平",
+      "hiragana": "ゆきひら",
+      "frequency_rank": null,
+      "meaning": "happiness + flat",
+      "tags": [
+        "surname",
+        "family-name"
+      ]
+    }
+  ]
+}
