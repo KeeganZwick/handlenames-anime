@@ -11,7 +11,7 @@
  *   - Romaji as subtitle
  *   - Hiragana as small detail
  *   - Meaning/tagline below
- *   - Watermark "anime.gethandlenames.com" at bottom
+ *   - Watermark "gethandlenames.com" at bottom
  * ===================================================================== */
 
 const ShareCard = (() => {
@@ -142,7 +142,7 @@ const ShareCard = (() => {
     ctx.font = '600 20px -apple-system, "Segoe UI", "Hiragino Sans", system-ui, sans-serif';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
-    ctx.fillText(window.SHARE_CARD_LABEL || 'ANIME HANDLE GENERATOR', 80, 70);
+    ctx.fillText(window.SHARE_CARD_LABEL || 'ANIME NAME GENERATOR', 80, 70);
 
     // ---- Hero text (kanji or romaji) ----
     const hero = pickHero(name);
@@ -212,7 +212,7 @@ const ShareCard = (() => {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'bottom';
 
-    ctx.fillText(window.SHARE_CARD_WATERMARK || 'anime.gethandlenames.com  \u00b7  anime handle generator', W / 2, H - 48);
+    ctx.fillText(window.SHARE_CARD_WATERMARK || 'gethandlenames.com  \u00b7  anime name generator', W / 2, H - 48);
 
     return canvas;
   };
@@ -245,12 +245,12 @@ const ShareCard = (() => {
         const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
         if (!blob) throw new Error('canvas.toBlob failed');
         const file = new File([blob], `anime-name.png`, { type: 'image/png' });
-        // Short share caption: "Tengu 天狗 — check out anime.gethandlenames.com/anime-names"
+        // Short share caption: "Tengu 天狗 — check out gethandlenames.com/anime-names"
         // Romaji comes first, then kanji if present, then a fixed CTA + URL.
         const titleStr = name.kanji
           ? `${name.romaji} ${name.kanji}`
           : name.romaji;
-        const captionTpl = window.SHARE_CARD_CAPTION || '${name.romaji} \u2014 check out anime.gethandlenames.com/anime-names';
+        const captionTpl = window.SHARE_CARD_CAPTION || '${name.romaji} \u2014 check out gethandlenames.com/anime-names';
         const textStr = name.kanji
           ? captionTpl.replace('${name.romaji}', `${name.romaji} ${name.kanji}`)
           : captionTpl.replace('${name.romaji}', name.romaji);
