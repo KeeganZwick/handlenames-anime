@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>Anime Handle Generator — Genereer Japanse Namen | anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="Anime naam generator voor OC, fan-persona, handle of animepersonage. Kawaii, Japans, IRL. Gratis, geen registratie.">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="Anime Handle Generator — Genereer Japanse Namen | anime.gethandlenames.com">
+  <meta property="og:description" content="Anime naam generator voor OC, fan-persona, handle of animepersonage. Kawaii, Japans, IRL. Gratis, geen registratie.">
+  <meta property="og:url" content="https://anime.gethandlenames.com/nl/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. Cool Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anime Handle Generator — Genereer Japanse Namen | anime.gethandlenames.com">
+  <meta name="twitter:description" content="Anime naam generator voor OC, fan-persona, handle of animepersonage. Kawaii, Japans, IRL. Gratis, geen registratie.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">TikTok Handle Checker</a>
+        <a href="../../anime-names/" class="active">Anime Handles</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl" selected>🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms">🇲🇾 Bahasa Melayu</option>
+    <option value="vi">🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo">🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja">🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Willekeurige Anime Handle Generator</h1>
+      <p class="hero__sub">
+        Coole Japanse namen voor je OC, fan-persona, online handle of anime personage — cute, kawaii, Japans, mythologie, fusie en IRL smaken. Gebouwd voor weebs, otaku en anime-fans die de esthetische nauwkeurigheid willen zonder franchise-labels: vier generators, geen tropes, allemaal IP-veilig.
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 Schattig</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ Fusie</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 IRL-namen</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ Mythologie</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">Schattige & kawaii namen</h2>
+        <p class="tabpanel__desc">Speelse, kawaii-vriendelijke namen uit echte Japanse woorden voor dieren, natuur en zachte beelden — de zachte, schattige kant van de anime-esthetiek. Perfect voor huisdieren, OC\'s of leuke handles.</p>
+        <div class="opts">
+          <label>Resultaten <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>Achtervoegsel
+            <select id="animal-suffix">
+              <option value="none">geen</option>
+              <option value="chan">-chan (schattig)</option>
+              <option value="maru">-maru (huisdier)</option>
+              <option value="pon">-pon (speels)</option>
+              <option value="none,chan,maru,pon">alles mengen</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> soms Engels voorvoegsel toevoegen (CuteNeko-stijl)
+          </label>
+          <button class="btn btn--primary" id="animal-go">Genereer</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">Fusienamen</h2>
+        <p class="tabpanel__desc">Typ een woord uit je taal (of laat leeg voor een willekeurig) en we koppelen het aan een Japans woord. Stijlvoorbeelden: <code>SchaduwKitsune</code>, <code>SterYuki</code>, <code>WolfTsukuyomi</code>. Formatopties hieronder.</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">Jouw woord
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="bijv. schaduw, wolf, droom" autocomplete="off" spellcheck="false">
+          </label>
+          <label>Resultaten <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>Formaat\n            <select id="fusion-style">\n              <option value="camel">CamelCase (SchaduwKitsune)</option>\n              <option value="space">Met spatie (Schaduw Kitsune)</option>\n              <option value="hyphen">Met koppelteken (Schaduw-Kitsune)</option>\n              <option value="under">Met onderstreep (Schaduw_Kitsune)</option>\n              <option value="lower">Kleine letters (schaduwkitsune)</option>\n              <option value="pipe">Met sluistreep (Schaduw | Kitsune)</option>\n            </select>\n          </label>
+          <label>Sfeer
+            <select id="fusion-vibe">
+              <option value="all">Alle sferen</option>
+              <option value="cute">Schattig</option>
+              <option value="cool">Cool / stoer</option>
+              <option value="dark">Donker / mysterieus</option>
+              <option value="strong">Sterk / episch</option>
+              <option value="elegant">Elegant / woord-als-naam (Midori, Sora, etc.)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">Genereer</button>
+        </div>
+        <p class="fusion-hint muted small">Tip: elk resultaat heeft een ⇄-knop om de volgorde om te draaien (jouw-woord-eerst ↔ Japans-eerst) zonder opnieuw te genereren.</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">IRL Japanse Namen</h2>
+        <p class="tabpanel__desc">Echte Japanse voornamen en achternamen voor mannelijke, vrouwelijke of genderneutrale personages — cultureel authentiek, geen anime-associatie. Bevat de 100 meest voorkomende Japanse familienamen (achternamen) en gendergemarkeerde voornamen. Elke naam bestaat als een alledaagse echte Japanse naam.</p>
+        <div class="opts">
+          <label>Resultaten <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>Geslacht
+            <select id="irl-gender">
+              <option value="any">Elk</option>
+              <option value="male">Mannelijk</option>
+              <option value="female">Vrouwelijk</option>
+              <option value="neutral">Genderneutraal</option>
+            </select>
+          </label>
+          <label>Volgorde
+            <select id="irl-order">
+              <option value="japanese">Japans (Tanaka Yuki)</option>
+              <option value="western">Westers (Yuki Tanaka)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">Genereer</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">Mythologie- en krijgersnamen</h2>
+        <p class="tabpanel__desc">Echte Japanse mythologie — Shinto-schrijnen, boeddhistische tempels, yokai, godheden, legendarische krijgers en historische vechtkunst-terminologie. Ontleend aan openbare culturele bronnen (Kojiki, Nihon Shoki, Wikipedia, Wiktionary). Alle items zijn echte culturele verwijzingen, geen specifieke fictieve personages. Goed voor schrijn-geïnspireerde achternamen, clan-stijl samengestelde namen, en "krijger van de oude wereld"-karakternamen met de mystieke, oeroude sfeer van de Japanse spirituele en vechtkunst-traditie.</p>
+        <div class="opts">
+          <label>Bron
+            <select id="myth-source">
+              <option value="figure" selected>👹 Mythological figures (yokai, deities, legendary heroes)</option>
+              <option value="shrine">⛩️ Schrijnen & tempels (echte culturele locaties)</option>
+              <option value="martial">⚔️ Vechttermen (kensei, samoerai, katana, enz.)</option>
+            </select>
+          </label>
+          <label>Resultaten <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>Modus
+            <select id="myth-mode">
+              <option value="standalone">Losstaand (gebruik bronnaam zoals het is)</option>
+              <option value="with_given">Gecombineerd met een echte voornaam</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">Geslacht voornaam
+            <select id="myth-gender">
+              <option value="any">Elk</option>
+              <option value="male">Mannelijk</option>
+              <option value="female">Vrouwelijk</option>
+              <option value="neutral">Genderneutraal</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">Genereer</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">Kies hierboven een generator en klik op Genereer ✨</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 Opgeslagen namen <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">Alles wissen</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">Nog geen namen opgeslagen. Klik op ⭐ bij een resultaat om het hier toe te voegen.</p>
+      </div>
+      <p class="muted small">Opgeslagen namen worden alleen in je browser opgeslagen (localStorage). Ze worden niet gesynchroniseerd met een server.</p>
+    </section>
+
+    <section class="faq">
+      <h2>Veelgestelde vragen</h2>
+      <details>
+        <summary>Waar komen deze namen vandaan?</summary>
+        <p>Dier- en fusienamen komen uit echte Japanse vocabulaire (JMdict, JLPT-community woordenlijsten). IRL-namen komen uit publiek beschikbare Japanse voornaam- en achternaamregisters. Schrijn- en tempelnamen zijn echte culturele locaties in Japan. Zie <code>ATTRIBUTIONS.md</code> voor de volledige databronvermeldingen.</p>
+      </details>
+      <details>
+        <summary>Hoe werkt het Fusion-tabblad?</summary>
+        <p>De Fusion-tab combineert een woord uit je taal met een Japans woord. Typ een woord in het invoerveld (of laat leeg om een willekeurig woord uit de paginataal-woordbank te gebruiken). Elke pagina heeft zijn eigen taal: Engels op de Engelse pagina, Nederlands op de Nederlandse pagina, Duits op de Duitse pagina, Spaans op de Spaanse pagina, Frans op de Franse pagina, Portugees op de Portugese pagina, en Pools op de Poolse pagina. De Japanse kant blijft hetzelfde ongeacht je invoer — het haalt uit dezelfde dier/natuur/cool/vocabulaire-als-naam pool als voorheen. Alle formaatopties (CamelCase, spatie, koppelteken, onderstreep, kleine letters, pijp) werken hetzelfde. Er is geen Hindi- of Tagalog-fusieoptie in de UI — gebruikers die de site in die talen bekijken krijgen dezelfde Engelse fusie-ervaring.</p>
+      </details>
+      <details>
+        <summary>Kan ik de naam veilig gebruiken voor mijn OC of handle?</summary>
+        <p>Ja. We voeren geen specifieke anime-karakternamen, fan-wikinamen of namen die geassocieerd worden met bepaalde fictieve personages uit. Alle output wordt gegenereerd uit echte Japanse taal en cultuur. Je moet nog steeds even snel zoeken naar de naam die je kiest om er zeker van te zijn dat deze niet per ongeluk botst met een beroemd personage in jouw specifieke fandom.</p>
+      </details>
+      <details>
+        <summary>Kan ik een van deze namen als gebruikersnaam op Discord, TikTok of Instagram gebruiken?</summary>
+        <p>Er is niets dat je tegenhoudt. We claimen of registreren geen van de gegenereerde namen, en we voeren geen live beschikbaarheidscontroles uit. Als je een naam als handle wilt, kopieer deze en zoek deze zelf op het platform — zo krijg je een definitief ja/nee zonder dat we de ratelimieten van het platform opbranden of per ongeluk controleren tegen een account dat de naam gereserveerd heeft maar onzichtbaar voor ons is.</p>
+      </details>
+      <details>
+        <summary>Waarom geen yandere/shonen/isekai-categorieën?</summary>
+        <p>Bewust. We bouwen geen trope-gebaseerde tool omdat (a) het IP-risico op archetype-specifieke namen hoger is dan we willen, en (b) de vier generators hieronder de patronen al dekken die een naam "anime" laten voelen zonder een specifieke serie te kopiëren. De sfeer zit in het geluid, niet in het label.</p>
+      </details>
+      <details>
+        <summary>Wat zit er in het Mythologie-tabblad?</summary>
+        <p>De Mythology-tab put uit drie echte Japanse culturele bronnen, selecteerbaar via de "Source" dropdown: 
+        <br><br><b>⛩️ Heiligdommen & tempels</b> — echte Shinto-heiligdommen en boeddhistische tempels (Ise Jingu, Fushimi Inari, Tsurugaoka Hachimangu, etc.) gebruikt als zelfstandige namen of gecombineerd met een voornaam.
+        <br><br><b>👹 Mythische figuren</b> — echte yokai, Shinto-goden, Vier Symbolen en legendarische helden (Suzaku, Orochi, Inari, Tamamo, Bishamon, Kintaro, etc.) ontleend aan de Kojiki, Nihon Shoki en Wikipedia.
+        <br><br><b>⚔️ Vechtkunst-termen</b> — echte Japanse vechtkunst-terminologie en krijgers titels (Kensei, Samurai, Katana, Budo, Kengo, etc.).
+        <br><br>Alle items zijn echte culturele referenties uit de Japanse geschiedenis, mythologie en vechtkunsttraditie — historische/mythologische figuren en echte culturele locaties, niet afgeleid van een specifiek auteursrechtelijk beschermd personage of moderne franchise.</p>
+      </details>
+      <details>
+        <summary>Kan ik mannelijke of vrouwelijke anime-karakternamen genereren?</summary>
+        <p>Ja. De IRL Names-tab heeft een geslachtskiezer met drie opties: jongen (mannelijke voornamen + achternamen), meisje (vrouwelijke voornamen + achternamen), en elke (gemengd). Alle namen zijn echte Japanse voornamen en familienamen uit openbare registers, niet anime-specifiek. Voor een vrouwelijke anime-personage kies je "meisje"; voor een mannelijke anime-OC kies je "jongen".</p>
+      </details>
+      <details>
+        <summary>Kan ik een Japanse naam, anime-karakternaam of bijnaam krijgen?</summary>
+        <p>Ja, op alle drie. Voor een echte Japanse naam (voornaam, achternaam, of beide), haalt de IRL Names-tab uit openbare voornaam- en achternaamregisters. Voor een anime-karakternaam werkt elk van de vier tabs — kies degene waarvan de smaak past bij de setting van je personage. Voor een korte anime-bijnaam of handle-vriendelijke vorm geeft de Cute-tab met een korte achtervoegsel (-chan, -maru, -kun) en de "kleine letters" of "CamelCase" formaatoptie je handles zoals "konekomaru" of "YukiKitsune".</p>
+      </details>
+      <details>
+        <summary>Hebben jullie een saiyan-stijl, demon hunter, hero academy of piratenbende naamgenerator?</summary>
+        <p>Niet als gelabelde categorieën — de site is IP-veilig ontworpen, dus we gebruiken geen franchise-specifieke labels. Maar de patronen die die namen volgen worden allemaal gedekt: de Mythology-tab + Martial bron geeft je saiyan-stijl / shonen-warrior / hero-academy namen (Kensei, Tetsukage, Akatsuki, enz.); de Mythology-tab + Figures bron geeft je demon-hunter / cursed-energy / sorcerer-stijl namen (yokai, oni, en Shinto-goden die klinken als bovennatuurlijke jagers); de Fusion-tab met een sterk-vibe woord + Japans woord geeft je isekai-protagonist en pirate-crew-stijl samengestelde namen (ShadowKitsune, IronOnikiri, KaidoYuki, enz.). Gebruik het "Strong" of "Dark" vibe-filter in Fusion voor de dichtstbijzijnde match.</p>
+      </details>
+      <details>
+        <summary>Is dit een kawaii na generator?</summary>
+        <p>Ja — de Cute-tab is precies dat. Het haalt uit echte Japanse woorden voor dieren, natuur, planten, weer en zachte beelden (kat 猫, sakura 桜, yuki 雪, momo 桃, enz.) en combineert ze met kawaii-vriendelijke achtervoegsels zoals <code>-chan</code> en <code>-maru</code>. Als je een kawaii-naam wilt, klik op de Cute-tab, kies "Cute" of "Kawaii" achtervoegsel en klik op Genereren.</p>
+      </details>
+      <details>
+        <summary>Kan ik een Japanse achternaam of clannaam krijgen?</summary>
+        <p>Ja — de IRL Names-tab haalt uit de 100 meest voorkomende Japanse achternamen (Sato, Suzuki, Takahashi, Tanaka, Watanabe, enz., gerangschikt op huidige Japanse overheidsfrequentiegegevens). Voor een anime-clannaam, probeer de Mythology-tab met Source = Shrines, wat samengestelde namen produceert zoals "Fushimi Akihiko" die klinken als clan- of huisnamen. Voor iets meer verzonnen geeft de Fusion-tab met een sterk Japans woord als invoer je samengestelde namen die aanvoelen als clannamen.</p>
+      </details>
+      <details>
+        <summary>Hebben jullie een isekai-stijl of shonen-warrior naamgenerator?</summary>
+        <p>Niet als gelabelde categorie — de site is IP-veilig ontworpen, dus we gebruiken geen franchise-specifieke labels. Maar de patronen die die namen volgen worden gedekt: de Mythology-tab + Martial bron geeft je kensei / samurai / zwaardvechter-smakende namen; de Fusion-tab met een sterk-vibe woord geeft je samengestelde namen zoals "ShadowKitsune" of "IronOnikiri" die klinken als shonen-warrior of isekai-protagonist namen. Het "Strong" of "Dark" vibe-filter in Fusion is de dichtstbijzijnde match.</p>
+      </details>
+      <details>
+        <summary>Is dit een weeb / otaku na generator?</summary>
+        <p>Als je bedoelt "een na generator voor weebs/otaku, gebouwd door iemand die echt om Japanse nauwkeurigheid geeft" — ja. De gegevensbronnen zijn echt Japans (JMdict, openbare voornaamregisters, Shinto-heiligdomlijsten, Kojiki / Nihon Shoki mythologie), de kanji is echt, de hiragana is echt, de romaji is de standaard Hepburn-romanisatie. Niets is automatisch gegenereerde onzin of een stylisatie van een Engels woord.</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'none';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Anime Handle Generator maakt deel uit van <a href="/">anime.gethandlenames.com</a>. Gratis, geen registratie, geen tracking buiten standaard analyses.</p>
+      <p class="muted small">Databronnen: JMdict (CC BY-SA 4.0), JLPT-community vocabulaire (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). Zie <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">Privacy</a> ·
+        <a href="../about/">About</a> ·
+        <a href="../contact/">Contact</a> ·
+        <a href="#" data-cc-settings>Cookie settings</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">📤 Deze naam delen</h3>
+        <button class="iconbtn" data-close title="Sluiten">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ PNG downloaden</button>
+        <button class="btn btn--ghost"   id="share-native">📱 Delen…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 Afbeelding kopiëren</button>
+      </div>
+      <p class="share-modal__note muted small">
+        Tip: PNG is 1200×630 — de standaardgrootte voor Twitter/X, Discord, Pinterest en OG-previews.
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"nl":{"affectionate suffix":"lieve suffix","apple":"appel","arrow":"pijl","aster / remembrance of sound":"aster / herinnering aan geluid","bamboo":"bamboe","bear":"beer","bee":"bij","bird":"vogel","black":"zwart","blue":"blauw","blue sky":"blauwe lucht","brave":"dapper","bright / clear":"helder / duidelijk","butterfly":"vlinder","calm (of the sea)":"kalm (van de zee)","camellia":"camelia","camellia flower":"cameliabloem","carp":"karper","carp streamer":"karpervaandel","castle":"kasteel","cat":"kat","cherry blossom":"kersenbloesem","cicada":"cicade","circle/pet suffix":"cirkel/lieve suffix","claw":"klauw","cloud":"wolk","cloud (also: spider)":"wolk (ook: spin)","cold wintry wind":"koude winterwind","cool sound / refreshing tone":"koel geluid / verfrissende toon","cow":"koe","cruel":"wreed","cute":"schattig","cute suffix (sound)":"schattige suffix (geluid)","dark":"donker","darkness":"duisternis","dawn":"dageraad","deer":"hert","demon/ogre":"demon/ogre","dog":"hond","dove/pigeon":"duif","dragon":"draak","dragon god":"drakengod","dream":"droom","ear":"oor","evening glow / sunset":"avondgloed / zonsondergang","fang":"hoektand","far / distant":"ver / afgelegen","fire":"vuur","firefly":"vuurvliegje","fireworks":"vuurwerk","flame":"vlam","flower":"bloem","forest":"bos","formal dress / attire":"formele kleding","fox (mythic)":"vos (mythologisch)","fox (mythical)":"vos (mythisch)","ghost":"geest","glitter / silk (glamour)":"glitter / zijde (glamour)","goldfish":"goudvis","good fortune":"voorspoed","green / verdure":"groen / groen","hawk":"havik","heart":"hart","heart (on'yomi)":"hart (on'yomi)","heart / spirit":"hart / geest","heavenly moon / new moon":"hemelse maan / nieuwe maan","hollyhock / mallow":"stokroos / kaasjeskruid","horse":"paard","hydrangea":"hortensia","ice":"ijs","infinity":"oneindigheid","iris (the flower)":"iris (de bloem)","king":"koning","king (loanword)":"koning (leenwoord)","knight":"ridder","koala":"koala","light":"licht","light / lamp":"licht / lamp","light / radiance":"licht / straling","lightning":"bliksem","lily of the valley":"lelietje-van-dalen","long (of time)":"lang (van tijd)","long-lasting sky / eternity":"eeuwige lucht / eeuwigheid","lotus":"lotus","love":"liefde","mandarin orange":"mandarijn","mandarin orange tree":"mandarijnenboom","mist":"mist","monkey":"aap","moon":"maan","night sky":"nachtelijke hemel","orchid":"orchidee","panda":"panda","peaceful / easy":"vredig / gemakkelijk","peach":"perzik","pheasant":"fazant","pig":"varken","pink (dianthus) / 'lovely girl'":"roze (anjer) / 'schattig meisje'","rabbit":"konijn","raccoon dog (mythic)":"wasbeerhond (mythisch)","radiance":"straling","rain":"regen","rainbow":"regenboog","red":"rood","remains/corpse":"overblijfselen/lijk","river":"rivier","rose":"roos","rustic, impermanent beauty":"rustieke, vergankelijke schoonheid","sake cup":"sake-beker","scattered / falling cherry blossoms":"verspreide / vallende kersenbloesems","sea":"zee","sea / ocean":"zee / oceaan","sea/ocean":"zee/oceaan","shadow":"schaduw","sheep":"schaap","shoreline / beach":"kustlijn / strand","sincerity / truth":"oprechtheid / waarheid","sky":"hemel","small path / lane":"klein pad / steeg","small/tiny":"klein/piepklein","snow":"sneeuw","soul/spirit":"ziel/geest","sparkle/glitter":"fonkeling/glitter","sparrow":"mus","star":"ster","storm":"storm","strawberry":"aardbei","subtle, mysterious profundity":"subtiele, mysterieuze diepgang","summer hope":"zomerhoop","sunflower":"zonnebloem","sunlight filtering through leaves":"zonlicht door bladeren","sword":"zwaard","sword (alt)":"zwaard (alt)","thousand":"duizend","thread / string":"draad / koord","thrush (bird)":"lijster","thunder":"donder","tolerant / generous":"tolerant / gul","tonight":"vanavond","tree":"boom","violet":"viooltje","violet (the flower)":"viooltje (de bloem)","water":"water","wave":"golf","white":"wit","white-crested waves":"witgekuifde golven","wide truth":"brede waarheid","wind":"wind","wisdom / friend":"wijsheid / vriend","wolf":"wolf","young leaves / fresh leaves":"jonge bladeren / verse bladeren","twilight":"schemering","nap":"nap","greens":"groenten","seven":"zeven","mar":"mar","correct":"correct","will":"will","view":"view","field":"veld","eight":"acht","nine":"negen","ten":"tien","mountain":"berg","gold":"goud","jade":"jade","above":"above","ancient":"ancient","achieve":"achieve","achieve + also":"bereiken + ook","also":"also","assist":"assist","beach":"strand","beautiful":"beautiful","beauty":"beauty","beauty + cherry blossom":"beauty + cherry blossom","bell + tree":"bel + boom","blessed":"blessed","bloom":"bloom","bookmark":"bladwijzer","cape":"kaap","celebrate":"celebrate","child":"child","clear":"helder","colorful":"colorful","cool":"cool","corpse":"lijk","demon":"demon","design":"ontwerp","distant":"ver","easy":"gemakkelijk","eternity":"eeeuwigheid","excellent":"excellent","far":"ver","february":"february","february (traditional)":"february (traditional)","first":"eerste","festival":"festival","falling cherry blossoms":"vallende kersenbloesem","falcon person":"valkenier","autumn leaf":"autumn leaf","artisan":"artisan","aster":"aster","attire":"kleding","blessing":"blessing","circle":"cirkel","craftsman":"craftsman","dianthus":"dianthus","dignified":"dignified","dove":"duif","evening glow":"avondgloed","friend":"vriend","fragrance":"fragrance","garment":"garment","gauze":"gauze","generous":"gul","guardian":"guardian","hill":"heuvel","intelligent":"intelligent","lake":"meer","mountain + base":"berg + basis","pine":"den","plain":"plain","plum":"pruim","sun":"zon","tall":"tall","wisdom":"wijsheid","young leaves":"jonge bladeren","wisteria (Fujiwara branch)":"blauweregen (Fujiwara-tak)","helper + wisteria (Fujiwara branch)":"helper + wisteria (Fujiwara-tak)","sun + soar":"sun + soar","happiness + light, radiance":"geluk + licht, glans","good + rice field":"good + rice field","twilight + nap + greens":"schemering + dutje + groenten","ancient clan":"oud geslacht","ancient name for japan":"oude naam voor Japan","flat":"vlak","fresh leaves":"verse bladeren","grass":"gras","great harmony":"grote harmonie","harbor + view":"haven + uitzicht","grass + leaf":"grass + leaf","flame + sandalwood":"flame + sandalwood","beautiful + cherry blossom":"beautiful + cherry blossom","study/repair":"study/repair","heaven + field":"heaven + field","brighten + bird":"brighten + bird","assist + tree":"helpen + boom","tall + bridge":"lang + brug","tall / high / lofty":"tall / high / lofty","small + forest":"klein + bos","bright + village":"helder + dorp","mountain + village":"berg + dorp","bamboo + grove":"bamboo + grove","tolerant":"verdraagzaam","well + barrier":"put + barrière","morning sun":"ochtendzon","new moon":"nieuwe maan","heavenly moon":"hemelse maan","well":"put","pure":"puur","two":"twee","three":"drie","four":"vier","five":"vijf","six":"zes","flower + sound":"bloem + geluid","rice field + middle":"rijstveld + midden","middle + village":"midden + dorp","add + wisteria":"toevoegen + wisteria","that + wisteria":"dat + wisteria","crossing + side":"kruispunt + kant","land + sun":"land + zon","seven + sea":"zeven + zee","land":"land","courage":"courage","inside":"binnen","rice field":"rijstveld","gentle, excellent":"zacht, uitstekend","sunny place":"zonnige plek","soar":"stijgen","middle":"midden","village":"dorp","inside +":"binnen +","gentle + bright":"zacht + helder","shining + leaf":"glanzend + blad","shining + rice field":"glanzend + rijstveld","artisan/craftsman":"ambachtsman","beautiful + bloom":"mooi + bloei","beautiful + moon":"mooi + maan","blessed + child":"gezegend + kind","blessing + beauty":"zegen + schoonheid","calm (sea)":"kalm (zee)","festival + tree":"festival + boom","Mt. Fuji + view":"Mt. Fuji + uitzicht","happiness + light":"geluk + licht","mountain + base + ":"berg + basis +","heaven":"hemel","moss":"mos","leaf":"blad","verdure":"groen","ocean":"oceaan","sunset":"zonsondergang","night":"nacht","shoreline":"kustlijn","earth":"aarde","stone":"steen","valley":"vallei","island":"eiland","long-lasting sky":"eeuwigdurende lucht","soul":"ziel","spirit":"geest","phantom":"fantoom","phantom/illusion":"fantoom/illusie","ogre":"reus","pigeon":"duif","falcon":"valk","thrush":"lijster","fox":"vos","raccoon dog":"wasbeerhond","'lovely girl'":"\"lieve meid\"","bright":"helder","calm":"kalm","cool sound":"cool geluid","refreshing tone":"verfrissende toon","remembrance of sound":"geluidsherinnering","remains":"overblijfselen","cute suffix":"schattig achtervoegsel","pet suffix":"aaibaar achtervoegsel","scattered":"verspreid","formal dress":"avondjurk","glitter":"glinster","sparkle":"fonkeling","silk":"zijde","silk (glamour)":"zijde (glamour)","string":"koord","thread":"draad","subtle":"subtiel","hollyhock":"stokroos","impermanent beauty":"vergankelijke schoonheid","iris":"iris","lamp":"lamp","lane":"steeg","small path":"smal pad","mallow":"kaasjeskruid","mysterious profundity":"mysterieuze diepte","small":"klein","long":"lang","green":"groen","pink":"roze","pink (dianthus)":"roze (anjer)","tiny":"minuscuul","truth":"waarheid","sincerity":"oprechtheid","peaceful":"vreedzaam","rustic":"rustiek","one":"een","second":"tweede","silver":"zilver","fortress":"fort","palace":"paleis","maple":"esdoorn","willow":"wilg","moth":"mot","clam":"schelp","sailboat":"zeilboot","Mandarin orange tree":"mandarijnenboom","castle (ancient clan)":"kasteel (oude clan)","mochi":"mochi","eight-branch(ed)":"acht-takkig","helpful; helping":"hulpvaardig","shrine":"heiligdom","grove":"bos","reason":"reden","words":"woorden","helping; helper":"helpend; helper","axe":"bijl","shield":"schild","spear":"speer","helmet":"helm","gate":"poort","crown":"kroon","indigo":"indigo","brown":"bruin","silver (glamour)":"zilver (glamour)","bear (the animal)":"beer (het dier)","thoughts":"gedachten","spring (season)":"lente (seizoen)","autumn":"herfst","summer":"zomer","winter":"winter","daytime":"dagtijd","dawn (time)":"dageraad","sunset (time)":"zonsondergang","rest":"rust","play":"spelen","sing":"zingen","dance":"dansen","secluded place":"afgelegen plek","base + village":"basis + dorp","hillside":"heuvelhelling","gentle (rain)":"zacht (regen)","grand":"groots","bright (light)":"helder (licht)","dawn (light)":"dageraad (licht)","help":"helpen","brighten":"verhelderen","honest":"eerlijk","rapids":"stroomversnellingen","four seasons":"vier seizoenen","long-lasting sky / eternal sky":"eeuwigdurende lucht / eeuwige lucht","together / paired":"samen / gepaard","double / pair":"dubbel / paar","wisteria":"blauweregen","plain (ancient clan)":"vlakte (oude clan)","kinds":"soorten","hakama":"hakama","healthy":"gezond","base":"basis","dignified, cold-crisp":"waardig, koel-krakend","zero, spirit":"nul, geest","purple":"paars","spring":"lente","house":"huis","pongee (hand-spun silk)":"pongee (met de hand gesponnen zijde)","paulownia":"paulownia","life":"leven","hakama + rice field":"hakama + rijstveld","kudzu":"kudzu","far, distant":"ver, ver weg","wing":"vleugel","great":"groot","cool + great":"cool + groot","healthy + second":"gezond + tweede","kudzu + castle (ancient clan)":"kudzu + kasteel (oude clan)","three + house + pink (dianthus) / 'lovely girl'":"drie + huis + roze (anjelier) / 'lieve meid'","pure + water + painting + village + fragrance":"puur + water + schilderij + dorp + geur","hakama + rice field + calm (of the sea)":"hakama + rijstveld + kalm (van de zee)","mirror + zero, spirit":"spiegel + nul, geest","purple + heart + spring":"paars + hart + lente","grass + mow (legendary sword clan)":"gras + maaien (legendarische zwaardclan)","star + river + healthy + second":"ster + rivier + gezond + tweede","hakama + rice field + light / radiance":"hakama + rijstveld + licht / straling","thousand + kinds":"duizend + soorten","thousand + kinds + light / lamp":"duizend + soorten + licht / lamp","thousand + kinds + rustic, impermanent beauty":"duizend + soorten + rustieke, vergankelijke schoonheid","happiness + flat + bright / clear":"geluk + vlak + helder / duidelijk","happiness + flat":"geluk + vlak","wisteria + plain (ancient clan) + dream":"blauweregen + vlakte (oude clan) + droom","wisteria + plain (ancient clan) + blessed + child":"blauweregen + vlakte (oude clan) + gezegend + kind","wisteria + plain (ancient clan) + peaceful / easy":"blauweregen + vlakte (oude clan) + vredig / gemakkelijk","wisteria + plain (ancient clan) + night sky":"blauweregen + vlakte (oude clan) + nachtelijke hemel","wisteria + plain (ancient clan) + tree":"blauweregen + vlakte (oude clan) + boom","mountain + base + dignified, cold-crisp":"berg + basis + waardig, koel-krakend","pine + base + gauze + good":"den + basis + gaas + goed","mountain + mouth + sea / ocean":"berg + mond + zee / oceaan","grove + great + radiance":"bosje + groot + straling","shrine + cape + wind":"heiligdom + kaap + wind","paulownia + life + iris (the flower)":"paulownia + leven + iris (de bloem)","tie + love":"stropdas + liefde","tie + garment":"stropdas + kledingstuk","leisurely + truth":"ontspannen + waarheid","sprout + rely":"spruit + vertrouwen","jujube":"jujube","voyage + peace":"reis + vrede","great harmony (ancient name for Japan)":"grote harmonie (oude naam voor Japan)","heaven + valley + tie + love":"hemel + vallei + stropdas + liefde","paulownia + life + wide truth":"paulownia + leven + brede waarheid","paulownia + life + lotus":"paulownia + leven + lotus","paulownia + life + pongee (hand-spun silk)":"paulownia + leven + pongee (handgesponnen zijde)","rice + leaf + dignified, cold-crisp":"rijst + blad + waardig, koel-krakend","tall + bridge + tie + love":"lang + brug + stropdas + liefde","tall + mountain + harbor":"hoog + berg + haven","mirror + thread / string":"spiegel + draad / koord","well + above + achieve + also":"put + boven + bereiken + ook","well + barrier + painting + village + fragrance":"put + barrière + schilderij + dorp + geur","pure + water + leisurely + truth":"puur + water + ontspannen + waarheid","middle + village + tie + love":"midden + dorp + stropdas + liefde","mountain + mouth + leisurely + truth":"berg + mond + ontspannen + waarheid","mountain + rice field + sprout + rely":"berg + rijstveld + spruit + vertrouwen","crossing + side + tie + love":"oversteek + kant + stropdas + liefde","grove + sun + hollyhock":"bosje + zon + stokroos","jujube + long-lasting sky / eternity":"jujube + langdurige lucht / eeuwigheid","one + rapids + great harmony (ancient name for Japan)":"een + stroomversnellingen + grote harmonie (oude naam voor Japan)","heaven + valley + voyage + peace":"hemel + vallei + reis + vrede","small + forest + great harmony (ancient name for Japan)":"klein + bos + grote harmonie (oude naam voor Japan)","wisteria + plain (ancient clan) + tonight":"blauweregen + vlakte (oude clan) + vanavond","tall + mountain + subtle, mysterious profundity":"hoog + berg + subtiele, mysterieuze diepgang","help + brighten + truth + I":"helpen + verhelderen + waarheid + ik","tree + village + rustic, impermanent beauty":"boom + dorp + rustieke, vergankelijke schoonheid","ship channel":"scheepvaartkanaal","ga":"ga","gauze + good":"gaas + goed","celebrate + great":"vieren + groot","courage (alt reading)":"moed (alt lezing)","pine + base + aster / remembrance of sound":"den + basis + aster / herinnering aan geluid","rice + leaf + love":"rijst + blad + liefde","hill + side + cool sound / refreshing tone":"heuvel + kant + cool geluid / verfrissende toon","transparent":"transparant","silk, glisten":"zijde, glinsteren","sea + ladle":"zee + lepel","jujube + camellia flower":"jujube + camelliabloem","seven + sea + gauze + good":"zeven + zee + gaas + goed","that + wisteria + swift wind + mediate":"dat + blauweregen + snelle wind + bemiddelen","swift wind + mediate":"snelle wind + bemiddelen","hill + side":"heuvel + kant","shrine + cape + tie + greens":"heiligdom + kaap + stropdas + groenten","shrine + cape + silk, glisten":"heiligdom + kaap + zijde, glinsteren","thousand + kinds + sea + ladle":"duizend + soorten + zee + lepel","rice + leaf + gauze + good":"rijst + blad + gaas + goed","well + above + blessed + child":"put + boven + gezegend + kind","tall + mountain + flower":"hoog + berg + bloem","paulownia + life + celebrate + great":"paulownia + leven + vieren + groot","paulownia + life + fireworks":"paulownia + leven + vuurwerk","grove + courage (alt reading)":"bosje + moed (alt lezing)","rice field + middle + ship channel":"rijstveld + midden + scheepvaartkanaal","wisteria + plain (ancient clan) + ship channel":"blauweregen + vlakte (oude clan) + scheepvaartkanaal","swift wind":"snelle wind","mediate":"bemiddelen","jasmine":"jasmijn","jasmine + child":"jasmijn + kind","mountain + mouth + snow":"berg + mond + sneeuw","design + rapids + courage + second":"ontwerp + stroomversnellingen + moed + tweede","silver + jasmine + child":"zilver + jasmijn + kind","tall + mountain + spring":"hoog + berg + lente","tree + village + tie + love":"boom + dorp + stropdas + liefde","paulownia + life + dawn":"paulownia + leven + dageraad","inside + rice field + colorful + flower":"binnen + rijstveld + kleurrijk + bloem","colorful + flower":"kleurrijk + bloem","rice + leaf + shoreline / beach":"rijst + blad + kustlijn / strand","wisteria + plain (ancient clan) + falcon person":"blauweregen + vlakte (oude clan) + valkenier","long + swamp + tolerant / generous":"lang + moeras + tolerant / gul","long + swamp + sea + gentle":"lang + moeras + zee + zacht","long + swamp + soar + great":"lang + moeras + opstijgen + groot","long + swamp + forest":"lang + moeras + bos","mountain + base + rustic, impermanent beauty":"berg + basis + rustieke, vergankelijke schoonheid","people":"mensen","helper + wisteria (Fujiwara branch) + people":"helper + blauweregen (Fujiwara-tak) + mensen","well + above + tie + greens":"put + boven + stropdas + groenten","grass + mow (legendary sword clan) + tie + greens":"gras + maaien (legendarische zwaardclan) + stropdas + groenten","jujube + blessed + child":"jujube + gezegend + kind","help + brighten + light, radiance":"helpen + verhelderen + licht, straling","tree + village + light, radiance":"boom + dorp + licht, straling","middle + village + jasmine + child":"midden + dorp + jasmijn + kind","wing + mist":"vleugel + mist","well + above + sake cup":"put + boven + sake-beker","paulownia + life + mist":"paulownia + leven + mist","good + rice field + apple":"goed + rijstveld + appel","long + swamp + hollyhock":"lang + moeras + stokroos","mountain + mouth + cool sound / refreshing tone":"berg + mond + cool geluid / verfrissende toon","good + rice field + leisurely + person":"goed + rijstveld + ontspannen + persoon","leisurely + person":"ontspannen + persoon","one + rapids + painting + village + fragrance":"een + stroomversnellingen + schilderij + dorp + geur","bell":"bel","mountain + base + bell":"berg + basis + bel","seven + sea + bookmark":"zeven + zee + bladwijzer","mirror + love + child":"spiegel + liefde + kind","happiness + cool + great":"geluk + cool + groot","well + above + moon":"put + boven + maan","rice + leaf + peaceful / easy":"rijst + blad + vredig / gemakkelijk","long + swamp + cold wintry wind":"lang + moeras + koude winterse wind","mist + sun + hollyhock":"mist + zon + stokroos","shrine + base + light, radiance":"heiligdom + basis + licht, straling","well + barrier + light, radiance":"put + barrière + licht, straling","tall + bridge + gentle, excellent":"hoog + brug + zacht, uitstekend","rice + leaf + rustic, impermanent beauty":"rijst + blad + rustieke, vergankelijke schoonheid","shrine + base + painting + village + fragrance":"heiligdom + basis + schilderij + dorp + geur","mochi + koala":"mochi + koala"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "ANIME NAAM GENERATOR";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  anime naam generator";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — bekijk anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"schattig","cool":"stoer","dark":"donker","elegant":"elegant","epic":"episch","strong":"sterk","mysterious":"mysterieus","nature":"natuur","animal":"dier","adjective":"bijvoeglijk","vocab":"woordenschat","mythic":"mythologisch","martial":"krijgskunst","shrine":"schrijn","temple":"tempel","gentle":"zacht","light":"licht","dreamy":"dromerig","playful":"speels","plush":"pluchen","pure":"zuiver","romance":"romantisch","moody":"humeurig","peace":"vrede","sweet":"zoet","pet":"huisdier","night":"nacht","sky":"lucht","spring":"lente","summer":"zomer","winter":"winter","place":"plaats","noun":"zelfstandig naamwoord","prefix":"voorvoegsel","suffix":"achtervoegsel","male":"mannelijk","female":"vrouwelijk","masculine":"mannelijk","feminine":"vrouwelijk","gender-neutral":"genderneutraal","neutral":"neutraal","family-name":"achternaam","surname":"achternaam","with-given":"met voornaam","real":"echt","cultural":"cultureel"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'dutch';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'none';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use Cute/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">No results — try changing your options.</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="Copy"  aria-label="Copy"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">Kopiëren</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="Share" aria-label="Share"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">Delen</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="Save"  aria-label="Save"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">Opslaan</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="Swap order"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">Wisselen</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('Saved ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">Nog geen namen opgeslagen. Klik op ⭐ bij een resultaat om het hier toe te voegen.</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="Copy">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('Alle opgeslagen namen wissen?')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / Copy image buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('Delen mislukt — opties openen');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('Gedownload ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('Delen niet ondersteund — probeer Download');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('Afbeelding gekopieerd naar klembord 📋');
+        } else {
+          toast('Kopiëren niet ondersteund — probeer Download');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

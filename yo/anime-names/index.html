@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="yo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>Anime Handle Náìò — anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="Olu orísì anime fun OC, fan persona, handle, tàbí àwọn-orísì anime. Kawaii, Japan, IRL. Ọ̀fẹ́ẹ̀, kò sì iwà ipe.">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="Anime Handle Náìò — anime.gethandlenames.com">
+  <meta property="og:description" content="Olu orísì anime fun OC, fan persona, handle, tàbí àwọn-orísì anime. Kawaii, Japan, IRL. Ọ̀fẹ́ẹ̀, kò sì iwà ipe.">
+  <meta property="og:url" content="https://anime.gethandlenames.com/yo/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. Cool Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="yo_NG">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anime Handle Náìò — anime.gethandlenames.com">
+  <meta name="twitter:description" content="Olu orísì anime fun OC, fan persona, handle, tàbí àwọn-orísì anime. Kawaii, Japan, IRL. Ọ̀fẹ́ẹ̀, kò sì iwà ipe.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">TikTok Olukọ́ni Handle</a>
+        <a href="../../anime-names/" class="active">Anime Handle</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl">🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms">🇲🇾 Bahasa Melayu</option>
+    <option value="vi">🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo" selected>🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja">🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Olu Àtọ̀ọ̀ kọ̀ààtọ̀ Anime Handle</h1>
+      <p class="hero__sub">
+        Awọn-orísì Japan aláwọ̀dá fín pẹ̀ẹ́pẹ̀ẹ́lẹ̀ OC, fan persona, online handle, tàbì àwọn-orísì anime rẹ — cita rasa cute, kawaii, Jepang, mitologi, fusion, ati IRL. Ti a kọ fún weebs, otaku, àti àwọn-fẹ́ẹ̀nọ̀ anime tí wọ́n fẹ́ koko-ọ̀rọ̀ esthétique láìsí àwọn-ẹ̀bùù franchise: ẹ́nì generateur, kò tropes, kọ̀ gbogbo IP-sécurisé.
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 Àwà</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ Àdapọ̀ọ̀</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 Awọn IRL</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ Àtàlàpọ̀</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">Awọn-orísì & kawaii</h2>
+        <p class="tabpanel__desc">Awọn orúkọ arewa tí a gba láti àwọn ọ̀rọ́ Jẹ́pàní gidi fún àwọn ẹranko, ìdàbà, àti àwòrán rírọ̀ — ẹ̀gbẹ́ rírọ̀, arewa ti ẹ̀wà anime. Dára fún àwọn ọ̀rẹ́ ẹranko, OC, tàbí awọn handle aládùn.</p>
+        <div class="opts">
+          <label>Awọn abajade <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>Afikun ẹyin
+            <select id="animal-suffix">
+              <option value="none">ko si</option>
+              <option value="chan">-chan (arewa)</option>
+              <option value="maru">-maru (ohun ọsin)</option>
+              <option value="pon">-pon (ireti)</option>
+              <option value="none,chan,maru,pon">dapọ gbogbo</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> fi ami-iṣaaju Gẹẹsi kun nigbakan (ara CuteNeko)
+          </label>
+          <button class="btn btn--primary" id="animal-go">Ṣẹda</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">Awọn Àdapọ̀ọ̀</h2>
+        <p class="tabpanel__desc">Tẹ ọrọ eyikeyi lati ede rẹ (tabi fi ofo silẹ fun ọrọ àìṣe ìtumọ̀) àti pé a yoo darapọ̀ mọ́ ọrọ Jẹ́pánì. Àwọn àpẹẹrẹ ìrísí: <code>ÌjìKitsune</code>, <code>Ìràwọ̀Yuki</code>, <code>IkookoTsukuyomi</code>. Àwọn àṣàyàn ọ̀nà ìyàsọ́tọ̀ ní ìsàlẹ̀.</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">Ọrọ rẹ
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="f.a. ìjì, ikooko, àlá" autocomplete="off" spellcheck="false">
+          </label>
+          <label>Awọn abajade <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>Ọna kika
+            <select id="fusion-style">
+              <option value="camel">CamelCase (ÌdúKitsune)</option>
+              <option value="space">Pẹlu alafo (Shadow Kitsune)</option>
+              <option value="hyphen">Pẹlu ami-ọna (Shadow-Kitsune)</option>
+              <option value="under">Pẹlu ami-isalẹ (Shadow_Kitsune)</option>
+              <option value="lower">Gbogbo lẹta kekere (shadowkitsune)</option>
+              <option value="pipe">Pẹlu paipu (Shadow | Kitsune)</option>
+            </select>
+          </label>
+          <label>Ìmọ̀lẹ̀
+            <select id="fusion-vibe">
+              <option value="all">Gbogbo ìmọ̀lẹ̀</option>
+              <option value="cute">Arewa</option>
+              <option value="cool">Tutu</option>
+              <option value="dark">Dúdú / àṣiri</option>
+              <option value="strong">Lagbara / itan-iyanu</option>
+              <option value="elegant">Ẹlẹwa / ọrọ-bii-orúkọ (Midori, Sora, abbl.)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">Ṣẹda</button>
+        </div>
+        <p class="fusion-hint muted small">Ìmọ̀ràn: abajade kọọ̀kan ní bọtini ⇄ láti yí ọ̀nà padà (ọrọ-rẹ-akọ́kọ́ ↔ jẹ́pàní-akọ́kọ́) láì tún ṣe.</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">Awọn IRL</h2>
+        <p class="tabpanel__desc">Àwọn orúkọ àkọ́kọ́ àti orúkọ ìdílé Jẹ́pàní gidi fún àwọn ohun kíkọ ọkùnrin, obìnrin, tàbí ìyàsọ́tọ̀ èyíkéyìí — òtítọ́ ní àṣà, kò sí ìbáṣepọ̀ anime. Pẹ̀lú 100 orúkọ ìdílé (orúkọ ìdílé) Jẹ́pàní tí ó wọ́pọ̀ jùlọ àti àwọn orúkọ àkọ́kọ́ tí a fi àmì ìyàsọ́tọ̀ sí. Gbogbo orúkọ wà gẹ́gẹ́ bí orúkọ Jẹ́pàní ojoojúmọ́ ayé gidi.</p>
+        <div class="opts">
+          <label>Awọn abajade <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>Àkùkọ
+            <select id="irl-gender">
+              <option value="any">Eyikeyi</option>
+              <option value="male">Ọkùnrin</option>
+              <option value="female">Obìnrin</option>
+              <option value="neutral">Aláìní-ìyàsọ́tọ̀</option>
+            </select>
+          </label>
+          <label>Ọ̀nà
+            <select id="irl-order">
+              <option value="japanese">Jẹ́pàní (Tanaka Yuki)</option>
+              <option value="western">Ìlú Oòrùn (Yuki Tanaka)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">Ṣẹda</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">Awọn Àtàlàpọ̀</h2>
+        <p class="tabpanel__desc">Ìtàn Jẹ́pàní gidi — àwọn tẹmpili Shinto, tẹmpili Buddha, yokai, àwọn ọlọ́run, àwọn jagunjagun ìtàn, àti ọ̀rọ́ ọ̀nà jagunjagun ìtàn. Láti àwọn orisun ìṣàfihan gbangba (Kojiki, Nihon Shoki, Wikipedia, Wiktionary). Gbogbo àwọn titẹ̀ síi jẹ́ ìtọkasi ìṣàfihan gidi, kì í ṣe àwọn ohun kíkọ arójinlẹ̀ kan pàtàkì. Dára fún àwọn orúkọ ìdílé tí a gba ìmísí láti tẹmpili, àwọn orúkọ apapọ ọ̀nà ìdílé, àti àwọn orúkọ ohun kíkọ "jagunjagun ti àgbàlà ìṣàájú" pẹ̀lú ìmọ̀lẹ̀ ìjinlẹ̀, àtijókò ti ọ̀nà ẹ̀mí àti jagunjagun Jẹ́pàní.</p>
+        <div class="opts">
+          <label>Orisun
+            <select id="myth-source">
+              <option value="figure" selected>👹 Mythological figures (yokai, deities, legendary heroes)</option>
+              <option value="shrine">⛩️ Awọn tẹmpili (aaye ìṣàfihan gidi)</option>
+              <option value="martial">⚔️ Awọn ọrọ jagunjagun (kensei, samurai, katana, abbl.)</option>
+            </select>
+          </label>
+          <label>Awọn abajade <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>Ọ̀nà
+            <select id="myth-mode">
+              <option value="standalone">Lọ́tọ̀tọ̀ (lo orúkọ orisun bí ó ṣe wà)</option>
+              <option value="with_given">Darapọ̀ pẹlu orúkọ gidi</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">Àkùkọ orúkọ
+            <select id="myth-gender">
+              <option value="any">Eyikeyi</option>
+              <option value="male">Ọkùnrin</option>
+              <option value="female">Obìnrin</option>
+              <option value="neutral">Aláìní-ìyàsọ́tọ̀</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">Ṣẹda</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">Yan olupilẹ̀ṣẹ lókè kí o sì tẹ Ṣẹda ✨</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 Àwọn orúkọ̀ tí a fi pamọ́ <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">Pa gbogbo rẹ̀</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">Kò sí orúkọ̀ tí a fi pamọ́ sibẹsibẹ. Tẹ ⭐ lórí abajade kan láti fi kún un níbí.</p>
+      </div>
+      <p class="muted small">Àwọn orúkọ̀ tí a fi pamọ́ wà nínu abánisọ̀rọ̀ rẹ nìkan (localStorage). Wọn kò ń bá olupin kan ṣe ìbásọ̀rọ̀.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Nibo ni awọn orúkọ wọ̀nyí ti wá?</summary>
+        <p>Awọn orúkọ ẹranko ati àpapọ̀ wá láti ọ̀rọ̀ Jẹ́pánì gidi (JMdict, àkójọpọ̀ ọ̀rọ̀ agbègbè JLPT). Awọn orúkọ IRL wá láti àtòkọ orúkọ Jẹ́pánì tó wà fún gbogbo ènìyàn. Awọn orúkọ ààyè ọ̀run jẹ́ àwọn ibi ìṣàfẹ̀ ọ̀rọ̀ ìjọba gidi ní Jẹ́pánì. Wo <code>ATTRIBUTIONS.md</code> fún ìfẹ̀sí orísun ìtẹ̀léra.</p>
+      </details>
+      <details>
+        <summary>Bawo ni àbọ̀ Àpapọ̀ ṣe ṣiṣẹ́?</summary>
+        <p>Àbọ̀ Àpapọ̀ (Fusion) ń darapọ̀ ọ̀rọ̀ kan láti èdè rẹ pẹ̀lú ọ̀rọ̀ Jẹ́pánì kan. Tẹ ọ̀rọ̀ eyikeyi sí àkéyìì (tàbí fi ó fò fún lílo ọ̀rọ̀ àìṣe ìtumọ̀ láti ibi ìtajà ọ̀rọ̀ èdè ojúewé). Ojúewé kọ̀ọ̀kan ní èdè tirẹ: Gẹ́ẹ́sì lórí ojúewè Gẹ́ẹ́sì, Dúúkù lórí ojúewè Dúúkù, Jámánì lórí ojúewè Jámánì, Spéènìṣì lórí ojúewè Spéènìṣì, Fránsé lórí ojúewè Fránsé, Pọ́togíì lórí ojúewè Pọ́togíì, àti Pólànì lórí ojúewè Pólànì. Ẹ̀ka Jẹ́pánì kò yí padà, ó kàn án bí o tẹ ọ̀rọ̀ wo — ó gba láti ọ̀nà ẹ̀ranko/ọ̀gbìn/ìyàtọ̀/ọ̀rọ̀-gẹ́gẹ́-orúkọ̀ kan náà. Gbogbo àṣàyàn ọ̀nà (CamelCase, pẹ̀lú àyè, pẹ̀lú ìṣeda, pẹ̀lú ìlà ìsàlẹ̀, lẹ́tà kékè, pẹ̀lú ọ̀nà ìyàsọ́tọ̀) ń ṣiṣẹ́ ní ọ̀nà kan náà. Kò sí àṣàyàn àpapọ̀ Hindì tàbí Tagalog nínú UI — àwọn olùṣàwárí tó ń wo ààyè náà ní àwọn èdè wọ̀nyí ń gba ìrírí àpapọ̀ Gẹ́ẹ́sì kan náà.</p>
+      </details>
+      <details>
+        <summary>Ṣe èyí ní ààyè fun OC tàbí ìdánimọ̀ mi?</summary>
+        <p>Bẹ́ẹ́ni. A kò jáde orúkọ abala ìtàn anime kan pato, orúkọ wiki agbègbè, tàbí orúkọ tó jẹ́mọ́ abala ìtàn ìrísì kan pato. Gbogbo àbájáde jáde láti èdè àti àṣà Jẹ́pánì gidi. Ó yẹ kí o ṣàyẹ̀wò kíákíá fún orúkọ tí o yàn láti rí i pé kò pàdé pẹ̀lú abala ìtàn tó gbajúmọ̀ ní fandom pàtàkì rẹ.</p>
+      </details>
+      <details>
+        <summary>Ṣe mo lè lo ọ̀kan nínú àwọn orúkọ̀ wọ̀nyí gẹ́gẹ́ bí orúkọ̀ aṣàfihàn lórí Discord, TikTok, tàbí Instagram?</summary>
+        <p>Kò sí ohunkohun tó lè dènà ọ. A kò sọ tàbí forúkọ sílẹ̀ èyíkéyíí nínú àwọn orúkọ tí a dá, a sì kò ṣiṣẹ́ ìṣàyẹ̀wò wàláíyà. Tí o bá fẹ́ orúkọ gẹ́gẹ́ bí ìdánimọ̀, ẹ̀dà á, wá á lori pẹpẹ̀ ara ẹni — báyìíí o máa gba ìdáhùn bẹ́ẹ̀ni/rárá láìsí jíjẹ kíkankíkan òṣùwọ̀n pẹpẹ̀ tàbí àyẹ̀wò àìṣe ìtumọ̀ sí ìkáwùn kan tí ó ti pa orúkọ yẹn mọ́ ṣùgbọ́n kò hàn fún wa.</p>
+      </details>
+      <details>
+        <summary>Kí ni tí kò sí ẹka yandere/shonen/isekai?</summary>
+        <p>Ní àpẹẹrẹ. A kò kọ ohun-elo tí ó dá lórí trope nítorí (a) ewu IP lórí orúkọ àpẹẹrẹ tí ó dá lórí archetype ga ju ohun tí a fẹ́ lọ, àti (b) àwọn oníṣẹ́ mẹ́rin tí ó wa ní ìsàlẹ̀ ti ní àbójútó àwọn àpẹẹrẹ tí ó jẹ́ kí orúkọ kàn "anime" láìsí ẹ̀dà àwọn jíjẹ kan pàtàkì. Ìmọ̀lára wà nínú ohùn, kì í ṣe nínú àmì-ọ̀rọ̀.</p>
+      </details>
+      <details>
+        <summary>Kí ló nínú àbọ̀ Àtàkùrọ̀ṣe?</summary>
+        <p>Àbọ̀ Àtàkùrọ̀ṣe ń gba láti ọ̀nà ìṣàfẹ̀ ọ̀rọ̀ Jẹ́pánì mẹ́ta gidi, tí ó ṣe é yan ní ọ̀nà "Orísun" ìṣàfẹ̀: 
+        <br><br><b>⛩️ Àwọn ààyè ọ̀run & tempili</b> — àwọn ààyè ọ̀run Shinto gidi àti àwọn tempili Bùdísì (Ise Jingu, Fushimi Inari, Tsurugaoka Hachimangu, abbl.) tí a lò gẹ́gẹ́ bí orúkọ aládàáni tàbí tí a so pọ̀ pẹ̀lú orúkọ kíkọ.
+        <br><br><b>👹 Àwọn ohun ìtàn Àtàkùrọ̀ṣe</b> — àwọn yokai gidi, àwọn ọlọ́run Shinto, Àmi Mẹ́rin, àti àwọn akọni ìtàn (Suzaku, Orochi, Inari, Tamamo, Bishamon, Kintaro, abbl.) tí a gba láti Kojiki, Nihon Shoki, àti Wikipedia.
+        <br><br><b>⚔️ Àwọn ọ̀rọ̀ ìjà</b> — ìtumọ̀ ọ̀rọ̀ ìjà Jẹ́pánì gidi àti àwọn orúkọ akọni ogun (Kensei, Samurai, Katana, Budo, Kengo, abbl.).
+        <br><br>Gbogbo àwọn ohun tí a fi kún un jẹ́ ìtọ́kasí ìṣàfẹ̀ gidi láti ìtàn, àtàkùrọ̀ṣe, àti ìlànà ìjà Jẹ́pánì — àwọn ohun ìtàn/àtàkùrọ̀ṣe àti àwọn ààyè ìṣàfẹ̀ gidi, kì í ṣe ọ̀nà tí a gba láti abala ìtàn oní ìwọ̀n tàbí ìdàkejì òde ìbàmú.</p>
+      </details>
+      <details>
+        <summary>Ṣe mo lè dá orúkọ abala anime ọkùnrin tàbí obìnrin?</summary>
+        <p>Bẹ́ẹ́ni. Àbọ̀ IRL Names ní olùyàn ìbálà pẹ̀lú àwọn àṣàyàn mẹ́ta: ọmọkùnrin (orúkọ kọ́kọ́ ọkùnrin + orúkọ ìdílé), ọmọbìrìn (orúkọ kọ́kọ́ obìnrin + orúkọ ìdílé), àti eyikeyi (àrà). Gbogbo orúkọ jẹ́ orúkọ kọ́kọ́ àti orúkọ ìdílé Jẹ́pánì gidi láti àwọn àtòkọ ìjọba, kì í ṣe anime-nìkan. Fún abala anime obìnrin, yan "ọmọbìrìn"; fún OC anime ọkùnrin, yan "ọmọkùnrin".</p>
+      </details>
+      <details>
+        <summary>Ṣe mo lè gba orúkọ Japan, orúkọ ohun-ìtàṣí anime, tàbí ọ̀rọ̀ pẹ́pẹ̀?</summary>
+        <p>Bẹ́ẹ̀ni fún gbogbo mẹ́ta. Fún orúkọ Japan gangan (orúkọ kọ́kọ́, orúkọ ìdílé, tàbí èyí kejì), táàbì IRL Names ń yọ̀ jáde láti inú àtòjọ àwọn orúkọ kọ́kọ́ àti orúkọ ìdílé. Fún orúkọ ohun-ìtàṣí anime, ẹyọ́ke yìí kò ó tó àwọn táàbì mẹ́rin — yan ẹyọ́ke tí ó bá sísẹ̀tìngi ohun-ìtàṣí rẹ̀ mu. Fún ọ̀rọ̀ pẹ́pẹ̀ anime kúkuru tàbí fọ́ọ̀mù-ìfọwọ́yí, táàbì Cute pẹ̀lú ìparí kúkuru (-chan, -maru, -kun) àti àṣàyàn ọ̀nà "lowercase" tàbí "CamelCase" ń fún ọ ní àwọn handle bí "konekomaru" tàbí "YukiKitsune".</p>
+      </details>
+      <details>
+        <summary>Ṣe o ní ọ̀nà generateur orúkọ ọ̀nà saiyan, ọ̀nà demon-hunter, ọ̀nà hero-academy, tàbí ọ̀nà pirate-crew?</summary>
+        <p>Kì í ṣe gẹ́gẹ́ bí ẹ̀ka tí a lẹ́bàlẹ̀ — sáìtì yìí jẹ́ IP-sécurisé nípasẹ̀ àwọn-ọ̀nà, nítorí náà a kò lo àwọn-ẹ̀bùù tó jẹ́mí ọjà kan pàtàkì. Ṣùgbọ́n àwọn àpẹẹrẹ tí àwọn orúkọ wọ̀nyí ń tẹ̀lé wà ní ìdàbòbò: táàbì Mitologi + orísun Iṣẹ́ Ìjagun ń fún ọ ní àwọn orúkọ ọ̀nà saiyan / shonen-warrior / hero-academy (Kesei, Tetsukage, Akatsuki, abbl.); táàbì Mitologi + orísun Àwọn-ǹkan ń fún ọ ní àwọn orúkọ ọ̀nà demon-hunter / cursed-energy / sorcerer (yokai, oni, àti àwọn òrìṣà Shinto tí ó dà bí ọdẹ́ àṣà ọ̀dà); táàbì Fusion pẹ̀lú ọ̀rọ̀ vibe alágbára + ọ̀rọ̀ Japan ń fún ọ ní àwọn orúkọ àpapọ̀ ọ̀nà isekai-protagonist àti pirate-crew (ShadowKitsune, IronOnikiri, KaidoYuki, abbl.) Lo àlàfíyẹ̀ vibe "Strong" tàbí "Dark" nínú Fusion fún ìbámu tó sunmọ́.</p>
+      </details>
+      <details>
+        <summary>Ṣe èyí jẹ́ ìdàtà orúkọ kawaii?</summary>
+        <p>Bẹ́ẹ́ni — àbọ̀ Cute jẹ́ gbogbo èyí. Ó ń gba láti ọ̀rọ̀ Jẹ́pánì gidi fún ẹranko, ọ̀gbìn, ọ̀gbin, ọ̀jọ́, àti àwọn àwòrán rírọ̀ (ọ̀bọ 猫, sakura 桜, yuki 雪, momo 桃, abbl.) àti ń sọ wọ́n pọ̀ pẹ̀lú àwọn àbẹ̀ tí ó bá mu pẹ̀lú kawaii bí <code>-chan</code> àti <code>-maru</code>. Tí o bá fẹ́ orúkọ kawaii, tẹ àbọ̀ Cute, yan àbẹ̀ "Àrà" tàbí "Kawaii" kí o sì tẹ Ìdà.</p>
+      </details>
+      <details>
+        <summary>Ṣe mo lè gba orúkọ ìdílé Jẹ́pánì tàbí orúkọ ẹ̀bùn?</summary>
+        <p>Bẹ́ẹ́ni — àbọ̀ IRL Names ń gba láti ọ̀nà orúkọ ìdílé Jẹ́pánì tó wọ́pọ̀ jùlọ 100 (Sato, Suzuki, Takahashi, Tanaka, Watanabe, abbl., tí a ṣètò gẹ́gẹ́ bí iye ìgbà ìjọba Jẹ́pánì lọ́wọ́lọ́wọ́). Fún orúkọ ẹ̀bùn anime, gbìyànjú àbọ̀ Àtàkùrọ̀ṣe pẹ̀lú Orísun = Àwọn ààyè ọ̀run, èyí tí ó ń dá orúkọ àròpọ̀ bí "Fushimi Akihiko" tí ó ka bí orúkọ ẹ̀bùn tàbí ilé. Fún ohun tí ó ju ìmọ̀lẹ̀ lọ, àbọ̀ Àpapọ̀ pẹ̀lú ọ̀rọ̀ Jẹ́pánì líle ń fún ọ ní orúkọ àròpọ̀ tí ó dà bí orúkọ ẹ̀bùn.</p>
+      </details>
+      <details>
+        <summary>Ṣe ẹ ní ìdàtà orúkọ àpẹẹrẹ isekai tàbí jagunjagun shonen?</summary>
+        <p>Kì í ṣe gẹ́gẹ́ bí ẹka tí a fi àmì sí — ààyè náà jẹ́ IP-ailefà láti àpilẹ̀kọ, nítorí náà a kò lo àwọn àmì pàtàkì ti franchise. Ṣùgbọ́n àwọn àpẹẹrẹ tí àwọn orúkọ wọ̀nyí ń tẹ̀lé wà ní ìbúgbọ̀ pẹ̀lú: àbọ̀ Àtàkùrọ̀ṣe + orísun Ìjà ń fún ọ ní orúkọ tí ó ní ìtùnú kensei / samurai / olùjagun ọ̀bẹ; àbọ̀ Àpapọ̀ pẹ̀lú ọ̀rọ̀ ọ̀nà líle ń fún ọ ní orúkọ àròpọ̀ bí "ShadowKitsune" tàbí "IronOnikiri" tí ó ka bí orúkọ jagunjagun shonen tàbí ará-ìtàn isekai. Àlàyé ọ̀nà "Líle" tàbí "Dúdú" nínú Àpapọ̀ jẹ́ ìbámu tó sunmọ́ jù.</p>
+      </details>
+      <details>
+        <summary>Ṣe èyí jẹ́ ìdàtà orúkọ weeb / otaku?</summary>
+        <p>Tí ó túmọ̀ sí "orísì ìdàtà orúkọ fún weebs/otaku, tí a kọ láti ọwọ́ ẹnìkan tó ń báyìí ṣe pàtàkì ìtọnisọ̀nà Jẹ́pánì" — bẹ́ẹ́ni. Orísun ìtẹ̀léra jẹ́ Jẹ́pánì gidi (JMdict, àtòkọ orúkọ kọ́kọ́ ìjọba, àkójọpọ̀ ààyè ọ̀run Shinto, àtàkùrọ̀ṣe Kojiki / Nihon Shoki), kanji jẹ́ gidi, hiragana jẹ́ gidi, romaji jẹ́ ìṣàfihàn Hepburn ìpìlẹ̀. Kò sí ohun kan tí ó jẹ́ ọ̀rọ̀ aládàáni aládàáni tàbí ọ̀nà ọ̀rọ̀ Gẹ́ẹ́sì.</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'none';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Olu Àtọ̀ọ̀ kọ̀ààtọ̀dá Anime Handle Náìò jẹ́ apẹ́rẹ̀ anime.gethandlenames.com. Ọ̀fẹ́ẹ̀, kò sì iwà ipe, kò sì tẹ́ẹ̀jade lẹ́yín nítọ̀ọ̀ọ̀ọ̀ọ̀ àfẹ́ẹ̀ ẹ̀rọ̀ iwọn kà gbogbo.</p>
+      <p class="muted small">Data sources: JMdict (CC BY-SA 4.0), JLPT community vocab (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). See <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">Ìkọ̀ọ́</a> ·
+        <a href="../about/">Nípa</a> ·
+        <a href="../contact/">Ọ̀nà ọ̀nà</a> ·
+        <a href="#" data-cc-settings>Àtẹ́ẹ̀lẹ́ cookie</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">📤 Pín orúkọ yìí</h3>
+        <button class="iconbtn" data-close title="Tií">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ Gba PNG lori ayelujara</button>
+        <button class="btn btn--ghost"   id="share-native">📱 Pín…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 Ẹda àwòrán</button>
+      </div>
+      <p class="share-modal__note muted small">
+        Ìmọ̀ràn: PNG ní ìwọ̀n 1200×630 — ìwọ̀n ìtẹ̀jáde fún Twitter/X, Discord, Pinterest àti àwọn àkọ́ọ̀lẹ̀ OG.
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"yo":{"affectionate suffix":"afikun ifẹ","apple":"apu","arrow":"ọfà","aster / remembrance of sound":"aster / remembrance of sound","bamboo":"bambo","bear":"àgbéè re","bee":"kẹ̀lẹ́bẹ̀","bird":"ẹyẹ","black":"dúdú","blue":"búlú","blue sky":"ọ̀run bulu","brave":"akíìkan","bright / clear":"mọ́lẹ̀","butterfly":"labalábá","calm (of the sea)":"àlàáfíà (okun)","camellia":"kámẹ́líà","camellia flower":"ọ̀dọ́dọ̀ kamẹ́lia","carp":"kárì","carp streamer":"kárì fàǹfà","castle":"ààfọ̀","cat":"ọ̀bọ","cherry blossom":"sákúrà","cicada":"kẹ̀kẹ̀rẹ̀","circle/pet suffix":"àfikún yíká","claw":"ẹkẹ́","cloud":"òfurufu","cloud (also: spider)":"ṣánmà (tàbí: ẹ̀wà)","cold wintry wind":"afẹ́fẹ́ òtútù","cool sound / refreshing tone":"ohùn tútù / ohùn mímọ́","cow":"màlúù","cruel":"ìbànújẹ́","cute":"àlàáfíà","cute suffix (sound)":"àfikún arewà","dark":"dúdú","darkness":"òkùnkùn","dawn":"ìmọ́lẹ̀ òwúrọ̀","deer":"àgùnfọ̀n","demon/ogre":"demon/ogre","dog":"ajá","dove/pigeon":"dove/pigeon","dragon":"ẹ̀jì","dragon god":"ọlọ́run àjàkálẹ́","dream":"àlá","ear":"etí","evening glow / sunset":"evening glow / sunset","fang":"eyín ẹranko","far / distant":"jìjìnnà / ọ̀nà jíjẹ̀","fire":"iná","firefly":"àkàtànpọ́","fireworks":"pátákó","fish":"ẹja","flame":"iná","flower":"ododo","forest":"igbo","formal dress / attire":"formal dress / attire","fox":"kọ̀lọ̀kọ̀lọ̀","fox (mythic)":"kọ̀lọ̀ (ìtàn)","fox (mythical)":"kọ̀lọ̀ (àṣà)","ghost":"ọ̀rà","glitter / silk (glamour)":"glitter / silk (glamour)","goldfish":"ẹja wúrà","good fortune":"ọrọ̀ rere","green / verdure":"aláwọ̀ ewé","hawk":"ọ̀kẹ́","heart":"ọkàn","heart (on'yomi)":"ọkàn (on'yomi)","heart / spirit":"ọkàn / ẹ̀mí","heavenly moon / new moon":"ọ̀ṣù ọ̀run / ọ̀ṣù tuntun","hollyhock / mallow":"hollyhock / mallow","horse":"ẹṣin","hydrangea":"haidrénjíà","ice":"yìnyín","infinity":"àìní-pẹ̀","iris (the flower)":"ìrísì (ìtàkùn)","king":"ọba","king (loanword)":"ọba (àwíwé)","knight":"ọkọ́ ìkọ́","koala":"kóàlà","light":"ìmọ́lẹ̀","light / lamp":"light / lamp","light / radiance":"ìmọ́lẹ̀ / títàn","lightning":"mọ́nmọ́n","lily of the valley":"kẹ̀kẹ́ ẹ̀dà","long (of time)":"gígá (àkókò)","long-lasting sky / eternity":"long-lasting sky / eternity","lotus":"ọ̀gẹ̀dẹ̀","love":"ìfẹ́","mandarin orange":"ọ̀sàn","mandarin orange tree":"igi ọ̀rọ́ ọsàn","mist":"kùkù","monkey":"ọ̀bọ","moon":"ọ̀ṣù","mountain":"oke","night sky":"ọ̀run òru","orchid":"ọ̀ràkídì","panda":"pánda","peaceful / easy":"àlàáfíà / rọrùn","peach":"píìṣì","pheasant":"ẹyẹ ọ̀dà","pig":"ẹlẹ́dẹ̀","pink (dianthus) / 'lovely girl'":"pink (dianthus) / 'lovely girl'","rabbit":"ẹlẹ́dẹ̀","raccoon dog (mythic)":"ajá rá-kún (ìtàn)","radiance":"títàn","rain":"ọ̀jò","rainbow":"òṣùmarè","red":"pupa","remains/corpse":"remains/corpse","river":"odò","rose":"ròóṣì","rustic, impermanent beauty":"rustic, impermanent beauty","sake cup":"ìwọ̀lẹ́ sàkè","scattered / falling cherry blossoms":"scattered / falling cherry blossoms","sea":"okun","sea / ocean":"okun","sea/ocean":"sea/ocean","shadow":"ìjì","sheep":"àgùntàn","shoreline / beach":"ẹ̀bù òkun / etí okun","sincerity / truth":"sincerity / truth","sky":"ọ̀run","small path / lane":"small path / lane","small/tiny":"small/tiny","snow":"yìnyín","soul/spirit":"soul/spirit","sparkle/glitter":"sparkle/glitter","sparrow":"ẹyẹ","star":"ìràwọ̀","storm":"ìjà","strawberry":"ṣítiròbèrì","strong":"lagbara","subtle, mysterious profundity":"ìjinlẹ̀ àṣà, àìmọ̀","summer hope":"ìrètí ìgbà ìgbóná","sun":"oorun","sunflower":"ìtàkùn òòrùn","sunlight filtering through leaves":"ìmọ́lẹ̀ òòrùn kọjá nípa ewé","sword":"idà","sword (alt)":"idà (yàtọ̀)","thousand":"ẹgbẹ̀run","thread / string":"thread / string","thrush (bird)":"àkàtà (ẹyẹ)","thunder":"àrá","tiger":"ẹkùn","tolerant / generous":"tolerant / generous","tonight":"ọ̀jọ́ òru","tree":"igi","violet":"àwọ̀ ẹlẹ́dà","violet (the flower)":"àwọ̀ ẹlẹ́dà (ìtàkùn)","water":"omi","wave":"ìrì","white":"funfun","white-crested waves":"ìgbìlẹ̀ funfun","wide truth":"òtítọ́ gígá","wind":"afẹfẹ","wisdom / friend":"wisdom / friend","wolf":"ẹkùn","young leaves / fresh leaves":"ẹ̀wẹ́ títún","bell":"ago","bridge":"afara","rice":"iresi","rice field":"oko iresi","village":"abule","base":"isale","middle":"arin","side":"ẹgbẹ","add":"fi kun","crossing":"pipa","that":"eyi","small":"kekere","tall":"giga","soar":"fofly","land":"ilẹ","harbor":"ibudo","swift":"yara","great":"ńlá","seven":"meje","well":"kanga","barrier":"idi","sound":"ohun","helper":"oluranlowo","wisteria":"wisteria","sun + soar":"oorun + fofly","February (traditional)":"Fẹ́rúárù (aṣa)","artisan/craftsman":"ọṣọ́ọ̀ṣe","achieve + also":"ṣe aṣeyọri + pẹ̀lú","assist + tree":"ranlowo + igi","beautiful + bloom":"arewa + sisẹ","beautiful + moon":"arewa + oṣupa","bell + tree":"ago + igi","blessed + child":"bí olubukun + ọmọ","blessing + beauty":"bí olubukun + ẹwa","bright":"mọ́lẹ̀","bright + village":"mọ́lẹ̀ + abule","calm (sea)":"àlàáfíà (okun)","crossing + side":"ẹgbẹ́ pipa","festival + tree":"àjọ̀dún + igi","Mt. Fuji + view":"Oke Fuji + iran","helper + wisteria (Fujiwara branch)":"oluranlowo + wisteria (ẹka Fujiwara)","add + wisteria":"fi kun + wisteria","middle + village":"arin + abule","mountain + base":"isale oke","rice field + middle":"arin ọkọ iresi","small + forest":"kekere + igbo","tall + bridge":"giga + afara","that + wisteria":"eyi + wisteria","land + sun":"ilẹ + oorun","harbor + view":"ibudo + iran","seven + sea":"meje + okun","well + barrier":"kanga + idi","flower + sound":"ododo + ohun","good":"dára","courage":"ìfarahàn","second":"ìkejì","noir":"dúdú","mouth":"ẹnu","happiness":"ayọ̀","young":"ọ̀dọ́","leaves":"ẹ̀wẹ́","fresh":"tuntun","helping":"ràn","shining":"tàn","autumn":"ìgbà ìràwọ̀","spring":"ìgbà ọ̀dún","winter":"ìgbà ògbàlẹ̀","summer":"ìgbà ìgbóná","pure":"mímọ́","gentle":"rírọ̀","kind":"ṣùúrù","wonderful":"ìyanu","eternal":"àìnípẹ̀kun","mysterious":"àìmọ̀","peaceful":"àlàáfíà","calm":"àlàáfíà","wisdom":"ọgbọ́n","peace":"àlàáfíà","prosperity":"ọlọ́rọ̀","abundance":"púpọ̀","beautiful":"arewà","pretty":"arewà","graceful":"arewà","fragrant":"dídùn","happy":"dídùn","joyful":"ayọ̀","crystal":"kírísítàlì","jade":"jade","pearl":"ìyà","plum":"ṣúròpẹ́","cherry":"ṣẹ́rì","pine":"ṣóró-ìgi","willow":"wílò","autumn leaf":"ẹ̀wẹ́ ìrùbẹ́","lucky":"olùbùkún","twilight":"àṣálẹ́","nap":"ìsun ojo","greens":"ẹ̀fọ́","mar":"okun","correct":"tọ́ọ̀tọ́","will":"ìfẹ́","view":"iran","field":"oko","eight":"mẹ́jọ","nine":"mẹ́san","ten":"mẹ́wàá","gold":"wúrà","above":"lókè","ancient":"àtijọ́","achieve":"ṣe àṣeyọrí","also":"pẹ̀lú","assist":"ràn","beach":"eti okun","beauty":"ẹ́wà","beauty + cherry blossom":"ẹ́wà + sákúrà","blessed":"bí olubukun","bloom":"sisẹ","bookmark":"búkùmáàkì","cape":"ẹ̀bẹ̀ òkun","celebrate":"yẹ̀ ẹ","child":"ọmọ","clear":"kedere","colorful":"àwọ̀ ọ̀lọ́pọ̀lọ́pọ̀","cool":"tútù","corpse":"okú","demon":"èṣù","design":"àpẹẹrẹ","distant":"jìnnà","easy":"rọrùn","eternity":"àìnípẹ̀kun","excellent":"àṣeyọrí","far":"jìnnà","february":"Fẹ́rúárù","february (traditional)":"Fẹ́rúárù (aṣa)","first":"àkọ́kọ́","festival":"àjọ̀dún","falling cherry blossoms":"sákúrà tó ń ṣubú","falcon person":"ènìyàn ọ̀kẹ́","artisan":"ọṣọ́ọ̀ṣe","aster":"àṣtà","attire":"ṣe","blessing":"búkún","circle":"yíká","craftsman":"ọṣọ́ọ̀ṣe","dianthus":"dianthus","dignified":"ọ̀lá","dove":"àdàbà","evening glow":"títàn àṣálẹ́","friend":"ọ̀rẹ́","fragrance":"dídùn","garment":"ṣe","gauze":"gauze","generous":"ọ̀là","guardian":"olùṣọ́","hill":"ọ̀nà","intelligent":"ọlọ́gbọ́n","lake":"adá","plain":"pẹlẹpẹlẹ","young leaves":"ẹ̀wẹ́ títún","wisteria (Fujiwara branch)":"wisteria (ẹka Fujiwara)","happiness + light, radiance":"ayọ̀ + ìmọ́lẹ̀, títàn","good + rice field":"dára + ọkọ iresi","twilight + nap + greens":"àṣálẹ́ + ìsun ojo + ẹ̀fọ́","ancient clan":"ẹbùn àtijọ́","ancient name for japan":"orúkọ òṣì Jẹ́pánì","flat":"pẹlẹpẹlẹ","fresh leaves":"ẹ̀wẹ́ tuntun","grass":"koríko","great harmony":"àlàáfíà ńlá","grass + leaf":"koríko + ẹ̀wẹ́","flame + sandalwood":"iná + igi adán","beautiful + cherry blossom":"arewà + sákúrà","study/repair":"ìkẹ́kọ̀ọ́/ìtúnṣe","heaven + field":"ọ̀run + ọkọ","brighten + bird":"mọ́lẹ̀ + ẹyẹ","tall / high / lofty":"gígá","mountain + village":"oke + abule","bamboo + grove":"bambo + igbo kekere","tolerant":"aláfarabà","morning sun":"òòrùn àárọ̀","new moon":"ọ̀ṣù tuntun","heavenly moon":"ọ̀ṣù ọ̀run","two":"méjì","three":"mẹ́ta","four":"mẹ́rin","five":"márùn","six":"mẹ́fà","heaven":"ọ̀run","mochi":"mochi","iris":"ìrísì","jasmine":"jàsmínì","mirror":"dìrà","phoenix":"fíníksì","earth":"ilẹ̀","silver":"fàdákà","stone":"òkúta","dusk":"ìrọ̀lẹ́","night":"òru","fortress":"ààfọ̀","palace":"ọ̀gá","maple":"mápù","phoenix / peace":"fíníksì / àlàáfíà","palace (royal)":"ọ̀gá (ọba)","spring (season)":"ìgbà ìtẹ̀léra","tiny":"kékèrè","queen":"ayaba","queen (loanword)":"ayaba (àwíwé)","cute (loanword)":"àlàáfíà (àwíwé)","moss":"mósì","leaf":"èpè","verdure":"alawọ̀ ewé","ocean":"okèrè òkun","sunset":"ìrọ̀lẹ́ ọ̀rùn","shoreline":"ẹ̀bù òkun","valley":"àfon","island":"erékù","long-lasting sky":"ọ̀run àìpẹ́","soul":"ọkàn","spirit":"ẹ̀mí","phantom":"ọ̀rà","phantom/illusion":"ọ̀rà / ìmọ̀lẹ̀kàn","ogre":"ará òkúta","pigeon":"ẹyẹ ìdàlẹ̀","falcon":"ọ̀kẹ́","thrush":"àkàtà","raccoon dog":"ajá rá-kún","'lovely girl'":"\"ọmọbìnrin ọ̀ṣọ́\"","cool sound":"ohùn tútù","refreshing tone":"ohùn mímọ́","remembrance of sound":"ìrántí ohùn","remains":"àtàn ìdí","cute suffix":"afikun àlàáfíà","pet suffix":"afikun ọ̀wọ́́fẹ́","scattered":"tàn káàkiri","formal dress":"aṣọ ọ̀la","glitter":"ìmọ́lẹ̀ didán","sparkle":"ìmọ́lẹ̀","silk":"ṣíríìkì","silk (glamour)":"ṣíríìkì (àṣà)","string":"okùn","thread":"okùn","subtle":"ṣọ̀ṣo","hollyhock":"hólíhókì","impermanent beauty":"ẹ̀wà àìtẹ̀dó","lamp":"fitílà","lane":"ọ̀nà ìkànpọ̀","small path":"ọ̀nà kéékéè","mallow":"màlòwù","mysterious profundity":"ìjinlẹ̀ àṣà","long":"gígá","green":"alawọ̀ ewé","pink":"pupa ìtàn","pink (dianthus)":"pupa ìtàn (díánìtì)","truth":"òtítọ́","sincerity":"ìtẹ́wọ́gba","rustic":"àbúlé","one":"ọ̀kan","moth":"kòkòrò","clam":"họ́mọ́","sailboat":"ọkọ́ abánisọ́rọ̀","Mandarin orange tree":"igi ọ̀rọ́ ọsàn","castle (ancient clan)":"ààfọ̀ (ẹbùn ìtàn)","eight-branch(ed)":"ẹ̀ka mẹ́jọ","helpful; helping":"olùrànlọ́wọ́","shrine":"ilé ìjọ́sìn","grove":"ọgbà","reason":"ìdí","words":"ọ̀rọ̀","helping; helper":"olùrànlọ́wọ́","axe":"àké","shield":"àbọ́","spear":"ẹ̀mọ́","helmet":"ẹ̀bọ̀ ìdí","gate":"ọ̀nà ọ̀nà","crown":"adé","indigo":"ìndígò","brown":"àwọ̀ kẹ́kẹ́","silver (glamour)":"fàdákà (àṣà)","bear (the animal)":"àgbọ̀n (ẹranko náà)","thoughts":"èrò","daytime":"ọ̀sán","dawn (time)":"ìmọ́lẹ̀ òwúrọ̀","sunset (time)":"ìrọ̀lẹ́ ọ̀rùn","rest":"ìsinmi","play":"eré","sing":"orin","dance":"jókò","secluded place":"ibi ẹkùn","base + village":"ìpìlẹ̀ + ìlú","hillside":"ẹ̀bẹ̀ òkè","gentle (rain)":"rírọ̀ (òjò)","grand":"nlá","bright (light)":"mọ́lẹ́ (ìmọ́lẹ̀)","dawn (light)":"ìmọ́lẹ̀ òwúrọ̀ (ìmọ́lẹ̀)","help":"ìrànlọ́wọ́","brighten":"mọ́lẹ́","honest":"òtítọ́","rapids":"ọ̀nà pẹ̀lẹ́bẹ́","four seasons":"ìgbà mẹ́rin","long-lasting sky / eternal sky":"ọ̀run àìpẹ́ / ọ̀run tó pẹ̀","together / paired":"papọ̀ / jọpọ̀","double / pair":"ìlẹ̀ẹ̀méjì / ìdí ẹgbẹ̀ẹ́rún","plain (ancient clan)":"pẹlẹpẹlẹ (ẹbùn ìtàn)","kinds":"irú","hakama":"hakama","healthy":"lera","dignified, cold-crisp":"ọ̀lá, tútù","zero, spirit":"ọ̀fẹ́, ẹ̀mí","purple":"púpa ẹlẹ́dà","house":"ilé","pongee (hand-spun silk)":"ṣíríìkì (ọwọ́)","paulownia":"paulownia","life":"ìyè","hakama + rice field":"hakama + ọkọ iresi","kudzu":"kudzu","inside":"inú","far, distant":"jìnnà, jìjìnnà","wing":"ìyẹ́","sunny place":"ibi òòrùn","cool + great":"tútù + ńlá","healthy + second":"lera + ìkejì","kudzu + castle (ancient clan)":"kudzu + ààfọ̀ (ẹbùn ìtàn)","three + house + pink (dianthus) / 'lovely girl'":"mẹ́ta + ilé + pupa ìtàn (díánìtì) / \"ọmọbìnrin ọ̀ṣọ́\"","pure + water + painting + village + fragrance":"mímọ́ + omi + àwòrán + abùlé + dídùn","hakama + rice field + calm (of the sea)":"hakama + ọkọ iresi + àlàáfíà (okun)","mirror + zero, spirit":"dìrà + ọ̀fẹ́, ẹ̀mí","purple + heart + spring":"púpa ẹlẹ́dà + ọkàn + ìgbà ọ̀dún","grass + mow (legendary sword clan)":"koríko + gé (ẹbùn idà ìtàn)","star + river + healthy + second":"ìràwọ̀ + odò + lera + ìkejì","hakama + rice field + light / radiance":"hakama + ọkọ iresi + ìmọ́lẹ̀ / títàn","thousand + kinds":"ẹgbẹ̀run + irú","thousand + kinds + light / lamp":"ẹgbẹ̀run + irú + ìmọ́lẹ̀ / fitílà","thousand + kinds + rustic, impermanent beauty":"ẹgbẹ̀run + irú + ẹ̀wà àbúlé, àìtẹ̀dó","happiness + flat + bright / clear":"ayọ̀ + pẹlẹpẹlẹ + mọ́lẹ̀ / kedere","happiness + flat":"ayọ̀ + pẹlẹpẹlẹ","wisteria + plain (ancient clan) + dream":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + àlá","wisteria + plain (ancient clan) + blessed + child":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + bí olubukun + ọmọ","wisteria + plain (ancient clan) + peaceful / easy":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + àlàáfíà / rọrùn","wisteria + plain (ancient clan) + night sky":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + ọ̀run òru","wisteria + plain (ancient clan) + tree":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + igi","mountain + base + dignified, cold-crisp":"oke + isale + ọ̀lá, tútù","pine + base + gauze + good":"ṣóró-ìgi + isale + gauze + dára","mountain + mouth + sea / ocean":"oke + ẹnu + okun / okèrè òkun","grove + great + radiance":"ọgbà + ńlá + títàn","shrine + cape + wind":"ilé ìjọ́sìn + ẹ̀bẹ̀ òkun + afẹfẹ","paulownia + life + iris (the flower)":"paulownia + ìyè + ìrísì (ìtàkùn)","tie + love":"tì / ifẹ́","tie + garment":"tì / aṣọ","leisurely + truth":"rírọ̀ + òtítọ́","sprout + rely":"hóró + gbẹ́kẹ̀lé","jujube":"jujube","voyage + peace":"ìrìn-àjò + àlàáfíà","great harmony (ancient name for Japan)":"àlàáfíà ńlá (orúkọ òṣì Jẹ́pánì)","heaven + valley + tie + love":"ọ̀run + àfon + tì / ifẹ́","paulownia + life + wide truth":"paulownia + ìyè + òtítọ́ gígá","paulownia + life + lotus":"paulownia + ìyè + ọ̀gẹ̀dẹ̀","paulownia + life + pongee (hand-spun silk)":"paulownia + ìyè + ṣíríìkì (ọwọ́)","rice + leaf + dignified, cold-crisp":"iresi + èpè + ọ̀lá, tútù","tall + bridge + tie + love":"giga + afara + tì / ifẹ́","tall + mountain + harbor":"giga + oke + ibudo","mirror + thread / string":"dìrà + okùn","well + above + achieve + also":"kanga + lókè + ṣe àṣeyọrí + pẹ̀lú","well + barrier + painting + village + fragrance":"kanga + idi + àwòrán + abùlé + dídùn","pure + water + leisurely + truth":"mímọ́ + omi + rírọ̀ + òtítọ́","middle + village + tie + love":"arin + abùlé + tì / ifẹ́","mountain + mouth + leisurely + truth":"oke + ẹnu + rírọ̀ + òtítọ́","mountain + rice field + sprout + rely":"oke + ọkọ iresi + hóró + gbẹ́kẹ̀lé","crossing + side + tie + love":"pipa + ẹgbẹ́ + tì / ifẹ́","grove + sun + hollyhock":"ọgbà + oorun + hólíhókì","jujube + long-lasting sky / eternity":"jujube + ọ̀run àìpẹ́ / àìnípẹ̀kun","one + rapids + great harmony (ancient name for Japan)":"ọ̀kan + ọ̀nà pẹ̀lẹ́bẹ́ + àlàáfíà ńlá (orúkọ òṣì Jẹ́pánì)","heaven + valley + voyage + peace":"ọ̀run + àfon + ìrìn-àjò + àlàáfíà","small + forest + great harmony (ancient name for Japan)":"kekere + igbo + àlàáfíà ńlá (orúkọ òṣì Jẹ́pánì)","wisteria + plain (ancient clan) + tonight":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + ọ̀jọ́ òru","tall + mountain + subtle, mysterious profundity":"giga + oke + ìjinlẹ̀ àṣà, àìmọ̀","help + brighten + truth + I":"ìrànlọ́wọ́ + mọ́lẹ́ + òtítọ́ + mo","tree + village + rustic, impermanent beauty":"igi + abùlé + ẹ̀wà àbúlé, àìtẹ̀dó","ship channel":"ìtakùn ọkọ̀ omi","ga":"ga","gauze + good":"gauze + dára","celebrate + great":"yẹ̀ ẹ + ńlá","courage (alt reading)":"ìfarahàn (alt ìtumọ̀)","pine + base + aster / remembrance of sound":"ṣóró-ìgi + isale + àṣtà / ìrántí ohùn","rice + leaf + love":"iresi + èpè + ìfẹ́","hill + side + cool sound / refreshing tone":"ọ̀nà + ẹgbẹ́ + ohùn tútù / ohùn mímọ́","transparent":"kan tí ó fojú ríhìn","silk, glisten":"ṣíríìkì, didán","sea + ladle":"okun + ọ̀bẹ","jujube + camellia flower":"jujube + ọ̀dọ́dọ̀ kamẹ́lia","seven + sea + gauze + good":"meje + okun + gauze + dára","that + wisteria + swift wind + mediate":"eyi + wisteria + afẹ́fẹ́ yára + ṣe àlàáfíà","swift wind + mediate":"afẹ́fẹ́ yára + ṣe àlàáfíà","hill + side":"ọ̀nà + ẹgbẹ́","shrine + cape + tie + greens":"ilé ìjọ́sìn + ẹ̀bẹ̀ òkun + tì / ẹ̀fọ́","shrine + cape + silk, glisten":"ilé ìjọ́sìn + ẹ̀bẹ̀ òkun + ṣíríìkì, didán","thousand + kinds + sea + ladle":"ẹgbẹ̀run + irú + okun + ọ̀bẹ","rice + leaf + gauze + good":"iresi + èpè + gauze + dára","well + above + blessed + child":"kanga + lókè + bí olubukun + ọmọ","tall + mountain + flower":"giga + oke + ododo","paulownia + life + celebrate + great":"paulownia + ìyè + yẹ̀ ẹ + ńlá","paulownia + life + fireworks":"paulownia + ìyè + pátákó","grove + courage (alt reading)":"ọgbà + ìfarahàn (alt ìtumọ̀)","rice field + middle + ship channel":"ọkọ iresi + arin + ìtakùn ọkọ̀ omi","wisteria + plain (ancient clan) + ship channel":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + ìtakùn ọkọ̀ omi","swift wind":"afẹ́fẹ́ yára","mediate":"ṣe àlàáfíà","jasmine + child":"jàsmínì + ọmọ","mountain + mouth + snow":"oke + ẹnu + yìnyín","design + rapids + courage + second":"àpẹẹrẹ + ọ̀nà pẹ̀lẹ́bẹ́ + ìfarahàn + ìkejì","silver + jasmine + child":"fàdákà + jàsmínì + ọmọ","tall + mountain + spring":"giga + oke + ìgbà ọ̀dún","tree + village + tie + love":"igi + abùlé + tì / ifẹ́","paulownia + life + dawn":"paulownia + ìyè + ìmọ́lẹ̀ òwúrọ̀","inside + rice field + colorful + flower":"inú + ọkọ iresi + àwọ̀ ọ̀lọ́pọ̀lọ́pọ̀ + ododo","colorful + flower":"àwọ̀ ọ̀lọ́pọ̀lọ́pọ̀ + ododo","rice + leaf + shoreline / beach":"iresi + èpè + ẹ̀bù òkun / etí okun","wisteria + plain (ancient clan) + falcon person":"wisteria + pẹlẹpẹlẹ (ẹbùn ìtàn) + ènìyàn ọ̀kẹ́","long + swamp + tolerant / generous":"gígá + ẹkùn + aláfarabà / ọ̀là","long + swamp + sea + gentle":"gígá + ẹkùn + okun + rírọ̀","long + swamp + soar + great":"gígá + ẹkùn + fofly + ńlá","long + swamp + forest":"gígá + ẹkùn + igbo","mountain + base + rustic, impermanent beauty":"oke + isale + ẹ̀wà àbúlé, àìtẹ̀dó","people":"ènìyàn","helper + wisteria (Fujiwara branch) + people":"oluranlowo + wisteria (ẹka Fujiwara) + ènìyàn","well + above + tie + greens":"kanga + lókè + tì / ẹ̀fọ́","grass + mow (legendary sword clan) + tie + greens":"koríko + gé (ẹbùn idà ìtàn) + tì / ẹ̀fọ́","jujube + blessed + child":"jujube + bí olubukun + ọmọ","help + brighten + light, radiance":"ìrànlọ́wọ́ + mọ́lẹ́ + ìmọ́lẹ̀, títàn","tree + village + light, radiance":"igi + abùlé + ìmọ́lẹ̀, títàn","middle + village + jasmine + child":"arin + abùlé + jàsmínì + ọmọ","wing + mist":"ìyẹ́ + kùkù","well + above + sake cup":"kanga + lókè + ìwọ̀lẹ́ sàkè","paulownia + life + mist":"paulownia + ìyè + kùkù","good + rice field + apple":"dára + ọkọ iresi + apu","long + swamp + hollyhock":"gígá + ẹkùn + hólíhókì","mountain + mouth + cool sound / refreshing tone":"oke + ẹnu + ohùn tútù / ohùn mímọ́","good + rice field + leisurely + person":"dára + ọkọ iresi + rírọ̀ + ènìyàn","leisurely + person":"rírọ̀ + ènìyàn","one + rapids + painting + village + fragrance":"ọ̀kan + ọ̀nà pẹ̀lẹ́bẹ́ + àwòrán + abùlé + dídùn","mountain + base + bell":"oke + isale + ago","seven + sea + bookmark":"meje + okun + búkùmáàkì","mirror + love + child":"dìrà + ìfẹ́ + ọmọ","happiness + cool + great":"ayọ̀ + tútù + ńlá","well + above + moon":"kanga + lókè + ọ̀ṣù","rice + leaf + peaceful / easy":"iresi + èpè + àlàáfíà / rọrùn","long + swamp + cold wintry wind":"gígá + ẹkùn + afẹ́fẹ́ òtútù","mist + sun + hollyhock":"kùkù + oorun + hólíhókì","shrine + base + light, radiance":"ilé ìjọ́sìn + isale + ìmọ́lẹ̀, títàn","well + barrier + light, radiance":"kanga + idi + ìmọ́lẹ̀, títàn","tall + bridge + gentle, excellent":"giga + afara + rírọ̀, àṣeyọrí","gentle, excellent":"rírọ̀, àṣeyọrí","rice + leaf + rustic, impermanent beauty":"iresi + èpè + ẹ̀wà àbúlé, àìtẹ̀dó","shrine + base + painting + village + fragrance":"ilé ìjọ́sìn + isale + àwòrán + abùlé + dídùn","mochi + koala":"mochi + kóàlà"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "OLU ÀTỌ̀Ọ̀ KỌ̀ÀÀTỌ̀DÁ ANIME";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  olu àtọ̀ọ̀ kọ̀ààtọ̀dá anime";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — wo anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"arewa","cool":"tutu","dark":"dúdú","elegant":"ẹlẹwa","epic":"itan-iyanu","strong":"lagbara","mysterious":"àṣiri","nature":"ìdàbà","animal":"ẹranko","adjective":"ọ̀rọ̀ ìṣe","vocab":"ìtumọ̀ ọ̀rọ̀","mythic":"ìtàn","martial":"jagunjagun","shrine":"tẹmpili","temple":"tẹmpili","gentle":"rírọ̀","light":"fẹ̀ẹ́","dreamy":"alaílé","playful":"ireti","plush":"alápọ̀","pure":"mímọ̀","romance":"ìfẹ́","moody":"ìbànúẹ̀","peace":"àlàáfíà","sweet":"dùn","pet":"ohun ọ̀sìn","night":"alẹ́","sky":"ọ̀run","spring":"ìgbà ìràwọ̀","summer":"ọ̀gàn ọjọ́","winter":"Ọ̀gbà ọ̀fà","place":"ibi","noun":"ọ̀rọ̀ orúkọ","prefix":"ami-iṣaaju","suffix":"afikun ẹyin","male":"ọkùnrin","female":"obìnrin","masculine":"ọkùnrin","feminine":"obìnrin","gender-neutral":"aláìní-ìyàsọ́tọ̀","neutral":"dọ́gba","family-name":"orúkọ ìdílé","surname":"orúkọ ìdílé","with-given":"pẹlu orúkọ","real":"gidi","cultural":"ìṣàfihan"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'english';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'none';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use Cute/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">No results — try changing your options.</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="Copy"  aria-label="Copy"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">Daakọ</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="Share" aria-label="Share"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">Pin</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="Save"  aria-label="Save"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">Fi pamọ́</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="Swap order"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">Yí padà</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('Saved ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">Kò sí orúkọ̀ tí a fi pamọ́ sibẹsibẹ. Tẹ ⭐ lórí abajade kan láti fi kún un níbí.</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="Copy">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('Pa gbogbo àwọn orúkọ̀ tí a fi pamọ́?')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / Copy image buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('Pín kò dára — ń ṣí àwọn àṣàyàn');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('Gba lori ayelujara ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('Pín kò ṣe é — gbìyànjú Gba lori ayelujara');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('Àwòrán ti a dà sí àkọsílẹ̀ 📋');
+        } else {
+          toast('Dà kò ṣe é — gbìyànjú Gba lori ayelujara');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

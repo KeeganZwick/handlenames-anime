@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>مولد معرفات أنمي — أسماء يابانية | anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="مولد معرفات أنمي لـ OC، fan persona، معرف، أو شخصية أنمي. Kawaii، يابانية، أسطورية، IRL. مجاني، بدون تسجيل.">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="مولد معرفات أنمي — أسماء يابانية | anime.gethandlenames.com">
+  <meta property="og:description" content="مولد معرفات أنمي لـ OC، fan persona، معرف، أو شخصية أنمي. Kawaii، يابانية، أسطورية، IRL. مجاني، بدون تسجيل.">
+  <meta property="og:url" content="https://anime.gethandlenames.com/ar/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. Cool Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مولد معرفات أنمي — أسماء يابانية | anime.gethandlenames.com">
+  <meta name="twitter:description" content="مولد معرفات أنمي لـ OC، fan persona، معرف، أو شخصية أنمي. Kawaii، يابانية، أسطورية، IRL. مجاني، بدون تسجيل.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">فاحص معرف TikTok</a>
+        <a href="../../anime-names/" class="active">معرفات أنمي</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl">🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms">🇲🇾 Bahasa Melayu</option>
+    <option value="vi">🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar" selected>🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo">🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja">🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>مولد معرفات أنمي عشوائي</h1>
+      <p class="hero__sub">
+        أسماء بنمط ياباني أنيقة لشخصيتك أو شخصية المعجبين أو معرف على الإنترنت أو شخصية أنمي خاصة بك. مصممة لـ weebs وotaku ومحبي الأنمي الذين يريدون الدقة الجمالية بدون مسميات السلاسل: أربعة مولدات، بدون tropes، كلها آمنة لـ IP.
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 لطيف</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ دمج</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 أسماء حقيقية</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ أسطورة</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">أسماء لطيفة & kawaii</h2>
+        <p class="tabpanel__desc">أسماء ناعمة ولطيفة من كلمات يابانية حقيقية للحيوانات والطبيعة والصور اللطيفة — الجانب الناعم واللطيف من جمالية الأنمي. رائعة للحيوانات الأليفة، أو شخصيات OC، أو المعرّفات المرحة على الإنترنت.</p>
+        <div class="opts">
+          <label>النتائج <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>اللاحقة
+            <select id="animal-suffix">
+              <option value="none">بلا</option>
+              <option value="chan">-chan (لطيف)</option>
+              <option value="maru">-maru (حيوان أليف)</option>
+              <option value="pon">-pon (مرح)</option>
+              <option value="none,chan,maru,pon">امزج الكل</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> أضف أحياناً سابقة إنجليزية (نمط CuteNeko)
+          </label>
+          <button class="btn btn--primary" id="animal-go">إنشاء</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">أسماء الدمج</h2>
+        <p class="tabpanel__desc">اكتب أي كلمة من لغتك (أو اتركها فارغة لاختيار عشوائي) وسنقترنها بكلمة يابانية. أمثلة على الأسلوب: <code>ظلKitsune</code>، <code>نجمةYuki</code>، <code>ذئبTsukuyomi</code>. خيارات التنسيق أدناه.</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">كلمتك
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="مثل ظل، ذئب، حلم" autocomplete="off" spellcheck="false">
+          </label>
+          <label>النتائج <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>الصيغة
+            <select id="fusion-style">
+              <option value="camel">CamelCase (ظلKitsune)</option>
+              <option value="space">بفراغ (Shadow Kitsune)</option>
+              <option value="hyphen">بواصلة (Shadow-Kitsune)</option>
+              <option value="under">بشرطة سفلية (Shadow_Kitsune)</option>
+              <option value="lower">كلها أحرف صغيرة (shadowkitsune)</option>
+              <option value="pipe">بخط عمودي (Shadow | Kitsune)</option>
+            </select>
+          </label>
+          <label>الأجواء
+            <select id="fusion-vibe">
+              <option value="all">جميع الأجواء</option>
+              <option value="cute">لطيف</option>
+              <option value="cool">رائع</option>
+              <option value="dark">مظلم / غامض</option>
+              <option value="strong">قوي / ملحمي</option>
+              <option value="elegant">أنيق / كلمة-كاسم (Midori, Sora, إلخ)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">إنشاء</button>
+        </div>
+        <p class="fusion-hint muted small">تلميح: كل نتيجة بها زر ⇄ لعكس الترتيب (كلمتك-أولاً ↔ اليابانية-أولاً) دون إعادة الإنشاء.</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">أسماء حقيقية</h2>
+        <p class="tabpanel__desc">أسماء أولى وأسماء عائل يابانية حقيقية لشخصيات ذكر أو أنثى أو أي جنس — أصيلة ثقافياً، بدون ارتباط بالأنمي. تتضمن 100 اسم عائلي (لقب) ياباني الأكثر شيوعاً وأسماء أولى موسومة بالجنس. كل اسم موجود كاسم ياباني يومي حقيقي.</p>
+        <div class="opts">
+          <label>النتائج <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>الجنس
+            <select id="irl-gender">
+              <option value="any">أي</option>
+              <option value="male">ذكر</option>
+              <option value="female">أنثى</option>
+              <option value="neutral">محايد</option>
+            </select>
+          </label>
+          <label>الترتيب
+            <select id="irl-order">
+              <option value="japanese">ياباني (Tanaka Yuki)</option>
+              <option value="western">غربي (Yuki Tanaka)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">إنشاء</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">أسماء أسطورية</h2>
+        <p class="tabpanel__desc">أساطير يابانية حقيقية — أضرحة شنتو، معابد بوذية، yokai، آلهة، محاربون أسطوريون، ومصطلحات قتالية تاريخية. من مصادر ثقافية عامة (Kojiki، Nihon Shoki، Wikipedia، Wiktionary). جميع الإدخالات مراجع ثقافية حقيقية وليست شخصيات خيالية محددة. مناسبة لأسماء عائلية مستوحاة من الأضرحة، وأسماء مركبة على طراز العشيرة، وأسماء شخصيات "محارب العالم القديم" بطابع غامض وقديم من الروحانية والفنون القتالية اليابانية.</p>
+        <div class="opts">
+          <label>المصدر
+            <select id="myth-source">
+              <option value="figure" selected>👹 Mythological figures (yokai, deities, legendary heroes)</option>
+              <option value="shrine">⛩️ الأضرحة والمعابد (مواقع ثقافية حقيقية)</option>
+              <option value="martial">⚔️ مصطلحات قتالية (kensei، samurai، katana، إلخ)</option>
+            </select>
+          </label>
+          <label>النتائج <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>الوضع
+            <select id="myth-mode">
+              <option value="standalone">مستقل (استخدم اسم المصدر كما هو)</option>
+              <option value="with_given">مقترن باسم حقيقي</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">جنس الاسم
+            <select id="myth-gender">
+              <option value="any">أي</option>
+              <option value="male">ذكر</option>
+              <option value="female">أنثى</option>
+              <option value="neutral">محايد</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">إنشاء</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">اختر مولّداً أعلاه واضغط إنشاء ✨</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 الأسماء المحفوظة <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">مسح الكل</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">لا توجد أسماء محفوظة بعد. انقر ⭐ على أي نتيجة لإضافتها هنا.</p>
+      </div>
+      <p class="muted small">يتم تخزين الأسماء المحفوظة في متصفحك فقط (localStorage). لا تتم مزامنتها مع أي خادم.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>من أين تأتي هذه الأسماء؟</summary>
+        <p>أسماء الحيوانات والاندماج مستمدة من المفردات اليابانية الحقيقية (JMdict، قوائم الكلمات من مجتمع JLPT). أسماء IRL تأتي من سجلات الأسماء والألقاب اليابانية المتاحة للعامة. أسماء الأضرحة والمعابد هي مواقع ثقافية حقيقية في اليابان. راجع <code>ATTRIBUTIONS.md</code> لمعرفة مصادر البيانات الكاملة.</p>
+      </details>
+      <details>
+        <summary>كيف تعمل علامة التبويب Fusion؟</summary>
+        <p>تبويب Fusion تربط كلمة من لغتك بكلمة يابانية. اكتب أي كلمة في حقل الإدخال (أو اتركه فارغًا لاستخدام كلمة عشوائية من بنك كلمات لغة الصفحة). كل صفحة لها لغتها الخاصة: الإنجليزية على الصفحة الإنجليزية، الهولندية على الصفحة الهولندية، الألمانية على الصفحة الألمانية، الإسبانية على الصفحة الإسبانية، الفرنسية على الصفحة الفرنسية، البرتغالية على الصفحة البرتغالية، والبولندية على الصفحة البولندية. الجانب الياباني يبقى كما هو بغض النظر عن إدخالك — يتم سحبه من نفس مجموعة الحيوانات/الطبيعة/الرائع/المفردات-كاسم كما كان من قبل. جميع خيارات التنسيق (CamelCase، بمسافة، بواصلة، شرطة سفلية، أحرف صغيرة، شريط) تعمل بنفس الطريقة. لا يوجد خيار اندماج بالهندية أو التاغالوغية في الواجهة — المستخدمون الذين يتصفحون الموقع بهذه اللغات يحصلون على نفس تجربة الاندماج بالإنجليزية.</p>
+      </details>
+      <details>
+        <summary>هل هذا آمن لاستخدامه لشخصيتي أو معرفي؟</summary>
+        <p>نعم. نحن لا نخرج أي أسماء محددة لشخصيات أنمي، أو أسماء من ويكي المعجبين، أو أسماء مرتبطة بشخصيات خيالية معينة. جميع المخرجات مولدة من اللغة والثقافة اليابانية الحقيقية. لا يزال يجب عليك إجراء بحث سريع عن الاسم الذي تختاره للتأكد من أنه لا يتعارض بطريق الخطأ مع شخصية مشهورة في fandom المحدد لديك.</p>
+      </details>
+      <details>
+        <summary>هل يمكنني استخدام أحد هذه الأسماء كاسم مستخدم على Discord أو TikTok أو Instagram؟</summary>
+        <p>لا شيء يمنعك. نحن لا ندعي أو نسجل أيًا من الأسماء المولدة، ولا نجري فحوصات توفر مباشرة. إذا كنت تريد اسمًا كاسم مستخدم، فانسخه وابحث عنه بنفسك على المنصة — بهذه الطريقة تحصل على نعم/لا قاطعة دون أن نحرق حدود معدل المنصة أو نتحقق بطريق الخطأ من حساب يحجز الاسم ولكن غير مرئي لنا.</p>
+      </details>
+      <details>
+        <summary>لماذا لا توجد فئات yandere/shonen/isekai؟</summary>
+        <p>عن قصد. نحن لا نبني أداة قائمة على النمط لأن (أ) مخاطر الملكية الفكرية على الأسماء الخاصة بالنماذج الأولية أعلى مما نريد، و(ب) المولدات الأربعة أدناه تغطي بالفعل الأنماط التي تجعل الاسم يبدو "أنمي" دون نسخ أي سلسلة محددة. الأجواء في الصوت، وليس في الملصق.</p>
+      </details>
+      <details>
+        <summary>ماذا في علامة التبويب Mythology؟</summary>
+        <p>علامة التبويب Mythology تسحب من ثلاثة مصادر ثقافية يابانية حقيقية، يمكن تحديدها عبر القائمة المنسدلة "المصدر": 
+        <br><br><b>⛩️ الأضرحة والمعابد</b> — أضرحة شنتو حقيقية ومعابد بوذية (Ise Jingu، Fushimi Inari، Tsurugaoka Hachimangu، إلخ) تُستخدم كأسماء مستقلة أو مقترنة باسم شخصي.
+        <br><br><b>👹 الشخصيات الأسطورية</b> — يوكاي حقيقية، آلهة شنتو، الرموز الأربعة، وأبطال أسطوريون (Suzaku، Orochi، Inari، Tamamo، Bishamon، Kintaro، إلخ) مستمدة من Kojiki وNihon Shoki وويكيبيديا.
+        <br><br><b>⚔️ المصطلحات القتالية</b> — مصطلحات فنون القتال اليابانية الحقيقية وألقاب المحاربين (Kensei، Samurai، Katana، Budo، Kengo، إلخ).
+        <br><br>جميع الإدخالات هي مراجع ثقافية حقيقية من التاريخ والميثولوجيا والتقاليد القتالية اليابانية — شخصيات تاريخية/أسطورية ومواقع ثقافية حقيقية، غير مشتقة من أي شخصية محددة محمية بحقوق الطبع والنشر أو امتياز حديث.</p>
+      </details>
+      <details>
+        <summary>هل يمكنني توليد أسماء شخصيات أنمي ذكورية أو أنثوية؟</summary>
+        <p>نعم. علامة التبويب IRL Names بها محدد جنس بثلاثة خيارات: صبي (أسماء أولى ذكورية + ألقاب)، فتاة (أسماء أولى أنثوية + ألقاب)، وأي (مختلط). جميع الأسماء هي أسماء أولى وألقاب يابانية حقيقية من السجلات العامة، وليست خاصة بالأنمي. للحصول على شخصية أنمي أنثوية، اختر "فتاة"؛ للحصول على OC أنمي ذكوري، اختر "صبي".</p>
+      </details>
+      <details>
+        <summary>هل يمكنني الحصول على اسم ياباني، اسم شخصية أنمي، أو لقب؟</summary>
+        <p>نعم للثلاثة. لاسم ياباني حقيقي (اسم، لقب، أو كليهما)، تستخدم علامة تبويب أسماء IRL سجلات الأسماء والألقاب العامة. لاسم شخصية أنمي، أي من علامات التبويب الأربع يعمل — اختر الذي يتناسب وضع شخصيتك. للقب أنمي قصير أو شكل مناسب للمعرف، تستخدم علامة تبويب لطيف مع لاحقة قصيرة (-chan, -maru, -kun) وخيار تنسيق "lowercase" أو "CamelCase" لتصل على معرفات مثل "konekomaru" أو "YukiKitsune".</p>
+      </details>
+      <details>
+        <summary>هل توفرون مولداً للأسماء بنمط saiyan، صيد الشياطين، أكاديمية الأبطال، أو طاقم القراصنة؟</summary>
+        <p>ليست كفئات مسماه — الموقع IP-safe بالتصميم، فلا نستخدم مسميات خاصة بسلسلة. لكن الأنماط التي تتبعها هذه الأسماء مغطية: علامة تبويب أسطورة + مصدر الفنون القتالية تغطي أسماء على طريقة saiyan / shonen-warrior / hero-academy (Kensei, Tetsukage, Akatsuki, إلخ)؛ علامة تبويب أسطورة + مصدر الشخصيات تغطي أسماء على طريقة demon-hunter / cursed-energy / sorcerer (yokai, oni, وآلهة شينتو تبدو كصيادين خارقين)؛ علامة تبويب fusion مع كلمة ذات vibe قوي + كلمة يابانية تعطي أسماء مركبة على طريقة isekai-protagonist وpirate-crew (ShadowKitsune, IronOnikiri, KaidoYuki, إلخ). استخدم مرشح vibe "Strong" أو "Dark" في fusion لأقرب تطابق.</p>
+      </details>
+      <details>
+        <summary>هل هذا مولد أسماء كايواي؟</summary>
+        <p>نعم — علامة التبويب Cute هي بالضبط ذلك. تسحب من كلمات يابانية حقيقية للحيوانات والطبيعة والنباتات والطقس والصور اللطيفة (قطة 猫، ساكورا 桜، يوكي 雪، مومو 桃، إلخ) وتقرنها مع لواحق ملائمة للكايواي مثل <code>-chan</code> و<code>-maru</code>. إذا كنت تريد اسم كايواي، انقر على علامة التبويب Cute، واختر لاحقة "لطيف" أو "Kawaii"، واضغط على إنشاء.</p>
+      </details>
+      <details>
+        <summary>هل يمكنني الحصول على لقب أو اسم عشيرة بأسلوب ياباني؟</summary>
+        <p>نعم — علامة التبويب IRL Names تسحب من أكثر 100 لقب ياباني شيوعًا (Sato, Suzuki, Takahashi, Tanaka, Watanabe, إلخ، مرتبة حسب بيانات تردد الحكومة اليابانية الحالية). للحصول على اسم عشيرة أنمي، جرب علامة التبويب Mythology مع المصدر = أضرحة، التي تنتج أسماء مركبة مثل "Fushimi Akihiko" التي تُقرأ كأسماء عشائر أو بيوت. لشيء أكثر اختراعًا، تمنحك علامة التبويب Fusion مع إدخال كلمة يابانية قوية أسماء مركبة تبدو كأسماء عشائر.</p>
+      </details>
+      <details>
+        <summary>هل لديكم مولد أسماء بأسلوب isekai أو محارب شونين؟</summary>
+        <p>ليس كفئة موسومة — الموقع آمن لـ IP بطبيعته، لذلك لا نستخدم تسميات خاصة بامتياز معين. لكن الأنماط التي تتبعها هذه الأسماء مغطاة: علامة تبويب Mythology + مصدر Martial تمنحك أسماء بنكهة kensei / samurai / مبارز بالسيف؛ علامة تبويب Fusion مع كلمة vibe قوية تمنحك أسماء مركبة مثل "ShadowKitsune" أو "IronOnikiri" التي تُقرأ كأسماء محارب شونين أو بطل isekai. فلتر vibe "قوي" أو "داكن" في Fusion هو أقرب مطابقة.</p>
+      </details>
+      <details>
+        <summary>هل هذا مولد أسماء لمحبي الأنمي/الوتاكو؟</summary>
+        <p>إذا كنت تقصد "مولد أسماء لمحبي الأنمي/الوتاكو، بناه شخص يهتم حقًا بالدقة اليابانية" — نعم. مصادر البيانات يابانية حقيقية (JMdict، سجلات الأسماء العامة، قوائم أضرحة شنتو، أساطير Kojiki / Nihon Shoki)، الكانجي حقيقي، الهيراغانا حقيقي، الروماجي هو التمثيل اللاتيني القياسي Hepburn. لا شيء هراء مُولّد تلقائيًا أو تنميق لكلمة إنجليزية.</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'none';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>مولد معرفات أنمي هو جزء من anime.gethandlenames.com. مجاني، بدون تسجيل، بدون تتبع خارج تحليلات المعيارية.</p>
+      <p class="muted small">Data sources: JMdict (CC BY-SA 4.0), JLPT community vocab (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). See <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">الخصوصية</a> ·
+        <a href="../about/">حول</a> ·
+        <a href="../contact/">اتصل بنا</a> ·
+        <a href="#" data-cc-settings>إعدادات الكوكيز</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">📤 شارك هذا الاسم</h3>
+        <button class="iconbtn" data-close title="إغلاق">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ تنزيل PNG</button>
+        <button class="btn btn--ghost"   id="share-native">📱 مشاركة…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 نسخ الصورة</button>
+      </div>
+      <p class="share-modal__note muted small">
+        نصيحة: الصورة بصيغة PNG بأبعاد 1200×630 — الحجم القياسي لـ Twitter/X وDiscord وPinterest ومعاينات OG.
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"ar":{"affectionate suffix":"لاحقة محبة","apple":"تفاحة","arrow":"سهم","aster / remembrance of sound":"aster / remembrance of sound","bamboo":"خيزران","bear":"دب","bee":"نحلة","bird":"طائر","black":"أسود","blue":"أزرق","blue sky":"سماء زرقاء","brave":"شجاع","bright / clear":"ساطع / صافٍ","butterfly":"فراشة","calm (of the sea)":"هادئ (البحر)","camellia":"كاميليا","camellia flower":"زهرة الكاميليا","carp":"شبوط","carp streamer":"سمكة الكارب","castle":"قلعة","cat":"قطة","cherry blossom":"زهر الكرز","cicada":"زيز","circle/pet suffix":"لاحقة دائرية","claw":"مخلب","cloud":"سحابة","cloud (also: spider)":"غيمة (أو: عنكبوت)","cold wintry wind":"رياح شتوية باردة","cool sound / refreshing tone":"صوت رائع / نغمة منعشة","cow":"بقرة","cruel":"قاسٍ","cute":"لطيف","cute suffix (sound)":"لاحقة لطيفة","dark":"داكن","darkness":"ظلام","dawn":"فجر","deer":"غزال","demon/ogre":"demon/ogre","dog":"كلب","dove/pigeon":"dove/pigeon","dragon":"تنين","dragon god":"إله التنين","dream":"حلم","ear":"أذن","evening glow / sunset":"evening glow / sunset","fang":"ناب","far / distant":"بعيد / بعيد","fire":"نار","firefly":"يراعة","fireworks":"ألعاب نارية","fish":"سمكة","flame":"لهب","flower":"زهرة","forest":"غابة","formal dress / attire":"formal dress / attire","fox":"ثعلب","fox (mythic)":"ثعلب أسطوري","fox (mythical)":"ثعلب خرافي","ghost":"شبح","glitter / silk (glamour)":"glitter / silk (glamour)","goldfish":"سمكة ذهبية","good fortune":"حظ سعيد","green / verdure":"أخضر","hawk":"صقر","heart":"قلب","heart (on'yomi)":"قلب (قراءة أون)","heart / spirit":"قلب / روح","heavenly moon / new moon":"القمر السماوي / القمر الجديد","hollyhock / mallow":"hollyhock / mallow","horse":"حصان","hydrangea":"هيدرانجيا","ice":"جليد","infinity":"لانهاية","iris (the flower)":"السوسن (الزهرة)","king":"ملك","king (loanword)":"ملك (مستعار)","knight":"فارس","koala":"كوالا","light":"ضوء","light / lamp":"light / lamp","light / radiance":"ضوء / إشعاع","lightning":"برق","lily of the valley":"زنبق الوادي","long (of time)":"طويل (الوقت)","long-lasting sky / eternity":"long-lasting sky / eternity","lotus":"لوتس","love":"حب","mandarin orange":"يوسفي","mandarin orange tree":"شجرة اليوسفي","mist":"ضباب","monkey":"قرد","moon":"قمر","mountain":"جبل","night sky":"سماء ليلية","orchid":"سحلبية","panda":"باندا","peaceful / easy":"هادئ / سهل","peach":"خوخ","pheasant":"تدرج","pig":"خنزير","pink (dianthus) / 'lovely girl'":"pink (dianthus) / 'lovely girl'","rabbit":"أرنب","raccoon dog (mythic)":"كلب الراكون الأسطوري","radiance":"إشراق","rain":"مطر","rainbow":"قوس قزح","red":"أحمر","remains/corpse":"remains/corpse","river":"نهر","rose":"وردة","rustic, impermanent beauty":"rustic, impermanent beauty","sake cup":"كأس ساكي","scattered / falling cherry blossoms":"scattered / falling cherry blossoms","sea":"بحر","sea / ocean":"بحر / محيط","sea/ocean":"sea/ocean","shadow":"ظل","sheep":"خروف","shoreline / beach":"شاطئ / شاطئ","sincerity / truth":"sincerity / truth","sky":"سماء","small path / lane":"small path / lane","small/tiny":"small/tiny","snow":"ثلج","soul/spirit":"soul/spirit","sparkle/glitter":"sparkle/glitter","sparrow":"عصفور","star":"نجمة","storm":"عاصفة","strawberry":"فراولة","strong":"قوي","subtle, mysterious profundity":"دقة غامضة","summer hope":"أمل الصيف","sun":"شمس","sunflower":"دوار الشمس","sunlight filtering through leaves":"ضوء الشمس عبر الأوراق","sword":"سيف","sword (alt)":"سيف (بديل)","thousand":"ألف","thread / string":"thread / string","thrush (bird)":"سمنة (طائر)","thunder":"رعد","tiger":"نمر","tolerant / generous":"tolerant / generous","tonight":"الليلة","tree":"شجرة","violet":"بنفسج","violet (the flower)":"بنفسج (الزهرة)","water":"ماء","wave":"موجة","white":"أبيض","white-crested waves":"أمواج بيضاء","wide truth":"حقيقة واسعة","wind":"ريح","wisdom / friend":"wisdom / friend","wolf":"ذئب","young leaves / fresh leaves":"أوراق صغيرة","bell":"جرس","bridge":"جسر","rice":"أرز","rice field":"حقل أرز","village":"قرية","base":"قاعدة","middle":"وسط","side":"جانب","add":"يضيف","crossing":"تقاطع","that":"ذلك","small":"صغير","tall":"طويل","soar":"يحلّق","land":"أرض","harbor":"ميناء","swift":"سريع","great":"عظيم","seven":"سبعة","well":"بئر","barrier":"حاجز","sound":"صوت","pond":"بركة","earth":"أرض","peace":"سلام","long":"طويل","new":"جديد","old":"قديم","good":"جيد","gold":"ذهب","silver":"فضة","stone":"حجر","leaf":"ورقة","green":"أخضر","sun + soar":"شمس + تحليق","helper":"مساعد","wisteria":"وستارية","helper + wisteria (Fujiwara branch)":"مساعد + ويستيريا (فرع فوجيوارا)","bell + tree":"جرس + شجرة","tall + bridge":"طويل + جسر","rice field + middle":"وسط حقل الأرز","crossing + side":"جانب التقاطع","that + wisteria":"ذلك + ويستيريا","mountain + base":"قاعدة الجبل","middle + village":"وسط القرية","small + forest":"غابة صغيرة","add + wisteria":"يضيف + ويستيريا","well + barrier":"بئر + حاجز","flower + sound":"زهرة + صوت","seven + sea":"سبعة + بحر","land + sun":"أرض + شمس","harbor + view":"ميناء + منظر","February (traditional)":"فبراير (تقليدي)","artisan/craftsman":"حرفي","achieve + also":"يحقق + أيضاً","assist + tree":"يساعد + شجرة","beautiful + bloom":"جميل + إزهار","beautiful + moon":"جميل + قمر","blessed + child":"مبارك + طفل","blessing + beauty":"بركة + جمال","bright":"مشرق","bright + village":"مشرق + قرية","calm (sea)":"هادئ (البحر)","festival + tree":"مهرجان + شجرة","Mt. Fuji + view":"جبل فوجي + منظر","courage":"شجاعة","second":"ثاني","noir":"أسود","young":"شاب","leaves":"أوراق","fresh":"طازج","mouth":"فم","leaf / leaf-shaped":"ورقة","helping":"يساعد","large":"كبير","tall / high / lofty":"طويل / عالٍ","happiness":"سعادة","shining":"لامع","autumn":"خريف","spring":"ربيع","winter":"شتاء","summer":"صيف","pure":"نقي","gentle":"لطيف","kind":"لطيف","wonderful":"رائع","eternal":"أبدي","mysterious":"غامض","peaceful":"مسالم","calm":"هادئ","wisdom":"حكمة","prosperity":"ازدهار","abundance":"وفرة","beautiful":"جميل","pretty":"جميل","graceful":"رشيق","fragrant":"عطر","happy":"سعيد","joyful":"مبتهج","crystal":"بلوري","jade":"يشم","pearl":"لؤلؤ","plum":"برقوق","cherry":"كرز","pine":"صنوبر","willow":"صفصاف","autumn leaf":"ورقة خريفية","lucky":"محظوظ","twilight":"شفق","nap":"قيلولة","greens":"خضروات","mar":"بحر","correct":"صحيح","will":"إرادة","view":"منظر","field":"حقل","eight":"ثمانية","nine":"تسعة","ten":"عشرة","above":"فوق","ancient":"قديم","achieve":"يحقق","also":"أيضاً","assist":"يساعد","beach":"شاطئ","beauty":"جمال","beauty + cherry blossom":"جمال + زهر الكرز","blessed":"مبارك","bloom":"إزهار","bookmark":"إشارة مرجعية","cape":"كيب","celebrate":"يحتفل","child":"طفل","clear":"واضح","colorful":"ملون","cool":"بارد","corpse":"جثة","demon":"شيطان","design":"تصميم","distant":"بعيد","easy":"سهل","eternity":"أبدية","excellent":"ممتاز","far":"بعيد","february":"فبراير","february (traditional)":"فبراير (تقليدي)","first":"أول","festival":"مهرجان","falling cherry blossoms":"سقوط أزهار الكرز","falcon person":"شخص الصقر","artisan":"حرفي","aster":"نجمية","attire":"زي","blessing":"بركة","circle":"دائرة","craftsman":"حرفي","dianthus":"قرنفل","dignified":"مهيب","dove":"حمامة","evening glow":"توهج المساء","friend":"صديق","fragrance":"عطر","garment":"ثوب","gauze":"شاش","generous":"كريم","guardian":"حارس","hill":"تل","intelligent":"ذكي","lake":"بحيرة","plain":"سهل","young leaves":"أوراق صغيرة","wisteria (Fujiwara branch)":"ويستيريا (فرع فوجيوارا)","happiness + light, radiance":"سعادة + ضوء، إشراق","good + rice field":"جيد + حقل أرز","twilight + nap + greens":"شفق + قيلولة + خضراوات","ancient clan":"عشيرة قديمة","ancient name for japan":"اسم قديم لليابان","flat":"مسطح","fresh leaves":"أوراق طازجة","grass":"عشب","great harmony":"انسجام عظيم","grass + leaf":"عشب + ورقة","flame + sandalwood":"لهب + صندل","beautiful + cherry blossom":"جميل + زهر الكرز","study/repair":"دراسة/إصلاح","heaven + field":"سماء + حقل","brighten + bird":"يضيء + طائر","mountain + village":"جبل + قرية","bamboo + grove":"خيزران + بستان","tolerant":"متسامح","morning sun":"شمس الصباح","new moon":"القمر الجديد","heavenly moon":"قمر سماوي","two":"اثنان","three":"ثلاثة","four":"أربعة","five":"خمسة","six":"ستة","heaven":"الجنة","mochi":"موشي","iris":"سوسن","jasmine":"ياسمين","mirror":"مرآة","phoenix":"طائر الفينيق","dusk":"غروب","night":"ليل","fortress":"حصن","palace":"قصر","maple":"قيقب","phoenix / peace":"طائر الفينيق / سلام","palace (royal)":"قصر (ملكي)","spring (season)":"ربيع","tiny":"صغير جداً","queen":"ملكة","queen (loanword)":"ملكة (مستعارة)","cute (loanword)":"لطيف (مستعار)","moss":"طحلب","verdure":"خضرة","ocean":"محيط","sunset":"غروب","shoreline":"خط الساحل","valley":"وادي","island":"جزيرة","long-lasting sky":"سماء دائمة","soul":"روح","spirit":"روح","phantom":"شبح","phantom/illusion":"شبح/وهم","ogre":"غول","pigeon":"حمامة","falcon":"صقر","thrush":"سمنة","raccoon dog":"كلب الراكون","'lovely girl'":"«فتاة جميلة»","cool sound":"صوت رائع","refreshing tone":"نبضة منعشة","remembrance of sound":"تذكّر الصوت","remains":"بقايا","cute suffix":"لاحقة لطيفة","pet suffix":"لاحقة مداعبة","scattered":"متناثر","formal dress":"فستان رسمي","glitter":"بريق","sparkle":"بريق","silk":"حرير","silk (glamour)":"حرير (سحر)","string":"خيط","thread":"خيط","subtle":"دقيق","hollyhock":"خطمية","impermanent beauty":"جمال زائل","lamp":"مصباح","lane":"ممر","small path":"مسار صغير","mallow":"خبازي","mysterious profundity":"عمق غامض","pink":"وردي","pink (dianthus)":"وردي (قرنفل)","truth":"حقيقة","sincerity":"صدق","rustic":"ريفي","one":"واحد","moth":"عثة","clam":"بلح البحر","sailboat":"قارب شراعي","Mandarin orange tree":"شجرة اليوسفي","castle (ancient clan)":"القلعة (العشيرة القديمة)","eight-branch(ed)":"ثمانية الفروع","helpful; helping":"مُساعد","shrine":"ضريح","grove":"بستان","reason":"سبب","words":"كلمات","helping; helper":"مساعد","axe":"فأس","shield":"درع","spear":"رمح","helmet":"خوذة","gate":"بوابة","crown":"تاج","indigo":"نيلي","brown":"بني","silver (glamour)":"فضة (سحر)","bear (the animal)":"دب (الحيوان)","thoughts":"أفكار","daytime":"نهار","dawn (time)":"فجر","sunset (time)":"غروب","rest":"راحة","play":"لعب","sing":"غناء","dance":"رقص","secluded place":"مكان منعزل","base + village":"قاعدة + قرية","hillside":"منحدر التل","gentle (rain)":"لطيف (مطر)","grand":"رائع","bright (light)":"ساطع (ضوء)","dawn (light)":"فجر (ضوء)","help":"مساعدة","brighten":"يسطع","honest":"أمين","rapids":"منحدرات","four seasons":"الفصول الأربعة","long-lasting sky / eternal sky":"سماء دائمة / سماء أبدية","together / paired":"معًا / مقترن","double / pair":"مزدوج / زوج","plain (ancient clan)":"سهول (عشيرة قديمة)","kinds":"أنواع","hakama":"هakama","healthy":"صحي","dignified, cold-crisp":"مهيب، بارد-مقرمش","zero, spirit":"صفر، روح","purple":"أرجواني","house":"منزل","pongee (hand-spun silk)":"بونجي (حرير مغزول يدويًا)","paulownia":"بولونيا","life":"حياة","hakama + rice field":"هكاما + حقل أرز","kudzu":"كودزو","inside":"داخل","far, distant":"بعيد، بعيد","wing":"جناح","sunny place":"مكان مشمس","cool + great":"رائع + عظيم","healthy + second":"صحي + ثاني","kudzu + castle (ancient clan)":"كودزو + قلعة (عشيرة قديمة)","three + house + pink (dianthus) / 'lovely girl'":"ثلاثة + منزل + وردي (قرنفل) / 'فتاة جميلة'","pure + water + painting + village + fragrance":"نقي + ماء + لوحة + قرية + عطر","hakama + rice field + calm (of the sea)":"هكاما + حقل أرز + هادئ (البحر)","mirror + zero, spirit":"مرآة + صفر، روح","purple + heart + spring":"أرجواني + قلب + ربيع","grass + mow (legendary sword clan)":"عشب + جز (عشيرة السيف الأسطورية)","star + river + healthy + second":"نجم + نهر + صحي + ثاني","hakama + rice field + light / radiance":"هكاما + حقل أرز + ضوء / إشعاع","thousand + kinds":"ألف + أنواع","thousand + kinds + light / lamp":"ألف + أنواع + ضوء / مصباح","thousand + kinds + rustic, impermanent beauty":"ألف + أنواع + جمال ريفي غير دائم","happiness + flat + bright / clear":"سعادة + مسطح + ساطع / واضح","happiness + flat":"سعادة + مسطح","wisteria + plain (ancient clan) + dream":"وستارية + سهول (عشيرة قديمة) + حلم","wisteria + plain (ancient clan) + blessed + child":"وستارية + سهول (عشيرة قديمة) + مبارك + طفل","wisteria + plain (ancient clan) + peaceful / easy":"وستارية + سهول (عشيرة قديمة) + هادئ / سهل","wisteria + plain (ancient clan) + night sky":"وستارية + سهول (عشيرة قديمة) + سماء ليلية","wisteria + plain (ancient clan) + tree":"وستارية + سهول (عشيرة قديمة) + شجرة","mountain + base + dignified, cold-crisp":"جبل + قاعدة + مهيب، بارد-مقرمش","pine + base + gauze + good":"صنوبر + قاعدة + شاش + جيد","mountain + mouth + sea / ocean":"جبل + فم + بحر / محيط","grove + great + radiance":"بستان + عظيم + إشعاع","shrine + cape + wind":"معبد + كيب + رياح","paulownia + life + iris (the flower)":"بولونيا + حياة + السوسن (الزهرة)","tie + love":"ربطة + حب","tie + garment":"ربطة + ثوب","leisurely + truth":"هادئ + حقيقة","sprout + rely":"برعم + يعتمد","jujube":"العناب","voyage + peace":"رحلة + سلام","great harmony (ancient name for Japan)":"انسجام عظيم (الاسم القديم لليابان)","heaven + valley + tie + love":"سماء + واد + ربطة + حب","paulownia + life + wide truth":"بولونيا + حياة + حقيقة واسعة","paulownia + life + lotus":"بولونيا + حياة + لوتس","paulownia + life + pongee (hand-spun silk)":"بولونيا + حياة + بونجي (حرير مغزول يدويًا)","rice + leaf + dignified, cold-crisp":"أرز + ورقة + مهيب، بارد-مقرمش","tall + bridge + tie + love":"طويل + جسر + ربطة + حب","tall + mountain + harbor":"طويل + جبل + ميناء","mirror + thread / string":"مرآة + خيط / وتر","well + above + achieve + also":"بئر + فوق + تحقيق + أيضا","well + barrier + painting + village + fragrance":"بئر + حاجز + لوحة + قرية + عطر","pure + water + leisurely + truth":"نقي + ماء + هادئ + حقيقة","middle + village + tie + love":"وسط + قرية + ربطة + حب","mountain + mouth + leisurely + truth":"جبل + فم + هادئ + حقيقة","mountain + rice field + sprout + rely":"جبل + حقل أرز + برعم + يعتمد","crossing + side + tie + love":"عبور + جانب + ربطة + حب","grove + sun + hollyhock":"بستان + شمس + خطمية","jujube + long-lasting sky / eternity":"العناب + سماء دائمة / أبدية","one + rapids + great harmony (ancient name for Japan)":"واحد + مياه سريعة + انسجام عظيم (الاسم القديم لليابان)","heaven + valley + voyage + peace":"سماء + واد + رحلة + سلام","small + forest + great harmony (ancient name for Japan)":"صغير + غابة + انسجام عظيم (الاسم القديم لليابان)","wisteria + plain (ancient clan) + tonight":"وستارية + سهول (عشيرة قديمة) + الليلة","tall + mountain + subtle, mysterious profundity":"طويل + جبل + دقة غامضة","help + brighten + truth + I":"مساعدة + إنارة + حقيقة + أنا","tree + village + rustic, impermanent beauty":"شجرة + قرية + جمال ريفي غير دائم","ship channel":"قناة الشحن","ga":"غا","gauze + good":"شاش + جيد","celebrate + great":"احتفال + عظيم","courage (alt reading)":"شجاعة (قراءة بديلة)","pine + base + aster / remembrance of sound":"صنوبر + قاعدة + نجمية / تذكير بالصوت","rice + leaf + love":"أرز + ورقة + حب","hill + side + cool sound / refreshing tone":"تلة + جانب + صوت بارد / نغمة منعشة","transparent":"شفاف","silk, glisten":"حرير، بريق","sea + ladle":"بحر + مغرفة","jujube + camellia flower":"العناب + زهرة الكاميليا","seven + sea + gauze + good":"سبعة + بحر + شاش + جيد","that + wisteria + swift wind + mediate":"هذا + وستارية + ريح سريعة + وساطة","swift wind + mediate":"ريح سريعة + وساطة","hill + side":"تلة + جانب","shrine + cape + tie + greens":"معبد + كيب + ربطة + خضروات","shrine + cape + silk, glisten":"معبد + كيب + حرير، بريق","thousand + kinds + sea + ladle":"ألف + أنواع + بحر + مغرفة","rice + leaf + gauze + good":"أرز + ورقة + شاش + جيد","well + above + blessed + child":"بئر + فوق + مبارك + طفل","tall + mountain + flower":"طويل + جبل + زهرة","paulownia + life + celebrate + great":"بولونيا + حياة + احتفال + عظيم","paulownia + life + fireworks":"بولونيا + حياة + ألعاب نارية","grove + courage (alt reading)":"بستان + شجاعة (قراءة بديلة)","rice field + middle + ship channel":"حقل أرز + وسط + قناة الشحن","wisteria + plain (ancient clan) + ship channel":"وستارية + سهول (عشيرة قديمة) + قناة الشحن","swift wind":"ريح سريعة","mediate":"وساطة","jasmine + child":"ياسمين + طفل","mountain + mouth + snow":"جبل + فم + ثلج","design + rapids + courage + second":"تصميم + مياه سريعة + شجاعة + ثاني","silver + jasmine + child":"فضة + ياسمين + طفل","tall + mountain + spring":"طويل + جبل + ربيع","tree + village + tie + love":"شجرة + قرية + ربطة + حب","paulownia + life + dawn":"بولونيا + حياة + فجر","inside + rice field + colorful + flower":"داخل + حقل أرز + ملون + زهرة","colorful + flower":"ملون + زهرة","rice + leaf + shoreline / beach":"أرز + ورقة + شاطئ / شاطئ","wisteria + plain (ancient clan) + falcon person":"وستارية + سهول (عشيرة قديمة) + شخص الصقر","long + swamp + tolerant / generous":"طويل + مستنقع + متسامح / كريم","long + swamp + sea + gentle":"طويل + مستنقع + بحر + لطيف","long + swamp + soar + great":"طويل + مستنقع + تحليق + عظيم","long + swamp + forest":"طويل + مستنقع + غابة","mountain + base + rustic, impermanent beauty":"جبل + قاعدة + جمال ريفي غير دائم","people":"ناس","helper + wisteria (Fujiwara branch) + people":"مساعد + وستارية (فرع فوجيوارا) + ناس","well + above + tie + greens":"بئر + فوق + ربطة + خضروات","grass + mow (legendary sword clan) + tie + greens":"عشب + جز (عشيرة السيف الأسطورية) + ربطة + خضروات","jujube + blessed + child":"العناب + مبارك + طفل","help + brighten + light, radiance":"مساعدة + إنارة + ضوء، إشعاع","tree + village + light, radiance":"شجرة + قرية + ضوء، إشعاع","middle + village + jasmine + child":"وسط + قرية + ياسمين + طفل","wing + mist":"جناح + ضباب","well + above + sake cup":"بئر + فوق + كأس ساكي","paulownia + life + mist":"بولونيا + حياة + ضباب","good + rice field + apple":"جيد + حقل أرز + تفاحة","long + swamp + hollyhock":"طويل + مستنقع + خطمية","mountain + mouth + cool sound / refreshing tone":"جبل + فم + صوت بارد / نغمة منعشة","good + rice field + leisurely + person":"جيد + حقل أرز + هادئ + شخص","leisurely + person":"هادئ + شخص","one + rapids + painting + village + fragrance":"واحد + مياه سريعة + لوحة + قرية + عطر","mountain + base + bell":"جبل + قاعدة + جرس","seven + sea + bookmark":"سبعة + بحر + إشارة مرجعية","mirror + love + child":"مرآة + حب + طفل","happiness + cool + great":"سعادة + رائع + عظيم","well + above + moon":"بئر + فوق + قمر","rice + leaf + peaceful / easy":"أرز + ورقة + هادئ / سهل","long + swamp + cold wintry wind":"طويل + مستنقع + رياح شتوية باردة","mist + sun + hollyhock":"ضباب + شمس + خطمية","shrine + base + light, radiance":"معبد + قاعدة + ضوء، إشعاع","well + barrier + light, radiance":"بئر + حاجز + ضوء، إشعاع","tall + bridge + gentle, excellent":"طويل + جسر + لطيف، ممتاز","gentle, excellent":"لطيف، ممتاز","rice + leaf + rustic, impermanent beauty":"أرز + ورقة + جمال ريفي غير دائم","shrine + base + painting + village + fragrance":"معبد + قاعدة + لوحة + قرية + عطر","mochi + koala":"موتشي + كوالا"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "مولد معرفات أنمي";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  مولد معرفات أنمي";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — تحقق من anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"لطيف","cool":"رائع","dark":"مظلم","elegant":"أنيق","epic":"ملحمي","strong":"قوي","mysterious":"غامض","nature":"طبيعة","animal":"حيوان","adjective":"صفة","vocab":"مفردات","mythic":"أسطوري","martial":"قتالي","shrine":"ضريح","temple":"معبد","gentle":"لطيف","light":"خفيف","dreamy":"حالم","playful":"مرح","plush":"فخم","pure":"نقي","romance":"رومانسي","moody":"متقلب","peace":"سلام","sweet":"حلو","pet":"حيوان أليف","night":"ليل","sky":"سماء","spring":"ربيع","summer":"صيف","winter":"شتاء","place":"مكان","noun":"اسم","prefix":"بادئة","suffix":"لاحقة","male":"ذكر","female":"أنثى","masculine":"مذكر","feminine":"مؤنث","gender-neutral":"محايد","neutral":"محايد","family-name":"اسم العائلة","surname":"اللقب","with-given":"مع اسم","real":"حقيقي","cultural":"ثقافي"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'english';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'none';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use Cute/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">No results — try changing your options.</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="Copy"  aria-label="Copy"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">نسخ</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="Share" aria-label="Share"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">مشاركة</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="Save"  aria-label="Save"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">حفظ</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="Swap order"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">تبادل</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('Saved ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">لا توجد أسماء محفوظة بعد. انقر ⭐ على أي نتيجة لإضافتها هنا.</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="Copy">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('مسح جميع الأسماء المحفوظة؟')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / Copy image buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('فشلت المشاركة — يتم فتح الخيارات');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('تم التنزيل ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('المشاركة غير مدعومة — جرب التنزيل');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('تم نسخ الصورة إلى الحافظة 📋');
+        } else {
+          toast('النسخ غير مدعوم — جرب التنزيل');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

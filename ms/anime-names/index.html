@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>Penjana Handle Anime — anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="Penjana nama anime untuk OC, fan persona, handle, atau watak anime. Kawaii, Jepun, mitologi, IRL. Percuma, tiada pendaftaran.">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="Penjana Handle Anime — anime.gethandlenames.com">
+  <meta property="og:description" content="Penjana nama anime untuk OC, fan persona, handle, atau watak anime. Kawaii, Jepun, mitologi, IRL. Percuma, tiada pendaftaran.">
+  <meta property="og:url" content="https://anime.gethandlenames.com/ms/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. Cool Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Penjana Handle Anime — anime.gethandlenames.com">
+  <meta name="twitter:description" content="Penjana nama anime untuk OC, fan persona, handle, atau watak anime. Kawaii, Jepun, mitologi, IRL. Percuma, tiada pendaftaran.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">Pemeriksa Handle TikTok</a>
+        <a href="../../anime-names/" class="active">Handle Anime</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl">🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms" selected>🇲🇾 Bahasa Melayu</option>
+    <option value="vi">🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo">🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja">🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Penjana Handle Anime Rawak</h1>
+      <p class="hero__sub">
+        Nama-nama bergaya Jepun yang keren untuk OC, fan persona, handle dalam talian, atau watak anime anda — perisa cute, kawaii, Jepun, mitologi, fusion, dan IRL. Dibina untuk weebs, otaku, dan peminat anime yang mahukan ketepatan estetik tanpa label francais: empat penjana, tanpa trope, semuanya selamat dari segi IP.
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 Comel</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ Gabungan</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 Nama IRL</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ Mitologi</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">Nama Comel & kawaii</h2>
+        <p class="tabpanel__desc">Nama-nama lembut dan kawaii-friendly yang diambil daripada perkataan Jepun sebenar untuk haiwan, alam semula jadi, dan gambaran lembut — sisi lembut dan comel bagi estetika anime. Sesuai untuk haiwan peliharaan, OC, atau handle yang menyeronokkan.</p>
+        <div class="opts">
+          <label>Keputusan <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>Akhiran
+            <select id="animal-suffix">
+              <option value="none">tiada</option>
+              <option value="chan">-chan (comel)</option>
+              <option value="maru">-maru (haiwan peliharaan)</option>
+              <option value="pon">-pon (seronok)</option>
+              <option value="none,chan,maru,pon">campur semua</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> kadang-kala tambah awalan Inggeris (gaya CuteNeko)
+          </label>
+          <button class="btn btn--primary" id="animal-go">Jana</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">Nama Gabungan</h2>
+        <p class="tabpanel__desc">Taip mana-mana perkataan dari bahasa anda (atau biarkan kosong untuk rawak) dan kami akan memadankannya dengan perkataan Jepun. Contoh gaya: <code>BayanganKitsune</code>, <code>BintangYuki</code>, <code>SerigalaTsukuyomi</code>. Pilihan format di bawah.</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">Perkataan anda
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="cth. bayangan, serigala, mimpi" autocomplete="off" spellcheck="false">
+          </label>
+          <label>Keputusan <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>Format
+            <select id="fusion-style">
+              <option value="camel">CamelCase (BayanganKitsune)</option>
+              <option value="space">Dengan ruang (Shadow Kitsune)</option>
+              <option value="hyphen">Dengan tanda hubung (Shadow-Kitsune)</option>
+              <option value="under">Dengan garis bawah (Shadow_Kitsune)</option>
+              <option value="lower">Semua huruf kecil (shadowkitsune)</option>
+              <option value="pipe">Dengan paip (Shadow | Kitsune)</option>
+            </select>
+          </label>
+          <label>Suasana
+            <select id="fusion-vibe">
+              <option value="all">Semua suasana</option>
+              <option value="cute">Comel</option>
+              <option value="cool">Cool / hebat</option>
+              <option value="dark">Gelap / misteri</option>
+              <option value="strong">Kuat / epik</option>
+              <option value="elegant">Elegan / perkataan-sebagai-nama (Midori, Sora, dll.)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">Jana</button>
+        </div>
+        <p class="fusion-hint muted small">Tip: setiap keputusan ada butang ⇄ untuk membalik urutan (perkataan-anda-dahulu ↔ jepun-dahulu) tanpa menjana semula.</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">Nama IRL</h2>
+        <p class="tabpanel__desc">Nama pertama dan nama keluarga Jepun sebenar untuk watak lelaki, perempuan, atau semua jantina — autentik dari segi budaya, tiada kaitan anime. Termasuk 100 nama keluarga Jepun yang paling lazim dan nama pertama bertag jantina. Setiap nama wujud sebagai nama harian dunia sebenar Jepun.</p>
+        <div class="opts">
+          <label>Keputusan <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>Jantina
+            <select id="irl-gender">
+              <option value="any">Semua</option>
+              <option value="male">Lelaki</option>
+              <option value="female">Perempuan</option>
+              <option value="neutral">Neutral jantina</option>
+            </select>
+          </label>
+          <label>Susunan
+            <select id="irl-order">
+              <option value="japanese">Jepun (Tanaka Yuki)</option>
+              <option value="western">Barat (Yuki Tanaka)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">Jana</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">Nama Mitologi</h2>
+        <p class="tabpanel__desc">Mitologi Jepun sebenar — kuil Shinto, kuil Buddha, yokai, dewa, pahlawan legenda, dan istilah seni pejuang bersejarah. Daripada sumber budaya awam (Kojiki, Nihon Shoki, Wikipedia, Wiktionary). Semua entri ialah rujukan budaya sebenar, bukan watak fiksyen tertentu. Sesuai untuk nama keluarga yang diilhamkan kuil, nama majmuk ala clan, dan nama watak "pejuang dunia lama" dengan nuansa mistik dan aura purba dari tradisi spiritual dan seni pejuang Jepun.</p>
+        <div class="opts">
+          <label>Sumber
+            <select id="myth-source">
+              <option value="figure" selected>👹 Mythological figures (yokai, deities, legendary heroes)</option>
+              <option value="shrine">⛩️ Kuil & tempat ibadat (tapak budaya sebenar)</option>
+              <option value="martial">⚔️ Istilah seni pejuang (kensei, samurai, katana, dll.)</option>
+            </select>
+          </label>
+          <label>Keputusan <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>Mod
+            <select id="myth-mode">
+              <option value="standalone">Berdiri sendiri (guna nama sumber apa adanya)</option>
+              <option value="with_given">Dipadankan dengan nama sebenar</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">Jantina nama pertama
+            <select id="myth-gender">
+              <option value="any">Semua</option>
+              <option value="male">Lelaki</option>
+              <option value="female">Perempuan</option>
+              <option value="neutral">Neutral jantina</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">Jana</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">Pilih penjana di atas dan tekan Jana ✨</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 Nama yang disimpan <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">Buang semua</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">Tiada nama disimpan lagi. Klik ⭐ pada mana-mana hasil untuk menambahkannya di sini.</p>
+      </div>
+      <p class="muted small">Nama yang disimpan hanya disimpan dalam pelayar anda (localStorage). Ia tidak diselaraskan dengan mana-mana pelayan.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Dari manakah nama-nama ini datang?</summary>
+        <p>Nama haiwan dan gabungan diambil daripada perbendaharaan kata Jepun sebenar (JMdict, senarai perkataan komuniti JLPT). Nama IRL datang daripada daftar nama pertama dan keluarga Jepun yang boleh didapati secara terbuka. Nama kuil dan tokong adalah tapak budaya sebenar di Jepun. Lihat <code>ATTRIBUTIONS.md</code> untuk kredit sumber data penuh.</p>
+      </details>
+      <details>
+        <summary>Bagaimana tab Fusion berfungsi?</summary>
+        <p>Tab Fusion memadankan perkataan dari bahasa anda dengan perkataan Jepun. Taip mana-mana perkataan dalam medan input (atau biarkan kosong untuk menggunakan perkataan rawak daripada bank perkataan bahasa halaman). Setiap halaman mempunyai bahasa sendiri: bahasa Inggeris di halaman bahasa Inggeris, bahasa Belanda di halaman bahasa Belanda, bahasa Jerman di halaman bahasa Jerman, bahasa Sepanyol di halaman bahasa Sepanyol, bahasa Perancis di halaman bahasa Perancis, bahasa Portugis di halaman bahasa Portugis, dan bahasa Poland di halaman bahasa Poland. Bahagian Jepun kekal sama tanpa mengira input anda — ia diambil dari kumpulan haiwan/alam/keren/perkataan-sebagai-nama yang sama seperti sebelum ini. Semua pilihan format (CamelCase, dengan ruang, dengan tanda hubung, dengan garis bawah, huruf kecil, dengan paip) berfungsi dengan cara yang sama. Tiada pilihan gabungan bahasa Hindi atau Tagalog dalam UI — pengguna yang melihat tapak dalam bahasa tersebut mendapat pengalaman gabungan bahasa Inggeris yang sama.</p>
+      </details>
+      <details>
+        <summary>Adakah ini selamat untuk OC atau handle saya?</summary>
+        <p>Ya. Kami tidak mengeluarkan nama watak anime tertentu, nama wiki peminat, atau nama yang dikaitkan dengan watak fiksyen tertentu. Semua output dijana daripada bahasa dan budaya Jepun sebenar. Anda masih perlu melakukan carian cepat untuk nama yang anda pilih untuk memastikan ia tidak bertembung secara tidak sengaja dengan watak terkenal dalam fandom khusus anda.</p>
+      </details>
+      <details>
+        <summary>Bolehkah saya menggunakan salah satu nama ini sebagai nama pengguna di Discord, TikTok, atau Instagram?</summary>
+        <p>Tiada apa yang menghalang anda. Kami tidak menuntut atau mendaftarkan mana-mana nama yang dijana, dan kami tidak menjalankan pemeriksaan ketersediaan secara langsung. Jika anda ingin nama sebagai handle, salin dan cari di platform sendiri — dengan cara itu anda mendapat ya/tidak yang muktamad tanpa kami membakar had kadar platform atau secara tidak sengaja menyemak akaun yang mempunyai nama itu tetapi tidak kelihatan kepada kami.</p>
+      </details>
+      <details>
+        <summary>Mengapa tiada kategori yandere/shonen/isekai?</summary>
+        <p>Dengan sengaja. Kami tidak membina alat berasaskan trope kerana (a) risiko IP pada nama khusus archtype lebih tinggi daripada yang kami mahukan, dan (b) empat penjana di bawah ini sudah merangkumi corak yang menjadikan nama berasa "anime" tanpa menyalin mana-mana siri tertentu. Vibes ada pada bunyi, bukan pada label.</p>
+      </details>
+      <details>
+        <summary>Apakah yang ada dalam tab Mitologi?</summary>
+        <p>Tab Mitologi menarik dari tiga sumber budaya Jepun sebenar, boleh dipilih melalui dropdown "Sumber": 
+        <br><br><b>⛩️ Kuil & Tokong</b> — kuil Shinto dan tokong Buddha sebenar (Ise Jingu, Fushimi Inari, Tsurugaoka Hachimangu, dll.) digunakan sebagai nama kendiri atau dipadankan dengan nama pertama.
+        <br><br><b>👹 Angkawan Mitos</b> — yokai sebenar, dewa Shinto, Empat Simbol, dan wira lagenda (Suzaku, Orochi, Inari, Tamamo, Bishamon, Kintaro, dll.) yang diambil dari Kojiki, Nihon Shoki, dan Wikipedia.
+        <br><br><b>⚔️ Istilah Seni Bela Diri</b> — terminologi seni bela diri Jepun sebenar dan gelaran pahlawan (Kensei, Samurai, Katana, Budo, Kengo, dll.).
+        <br><br>Semua entri adalah rujukan budaya sebenar dari sejarah, mitologi, dan tradisi seni bela diri Jepun — tokoh sejarah/mitologi dan tapak budaya sebenar, tidak diperoleh daripada watak berhak cipta tertentu atau francais moden.</p>
+      </details>
+      <details>
+        <summary>Bolehkah saya jana nama watak anime lelaki atau perempuan?</summary>
+        <p>Ya. Tab IRL Names mempunyai pemilih jantina dengan tiga pilihan: budak lelaki (nama pertama maskulin + nama keluarga), budak perempuan (nama pertama feminin + nama keluarga), dan mana-mana (campuran). Semua nama adalah nama pertama dan keluarga Jepun sebenar daripada daftar awam, bukan khusus anime. Untuk watak anime perempuan, pilih "budak perempuan"; untuk OC anime lelaki, pilih "budak lelaki".</p>
+      </details>
+      <details>
+        <summary>Bolehkah saya mendapat nama Jepun, nama watak anime, atau nama samaran?</summary>
+        <p>Ya untuk ketiga-tiganya. Untuk nama Jepun sebenar (nama pertama, nama keluarga, atau kedua-duanya), tab Nama IRL menarik daripada daftar nama pertama dan nama keluarga awam. Untuk nama watak anime, mana-mana daripada empat tab berfungsi — pilih yang perisanya sepadan dengan tetapan watak anda. Untuk nama samaran anime pendek atau bentuk mesra handle, tab Comel dengan akhiran pendek (-chan, -maru, -kun) dan pilihan format "lowercase" atau "CamelCase" memberi anda handle seperti "konekomaru" atau "YukiKitsune".</p>
+      </details>
+      <details>
+        <summary>Adakah anda ada penjana nama ala saiyan, pemburu syaitan, akademi wira, atau kru lanun?</summary>
+        <p>Bukan sebagai kategori berlabel — tapak ini IP-safe mengikut reka bentuk, jadi kami tidak menggunakan label khusus francais. Tetapi corak nama-nama itu diliputi: tab Mitologi + sumber Seni Pejuang memberi anda nama-nama ala saiyan / shonen-warrior / hero-academy (Kensei, Tetsukage, Akatsuki, dll.); tab Mitologi + sumber Angka memberi anda nama-nama ala demon-hunter / cursed-energy / sorcerer (yokai, oni, dan dewa Shinto yang berbau seperti pemburu ghaib); tab Fusion dengan perkataan vibe kuat + perkataan Jepun memberi anda nama majmuk ala isekai-protagonist dan pirate-crew (ShadowKitsune, IronOnikiri, KaidoYuki, dll.). Gunakan penapis vibe "Strong" atau "Dark" dalam Fusion untuk padanan terdekat.</p>
+      </details>
+      <details>
+        <summary>Adakah ini penjana nama kawaii?</summary>
+        <p>Ya — tab Cute adalah tepat itu. Ia menarik daripada perkataan Jepun sebenar untuk haiwan, alam, tumbuhan, cuaca, dan imej lembut (kucing 猫, sakura 桜, yuki 雪, momo 桃, dll.) dan memadankannya dengan akhiran mesra kawaii seperti <code>-chan</code> dan <code>-maru</code>. Jika anda mahukan nama kawaii, klik tab Cute, pilih akhiran "Comel" atau "Kawaii" dan klik Jana.</p>
+      </details>
+      <details>
+        <summary>Bolehkah saya mendapat nama keluarga atau nama klan bergaya Jepun?</summary>
+        <p>Ya — tab IRL Names menarik daripada 100 nama keluarga Jepun yang paling biasa (Sato, Suzuki, Takahashi, Tanaka, Watanabe, dll., disusun mengikut data kekerapan kerajaan Jepun semasa). Untuk nama klan anime, cuba tab Mitologi dengan Sumber = Kuil, yang menghasilkan nama gabungan seperti "Fushimi Akihiko" yang berbunyi seperti nama klan atau rumah. Untuk sesuatu yang lebih direka, tab Fusion dengan input perkataan Jepun yang kuat memberi anda nama gabungan yang terasa seperti nama klan.</p>
+      </details>
+      <details>
+        <summary>Adakah anda mempunyai penjana nama gaya isekai atau pejuang shonen?</summary>
+        <p>Bukan sebagai kategori berlabel — tapak ini IP-safe secara reka bentuk, jadi kami tidak menggunakan label khusus francais. Tetapi corak yang diikuti oleh nama-nama itu diliputi: tab Mitologi + sumber Martial memberi anda nama berperisa kensei / samurai / pendekar pedang; tab Fusion dengan perkataan vibe kuat memberi anda nama gabungan seperti "ShadowKitsune" atau "IronOnikiri" yang berbunyi sebagai nama pejuang shonen atau protagonis isekai. Penapis vibe "Kuat" atau "Gelap" dalam Fusion adalah padanan terdekat.</p>
+      </details>
+      <details>
+        <summary>Adakah ini penjana nama weeb / otaku?</summary>
+        <p>Jika anda maksud "penjana nama untuk weeb/otaku, dibina oleh seseorang yang benar-benar mengambil berat tentang ketepatan Jepun" — ya. Sumber data adalah Jepun sebenar (JMdict, daftar nama pertama awam, senarai kuil Shinto, mitologi Kojiki / Nihon Shoki), kanji sebenar, hiragana sebenar, romaji ialah romanisasi Hepburn standard. Tiada karut autogenerated atau penggayaan perkataan Inggeris.</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'none';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Penjana Handle Anime adalah sebahagian daripada anime.gethandlenames.com. Percuma, tiada pendaftaran, tiada penjejakan di luar analitik standard.</p>
+      <p class="muted small">Data sources: JMdict (CC BY-SA 4.0), JLPT community vocab (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). See <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">Privasi</a> ·
+        <a href="../about/">Perihal</a> ·
+        <a href="../contact/">Hubungi</a> ·
+        <a href="#" data-cc-settings>Tetapan kuki</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">📤 Kongsi nama ini</h3>
+        <button class="iconbtn" data-close title="Tutup">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ Muat turun PNG</button>
+        <button class="btn btn--ghost"   id="share-native">📱 Kongsi…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 Salin imej</button>
+      </div>
+      <p class="share-modal__note muted small">
+        Petua: PNG bersaiz 1200×630 — saiz standard untuk Twitter/X, Discord, Pinterest dan pratonton OG.
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"ms":{"affectionate suffix":"akhiran penuh kasih","apple":"epal","arrow":"anak panah","aster / remembrance of sound":"aster / remembrance of sound","bamboo":"buluh","bear":"beruang","bee":"lebah","bird":"burung","black":"hitam","blue":"biru","blue sky":"langit biru","brave":"berani","bright / clear":"terang / jelas","butterfly":"rama-rama","calm (of the sea)":"tenang (laut)","camellia":"kameria","camellia flower":"bunga kamelia","carp":"ikan koi","carp streamer":"karper","castle":"istana","cat":"kucing","cherry blossom":"bunga sakura","cicada":"tonggeret","circle/pet suffix":"akhiran bulat","claw":"cakar","cloud":"awan","cloud (also: spider)":"awan (atau: labah-labah)","cold wintry wind":"angin dingin musim sejuk","cool sound / refreshing tone":"bunyi mantap / nada menyegarkan","cow":"lembu","cruel":"kejam","cute":"comel","cute suffix (sound)":"akhiran comel","dark":"gelap","darkness":"kegelapan","dawn":"fajar","deer":"rusa","demon/ogre":"demon/ogre","dog":"anjing","dove/pigeon":"dove/pigeon","dragon":"naga","dragon god":"dewa naga","dream":"mimpi","ear":"telinga","evening glow / sunset":"evening glow / sunset","fang":"taring","far / distant":"jauh / jauh","fire":"api","firefly":"kelip-kelip","fireworks":"bunga api","fish":"ikan","flame":"nyalaan","flower":"bunga","forest":"hutan","formal dress / attire":"formal dress / attire","fox":"rubah","fox (mythic)":"rubah mitos","fox (mythical)":"rubah mitos","ghost":"hantu","glitter / silk (glamour)":"glitter / silk (glamour)","goldfish":"ikan emas","good fortune":"nasib baik","green / verdure":"hijau","hawk":"helang","heart":"hati","heart (on'yomi)":"hati (on'yomi)","heart / spirit":"hati / semangat","heavenly moon / new moon":"bulan syurgawi / bulan baru","hollyhock / mallow":"hollyhock / mallow","horse":"kuda","hydrangea":"hidrangea","ice":"ais","infinity":"ketakterhinggaan","iris (the flower)":"iris (bunga)","king":"raja","king (loanword)":"raja (serapan)","knight":"kesatria","koala":"koala","light":"cahaya","light / lamp":"light / lamp","light / radiance":"cahaya / sinar","lightning":"kilat","lily of the valley":"lili lembah","long (of time)":"lama (masa)","long-lasting sky / eternity":"long-lasting sky / eternity","lotus":"teratai","love":"cinta","mandarin orange":"oren mandarin","mandarin orange tree":"pokok oren mandarin","mist":"kabus","monkey":"monyet","moon":"bulan","mountain":"gunung","night sky":"langit malam","orchid":"orkid","panda":"panda","peaceful / easy":"damai / mudah","peach":"pic","pheasant":"ayam pegar","pig":"babi","pink (dianthus) / 'lovely girl'":"pink (dianthus) / 'lovely girl'","rabbit":"arnab","raccoon dog (mythic)":"anjing rakun mitos","radiance":"kilau","rain":"hujan","rainbow":"pelangi","red":"merah","remains/corpse":"remains/corpse","river":"sungai","rose":"mawar","rustic, impermanent beauty":"rustic, impermanent beauty","sake cup":"cawan sake","scattered / falling cherry blossoms":"scattered / falling cherry blossoms","sea":"laut","sea / ocean":"laut","sea/ocean":"sea/ocean","shadow":"bayangan","sheep":"birí-biri","shoreline / beach":"pesisir / pantai","sincerity / truth":"sincerity / truth","sky":"langit","small path / lane":"small path / lane","small/tiny":"small/tiny","snow":"salji","soul/spirit":"soul/spirit","sparkle/glitter":"sparkle/glitter","sparrow":"burung pipit","star":"bintang","storm":"ribut","strawberry":"strawberi","strong":"kuat","subtle, mysterious profundity":"halus, kedalaman misteri","summer hope":"harap musim panas","sun":"matahari","sunflower":"bunga matahari","sunlight filtering through leaves":"cahaya melalui daun","sword":"pedang","sword (alt)":"pedang (alt)","thousand":"seribu","thread / string":"thread / string","thrush (bird)":"anis (burung)","thunder":"guntur","tiger":"harimau","tolerant / generous":"tolerant / generous","tonight":"malam ini","tree":"pokok","violet":"violet","violet (the flower)":"violet (bunga)","water":"air","wave":"gelombang","white":"putih","white-crested waves":"ombak putih","wide truth":"kebenaran luas","wind":"angin","wisdom / friend":"wisdom / friend","wolf":"serigala","young leaves / fresh leaves":"daun muda","bell":"loceng","bridge":"jambatan","rice":"beras","rice field":"sawah","village":"kampung","base":"asas","middle":"tengah","side":"sisi","add":"menambah","crossing":"persimpangan","that":"itu","small":"kecil","tall":"tinggi","soar":"melayang","land":"tanah","harbor":"pelabuhan","swift":"cepat","great":"besar","seven":"tujuh","well":"telaga","barrier":"penghadang","sound":"bunyi","helper":"penolong","wisteria":"wisteria","sun + soar":"matahari + melayang","February (traditional)":"Februari (tradisional)","artisan/craftsman":"tukang","achieve + also":"mencapai + juga","assist + tree":"membantu + pokok","beautiful + bloom":"indah + mekar","beautiful + moon":"indah + bulan","bell + tree":"loceng + pokok","blessed + child":"diberkati + anak","blessing + beauty":"berkat + kecantikan","bright":"terang","bright + village":"terang + kampung","calm (sea)":"tenang (laut)","crossing + side":"sisi persimpangan","festival + tree":"perayaan + pokok","Mt. Fuji + view":"gunung Fuji + pemandangan","helper + wisteria (Fujiwara branch)":"penolong + wisteria (cabang Fujiwara)","add + wisteria":"menambah + wisteria","middle + village":"tengah + kampung","mountain + base":"asas gunung","rice field + middle":"tengah sawah","small + forest":"hutan kecil","tall + bridge":"tinggi + jambatan","that + wisteria":"itu + wisteria","land + sun":"tanah + matahari","harbor + view":"pelabuhan + pemandangan","seven + sea":"tujuh + laut","well + barrier":"telaga + penghadang","flower + sound":"bunga + bunyi","good":"baik","courage":"keberanian","second":"kedua","noir":"hitam","mouth":"mulut","happiness":"kebahagiaan","young":"muda","leaves":"daun","fresh":"segar","helping":"membantu","shining":"bersinar","autumn":"musim luruh","spring":"musim bunga","winter":"musim sejuk","summer":"musim panas","pure":"murni","gentle":"lembut","kind":"baik","wonderful":"hebat","eternal":"kekal","mysterious":"misteri","peaceful":"damai","calm":"tenang","wisdom":"kebijaksanaan","peace":"keamanan","prosperity":"kemakmuran","abundance":"kelimpahan","beautiful":"cantik","pretty":"comel","graceful":"anggun","fragrant":"wangi","happy":"gembira","joyful":"riang","crystal":"hablur","jade":"batu jed","pearl":"mutiara","plum":"plum","cherry":"ceri","pine":"pain","willow":"dedalu","autumn leaf":"daun luruh","lucky":"bertuah","twilight":"senja","nap":"tidur","greens":"sayur-sayuran","mar":"laut","correct":"betul","will":"kehendak","view":"pemandangan","field":"ladang","eight":"lapan","nine":"sembilan","ten":"sepuluh","gold":"emas","above":"di atas","ancient":"purba","achieve":"mencapai","also":"juga","assist":"membantu","beach":"pantai","beauty":"kecantikan","beauty + cherry blossom":"kecantikan + bunga sakura","blessed":"diberkati","bloom":"mekar","bookmark":"penanda halaman","cape":"tanjung","celebrate":"meraikan","child":"kanak-kanak","clear":"jelas","colorful":"berwarna-warni","cool":"sejuk","corpse":"mayat","demon":"syaitan","design":"reka bentuk","distant":"jauh","easy":"mudah","eternity":"kekal","excellent":"cemerlang","far":"jauh","february":"Februari","february (traditional)":"Februari (tradisional)","first":"pertama","festival":"perayaan","falling cherry blossoms":"bunga sakura jatuh","falcon person":"orang helang","artisan":"tukang","aster":"aster","attire":"pakaian","blessing":"berkat","circle":"bulatan","craftsman":"tukang","dianthus":"dianthus","dignified":"bermartabat","dove":"merpati","evening glow":"cahaya senja","friend":"kawan","fragrance":"wangian","garment":"pakaian","gauze":"kain kasa","generous":"murah hati","guardian":"penjaga","hill":"bukit","intelligent":"cerdas","lake":"tasik","plain":"dataran","young leaves":"daun muda","wisteria (Fujiwara branch)":"wisteria (cabang Fujiwara)","happiness + light, radiance":"kebahagiaan + cahaya, kilau","good + rice field":"baik + sawah","twilight + nap + greens":"senja + tidur + sayur hijau","ancient clan":"klan purba","ancient name for japan":"nama purba Jepun","flat":"rata","fresh leaves":"daun segar","grass":"rumput","great harmony":"keharmonian besar","grass + leaf":"rumput + daun","flame + sandalwood":"nyalaan + cendana","beautiful + cherry blossom":"cantik + bunga sakura","study/repair":"belajar/membaiki","heaven + field":"syurga + ladang","brighten + bird":"menerangi + burung","tall / high / lofty":"tinggi","mountain + village":"gunung + kampung","bamboo + grove":"bambu + belukar","tolerant":"bertoleransi","morning sun":"matahari pagi","new moon":"bulan baru","heavenly moon":"bulan syurgawi","two":"dua","three":"tiga","four":"empat","five":"lima","six":"enam","heaven":"syurga","mochi":"mochi","iris":"iris","jasmine":"melur","mirror":"cermin","phoenix":"phoenix","earth":"bumi","silver":"perak","stone":"batu","dusk":"senja","night":"malam","fortress":"benteng","palace":"istana","maple":"mapel","phoenix / peace":"phoenix / keamanan","palace (royal)":"istana (diraja)","spring (season)":"musim bunga","tiny":"sangat kecil","queen":"ratu","queen (loanword)":"ratu (serapan)","cute (loanword)":"comel (serapan)","moss":"lumut","leaf":"daun","verdure":"kehijauan","ocean":"lautan","sunset":"matahari terbenam","shoreline":"pesisir","valley":"lembah","island":"pulau","long-lasting sky":"langit kekal","soul":"jiwa","spirit":"semangat","phantom":"hantu","phantom/illusion":"hantu/ilusi","ogre":"raksasa","pigeon":"merpati","falcon":"helang","thrush":"burung anis","raccoon dog":"anjing rakun","'lovely girl'":"\"gadis comel\"","cool sound":"bunyi mantap","refreshing tone":"nada menyegarkan","remembrance of sound":"kenangan bunyi","remains":"sisa","cute suffix":"akhiran comel","pet suffix":"akhiran sayang","scattered":"tersebar","formal dress":"pakaian formal","glitter":"kilauan","sparkle":"bercahaya","silk":"sutera","silk (glamour)":"sutera (glamour)","string":"tali","thread":"benang","subtle":"halus","hollyhock":"hollyhock","impermanent beauty":"kecantikan sementara","lamp":"lampu","lane":"lorong","small path":"jalan kecil","mallow":"marshmallow","mysterious profundity":"kedalaman misteri","long":"panjang","green":"hijau","pink":"merah jambu","pink (dianthus)":"merah jambu (dianthus)","truth":"kebenaran","sincerity":"keikhlasan","rustic":"pedesaan","one":"satu","moth":"rama-rama malam","clam":"kerang","sailboat":"perahu layar","Mandarin orange tree":"pokok oren mandarin","castle (ancient clan)":"istana (puak kuno)","eight-branch(ed)":"lapan cabang","helpful; helping":"membantu","shrine":"kuil","grove":"kebun","reason":"sebab","words":"kata-kata","helping; helper":"membantu","axe":"kapak","shield":"perisai","spear":"tombak","helmet":"topi keledar","gate":"pintu","crown":"mahkota","indigo":"indigo","brown":"coklat","silver (glamour)":"perak (glamour)","bear (the animal)":"beruang (haiwan itu)","thoughts":"pemikiran","daytime":"siang hari","dawn (time)":"fajar","sunset (time)":"matahari terbenam","rest":"rehat","play":"bermain","sing":"menyanyi","dance":"menari","secluded place":"tempat terpencil","base + village":"asas + kampung","hillside":"cerun bukit","gentle (rain)":"lembut (hujan)","grand":"hebat","bright (light)":"cerah (cahaya)","dawn (light)":"fajar (cahaya)","help":"bantuan","brighten":"mencerahkan","honest":"jujur","rapids":"jeram","four seasons":"empat musim","long-lasting sky / eternal sky":"langit kekal / langit abadi","together / paired":"bersama / berpasangan","double / pair":"berganda / pasangan","plain (ancient clan)":"dataran (puak kuno)","kinds":"jenis","hakama":"hakama","healthy":"sihat","dignified, cold-crisp":"bermartabat, sejuk-rangup","zero, spirit":"kosong, semangat","purple":"ungu","house":"rumah","pongee (hand-spun silk)":"pongee (sutera pintal tangan)","paulownia":"paulownia","life":"kehidupan","hakama + rice field":"hakama + bendang","kudzu":"kudzu","inside":"di dalam","far, distant":"jauh, jauh","wing":"sayap","sunny place":"tempat cerah","cool + great":"menarik + besar","healthy + second":"sihat + kedua","kudzu + castle (ancient clan)":"kudzu + istana (puak kuno)","three + house + pink (dianthus) / 'lovely girl'":"tiga + rumah + merah jambu (bunga teluki) / 'gadis comel'","pure + water + painting + village + fragrance":"murni + air + lukisan + kampung + wangian","hakama + rice field + calm (of the sea)":"hakama + bendang + tenang (laut)","mirror + zero, spirit":"cermin + kosong, semangat","purple + heart + spring":"ungu + hati + musim bunga","grass + mow (legendary sword clan)":"rumput + memotong (puak pedang legenda)","star + river + healthy + second":"bintang + sungai + sihat + kedua","hakama + rice field + light / radiance":"hakama + bendang + cahaya / sinar","thousand + kinds":"seribu + jenis","thousand + kinds + light / lamp":"seribu + jenis + cahaya / lampu","thousand + kinds + rustic, impermanent beauty":"seribu + jenis + keindahan desa yang tidak kekal","happiness + flat + bright / clear":"kebahagiaan + rata + terang / jelas","happiness + flat":"kebahagiaan + rata","wisteria + plain (ancient clan) + dream":"wisteria + dataran (puak kuno) + mimpi","wisteria + plain (ancient clan) + blessed + child":"wisteria + dataran (puak kuno) + diberkati + kanak-kanak","wisteria + plain (ancient clan) + peaceful / easy":"wisteria + dataran (puak kuno) + damai / mudah","wisteria + plain (ancient clan) + night sky":"wisteria + dataran (puak kuno) + langit malam","wisteria + plain (ancient clan) + tree":"wisteria + dataran (puak kuno) + pokok","mountain + base + dignified, cold-crisp":"gunung + asas + bermartabat, sejuk-rangup","pine + base + gauze + good":"pain + asas + gauze + baik","mountain + mouth + sea / ocean":"gunung + mulut + laut / lautan","grove + great + radiance":"hutan kecil + besar + sinar","shrine + cape + wind":"kuil + tanjung + angin","paulownia + life + iris (the flower)":"paulownia + kehidupan + iris (bunga)","tie + love":"tali leher + cinta","tie + garment":"tali leher + pakaian","leisurely + truth":"santai + kebenaran","sprout + rely":"pucuk + bersandar","jujube":"jujube","voyage + peace":"perjalanan + damai","great harmony (ancient name for Japan)":"kebesaran harmoni (nama kuno Jepun)","heaven + valley + tie + love":"syurga + lembah + tali leher + cinta","paulownia + life + wide truth":"paulownia + kehidupan + kebenaran luas","paulownia + life + lotus":"paulownia + kehidupan + teratai","paulownia + life + pongee (hand-spun silk)":"paulownia + kehidupan + pongee (sutera pintal tangan)","rice + leaf + dignified, cold-crisp":"beras + daun + bermartabat, sejuk-rangup","tall + bridge + tie + love":"tinggi + jambatan + tali leher + cinta","tall + mountain + harbor":"tinggi + gunung + pelabuhan","mirror + thread / string":"cermin + benang / tali","well + above + achieve + also":"telaga + atas + mencapai + juga","well + barrier + painting + village + fragrance":"telaga + penghalang + lukisan + kampung + wangian","pure + water + leisurely + truth":"murni + air + santai + kebenaran","middle + village + tie + love":"tengah + kampung + tali leher + cinta","mountain + mouth + leisurely + truth":"gunung + mulut + santai + kebenaran","mountain + rice field + sprout + rely":"gunung + bendang + pucuk + bersandar","crossing + side + tie + love":"lintasan + sisi + tali leher + cinta","grove + sun + hollyhock":"hutan kecil + matahari + hollyhock","jujube + long-lasting sky / eternity":"jujube + langit berkekalan / keabadian","one + rapids + great harmony (ancient name for Japan)":"satu + jeram + kebesaran harmoni (nama kuno Jepun)","heaven + valley + voyage + peace":"syurga + lembah + perjalanan + damai","small + forest + great harmony (ancient name for Japan)":"kecil + hutan + kebesaran harmoni (nama kuno Jepun)","wisteria + plain (ancient clan) + tonight":"wisteria + dataran (puak kuno) + malam ini","tall + mountain + subtle, mysterious profundity":"tinggi + gunung + halus, kedalaman misteri","help + brighten + truth + I":"bantuan + menerangi + kebenaran + saya","tree + village + rustic, impermanent beauty":"pokok + kampung + keindahan desa yang tidak kekal","ship channel":"saluran kapal","ga":"ga","gauze + good":"gauze + baik","celebrate + great":"meraikan + besar","courage (alt reading)":"keberanian (alt bacaan)","pine + base + aster / remembrance of sound":"pain + asas + aster / kenangan bunyi","rice + leaf + love":"beras + daun + cinta","hill + side + cool sound / refreshing tone":"bukit + sisi + bunyi sejuk / nada menyegarkan","transparent":"telus","silk, glisten":"sutera, berkilat","sea + ladle":"laut + senduk","jujube + camellia flower":"jujube + bunga kamelia","seven + sea + gauze + good":"tujuh + laut + gauze + baik","that + wisteria + swift wind + mediate":"itu + wisteria + angin pantas + mengantara","swift wind + mediate":"angin pantas + mengantara","hill + side":"bukit + sisi","shrine + cape + tie + greens":"kuil + tanjung + tali leher + sayur","shrine + cape + silk, glisten":"kuil + tanjung + sutera, berkilat","thousand + kinds + sea + ladle":"seribu + jenis + laut + senduk","rice + leaf + gauze + good":"beras + daun + gauze + baik","well + above + blessed + child":"telaga + atas + diberkati + kanak-kanak","tall + mountain + flower":"tinggi + gunung + bunga","paulownia + life + celebrate + great":"paulownia + kehidupan + meraikan + besar","paulownia + life + fireworks":"paulownia + kehidupan + bunga api","grove + courage (alt reading)":"hutan kecil + keberanian (alt bacaan)","rice field + middle + ship channel":"bendang + tengah + saluran kapal","wisteria + plain (ancient clan) + ship channel":"wisteria + dataran (puak kuno) + saluran kapal","swift wind":"angin pantas","mediate":"mengantara","jasmine + child":"melur + kanak-kanak","mountain + mouth + snow":"gunung + mulut + salji","design + rapids + courage + second":"reka bentuk + jeram + keberanian + kedua","silver + jasmine + child":"perak + melur + kanak-kanak","tall + mountain + spring":"tinggi + gunung + musim bunga","tree + village + tie + love":"pokok + kampung + tali leher + cinta","paulownia + life + dawn":"paulownia + kehidupan + fajar","inside + rice field + colorful + flower":"di dalam + bendang + berwarna-warni + bunga","colorful + flower":"berwarna-warni + bunga","rice + leaf + shoreline / beach":"beras + daun + pesisir / pantai","wisteria + plain (ancient clan) + falcon person":"wisteria + dataran (puak kuno) + orang helang","long + swamp + tolerant / generous":"panjang + paya + bertoleransi / pemurah","long + swamp + sea + gentle":"panjang + paya + laut + lembut","long + swamp + soar + great":"panjang + paya + terbang + besar","long + swamp + forest":"panjang + paya + hutan","mountain + base + rustic, impermanent beauty":"gunung + asas + keindahan desa yang tidak kekal","people":"orang","helper + wisteria (Fujiwara branch) + people":"penolong + wisteria (cawangan Fujiwara) + orang","well + above + tie + greens":"telaga + atas + tali leher + sayur","grass + mow (legendary sword clan) + tie + greens":"rumput + memotong (puak pedang legenda) + tali leher + sayur","jujube + blessed + child":"jujube + diberkati + kanak-kanak","help + brighten + light, radiance":"bantuan + menerangi + cahaya, sinar","tree + village + light, radiance":"pokok + kampung + cahaya, sinar","middle + village + jasmine + child":"tengah + kampung + melur + kanak-kanak","wing + mist":"sayap + kabus","well + above + sake cup":"telaga + atas + cawan sake","paulownia + life + mist":"paulownia + kehidupan + kabus","good + rice field + apple":"baik + bendang + epal","long + swamp + hollyhock":"panjang + paya + hollyhock","mountain + mouth + cool sound / refreshing tone":"gunung + mulut + bunyi sejuk / nada menyegarkan","good + rice field + leisurely + person":"baik + bendang + santai + orang","leisurely + person":"santai + orang","one + rapids + painting + village + fragrance":"satu + jeram + lukisan + kampung + wangian","mountain + base + bell":"gunung + asas + loceng","seven + sea + bookmark":"tujuh + laut + penanda halaman","mirror + love + child":"cermin + cinta + kanak-kanak","happiness + cool + great":"kebahagiaan + menarik + besar","well + above + moon":"telaga + atas + bulan","rice + leaf + peaceful / easy":"beras + daun + damai / mudah","long + swamp + cold wintry wind":"panjang + paya + angin sejuk musim sejuk","mist + sun + hollyhock":"kabus + matahari + hollyhock","shrine + base + light, radiance":"kuil + asas + cahaya, sinar","well + barrier + light, radiance":"telaga + penghalang + cahaya, sinar","tall + bridge + gentle, excellent":"tinggi + jambatan + lembut, cemerlang","gentle, excellent":"lembut, cemerlang","rice + leaf + rustic, impermanent beauty":"beras + daun + keindahan desa yang tidak kekal","shrine + base + painting + village + fragrance":"kuil + asas + lukisan + kampung + wangian","mochi + koala":"mochi + koala"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "PENJANA NAMA ANIME";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  penjana nama anime";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — lihat anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"comel","cool":"hebat","dark":"gelap","elegant":"elegan","epic":"epik","strong":"kuat","mysterious":"misteri","nature":"alam","animal":"haiwan","adjective":"adjektif","vocab":"perbendaharaan","mythic":"myth","martial":"seni pejuang","shrine":"kuil","temple":"kuil","gentle":"lembut","light":"terang","dreamy":"mengawang","playful":"seronok","plush":"comel","pure":"tulen","romance":"romantik","moody":"merungut","peace":"keamanan","sweet":"manis","pet":"haiwan peliharaan","night":"malam","sky":"langit","spring":"musim bunga","summer":"musim panas","winter":"musim sejuk","place":"tempat","noun":"kata nama","prefix":"awalan","suffix":"akhiran","male":"lelaki","female":"perempuan","masculine":"maskulin","feminine":"feminin","gender-neutral":"neutral jantina","neutral":"neutral","family-name":"nama keluarga","surname":"nama keluarga","with-given":"dengan nama","real":"sebenar","cultural":"budaya"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'english';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'none';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use Cute/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">No results — try changing your options.</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="Copy"  aria-label="Copy"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">Salin</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="Share" aria-label="Share"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">Kongsi</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="Save"  aria-label="Save"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">Simpan</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="Swap order"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">Tukar</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('Saved ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">Tiada nama disimpan lagi. Klik ⭐ pada mana-mana hasil untuk menambahkannya di sini.</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="Copy">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('Buang semua nama yang disimpan?')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / Copy image buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('Kongsi gagal — membuka pilihan');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('Dimuat turun ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('Kongsi tidak disokong — cuba Muat turun');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('Imej disalin ke papan keratan 📋');
+        } else {
+          toast('Salin tidak disokong — cuba Muat turun');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

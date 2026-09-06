@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>Trình Tạo Handle Anime — anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="Trình tạo tên anime cho OC, fan persona, handle, hoặc nhân vật. Kawaii, Nhật, thần thoại, IRL. Miễn phí, không cần đăng ký.">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="Trình Tạo Handle Anime — anime.gethandlenames.com">
+  <meta property="og:description" content="Trình tạo tên anime cho OC, fan persona, handle, hoặc nhân vật. Kawaii, Nhật, thần thoại, IRL. Miễn phí, không cần đăng ký.">
+  <meta property="og:url" content="https://anime.gethandlenames.com/vi/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. Cool Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trình Tạo Handle Anime — anime.gethandlenames.com">
+  <meta name="twitter:description" content="Trình tạo tên anime cho OC, fan persona, handle, hoặc nhân vật. Kawaii, Nhật, thần thoại, IRL. Miễn phí, không cần đăng ký.">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">Trình kiểm tra Handle TikTok</a>
+        <a href="../../anime-names/" class="active">Handle Anime</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl">🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms">🇲🇾 Bahasa Melayu</option>
+    <option value="vi" selected>🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo">🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja">🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Trình Tạo Handle Anime Ngẫu Nhiên</h1>
+      <p class="hero__sub">
+        Tên phong cách Nhật hay cho OC, fan persona, handle trực tuyến, hoặc nhân vật anime của bạn — các hương vị cute, kawaii, Nhật, thần thoại, fusion, và IRL. Dành cho weebs, otaku, và fan anime muốn sự chính xác thẩm mỹ mà không có nhãn hiệu của franchise: bốn trình tạo, không trope, an toàn về bản quyền.
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 Dễ thương</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ Pha trộn</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 Tên IRL</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ Thần thoại</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">Tên dễ thương & kawaii</h2>
+        <p class="tabpanel__desc">Tên dễ thương và kawaii-friendly lấy từ các từ tiếng Nhật thực về động vật, thiên nhiên, và hình ảnh dịu dàng — khía cạnh mềm mại, dễ thương của thẩm mỹ anime. Tuyệt vời cho thú cưng, OC, hoặc tên trực tuyến vui nhộn.</p>
+        <div class="opts">
+          <label>Kết quả <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>Hậu tố
+            <select id="animal-suffix">
+              <option value="none">không</option>
+              <option value="chan">-chan (dễ thương)</option>
+              <option value="maru">-maru (thú cưng)</option>
+              <option value="pon">-pon (vui nhộn)</option>
+              <option value="none,chan,maru,pon">trộn tất cả</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> thỉnh thoảng thêm tiền tố tiếng Anh (kiểu CuteNeko)
+          </label>
+          <button class="btn btn--primary" id="animal-go">Tạo</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">Tên Pha trộn</h2>
+        <p class="tabpanel__desc">Nhập bất kỳ từ nào từ ngôn ngữ của bạn (hoặc để trống để chọn ngẫu nhiên) và chúng tôi sẽ ghép nó với một từ tiếng Nhật. Ví dụ kiểu: <code>BóngKitsune</code>, <code>SaoYuki</code>, <code>SóiTsukuyomi</code>. Tùy chọn định dạng bên dưới.</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">Từ của bạn
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="vd. bóng, sói, mơ" autocomplete="off" spellcheck="false">
+          </label>
+          <label>Kết quả <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>Định dạng
+            <select id="fusion-style">
+              <option value="camel">CamelCase (BóngKitsune)</option>
+              <option value="space">Cách nhau bằng dấu cách (Shadow Kitsune)</option>
+              <option value="hyphen">Nối bằng dấu gạch ngang (Shadow-Kitsune)</option>
+              <option value="under">Nối bằng dấu gạch dưới (Shadow_Kitsune)</option>
+              <option value="lower">Tất cả chữ thường (shadowkitsune)</option>
+              <option value="pipe">Nối bằng dấu gạch đứng (Shadow | Kitsune)</option>
+            </select>
+          </label>
+          <label>Phong cách
+            <select id="fusion-vibe">
+              <option value="all">Mọi phong cách</option>
+              <option value="cute">Dễ thương</option>
+              <option value="cool">Ngầu</option>
+              <option value="dark">Tối / bí ẩn</option>
+              <option value="strong">Mạnh / sử thi</option>
+              <option value="elegant">Thanh lịch / từ-làm-tên (Midori, Sora, v.v.)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">Tạo</button>
+        </div>
+        <p class="fusion-hint muted small">Mẹo: mỗi kết quả có nút ⇄ để đảo thứ tự (từ-bạn-trước ↔ nhật-trước) mà không cần tạo lại.</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">Tên IRL</h2>
+        <p class="tabpanel__desc">Tên và họ Nhật Bản thực cho nhân vật nam, nữ, hoặc mọi giới tính — đúng đắn về văn hóa, không liên hệ anime. Bao gồm 100 họ (tên gia đình) Nhật phổ biến nhất và tên được gắn thẻ giới tính. Mỗi tên đều tồn tại như một tên Nhật thường ngày ngoài đời thực.</p>
+        <div class="opts">
+          <label>Kết quả <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>Giới tính
+            <select id="irl-gender">
+              <option value="any">Bất kỳ</option>
+              <option value="male">Nam</option>
+              <option value="female">Nữ</option>
+              <option value="neutral">Trung lập</option>
+            </select>
+          </label>
+          <label>Thứ tự
+            <select id="irl-order">
+              <option value="japanese">Nhật Bản (Tanaka Yuki)</option>
+              <option value="western">Phương Tây (Yuki Tanaka)</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">Tạo</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">Tên Thần thoại</h2>
+        <p class="tabpanel__desc">Thần thoại Nhật Bản thực — đền Shinto, chùa Phật giáo, yokai, thần linh, chiến binh huyền thoại, và thuật ngữ võ thuật lịch sử. Lấy từ nguồn văn hóa công khai (Kojiki, Nihon Shoki, Wikipedia, Wiktionary). Tất cả là tham chiếu văn hóa thực, không phải nhân vật hư cấu cụ thể. Tốt cho họ lấy cảm hứng từ đền, tên ghép kiểu clan, và tên nhân vật "chiến binh thế giới cũ" với cảm giác huyền bí, cổ xưa của truyền thống tâm linh và võ thuật Nhật Bản.</p>
+        <div class="opts">
+          <label>Nguồn
+            <select id="myth-source">
+              <option value="figure" selected>👹 Mythological figures (yokai, deities, legendary heroes)</option>
+              <option value="shrine">⛩️ Đền và chùa (di sản văn hóa thực)</option>
+              <option value="martial">⚔️ Thuật ngữ võ thuật (kensei, samurai, katana, v.v.)</option>
+            </select>
+          </label>
+          <label>Kết quả <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>Chế độ
+            <select id="myth-mode">
+              <option value="standalone">Độc lập (dùng tên nguồn nguyên văn)</option>
+              <option value="with_given">Kết hợp với tên thật</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">Giới tính tên
+            <select id="myth-gender">
+              <option value="any">Bất kỳ</option>
+              <option value="male">Nam</option>
+              <option value="female">Nữ</option>
+              <option value="neutral">Trung lập</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">Tạo</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">Chọn trình tạo ở trên và nhấn Tạo ✨</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 Tên đã lưu <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">Xóa tất cả</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">Chưa có tên nào được lưu. Nhấp ⭐ trên bất kỳ kết quả nào để thêm vào đây.</p>
+      </div>
+      <p class="muted small">Tên đã lưu chỉ được lưu trong trình duyệt của bạn (localStorage). Chúng không được đồng bộ với bất kỳ máy chủ nào.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Tên này đến từ đâu?</summary>
+        <p>Tên động vật và tên kết hợp được lấy từ từ vựng tiếng Nhật thực (JMdict, danh sách từ của cộng đồng JLPT). Tên IRL đến từ các sổ đăng ký tên và họ tiếng Nhật có sẵn công khai. Tên đền và chùa là các địa điểm văn hóa có thật tại Nhật Bản. Xem <code>ATTRIBUTIONS.md</code> để biết đầy đủ nguồn dữ liệu.</p>
+      </details>
+      <details>
+        <summary>Tab Fusion hoạt động như thế nào?</summary>
+        <p>Tab Fusion ghép một từ từ ngôn ngữ của bạn với một từ tiếng Nhật. Nhập bất kỳ từ nào vào trường nhập (hoặc để trống để sử dụng một từ ngẫu nhiên từ ngân hàng từ ngôn ngữ trang). Mỗi trang có ngôn ngữ riêng: tiếng Anh trên trang tiếng Anh, tiếng Hà Lan trên trang tiếng Hà Lan, tiếng Đức trên trang tiếng Đức, tiếng Tây Ban Nha trên trang tiếng Tây Ban Nha, tiếng Pháp trên trang tiếng Pháp, tiếng Bồ Đào Nha trên trang tiếng Bồ Đào Nha và tiếng Ba Lan trên trang tiếng Ba Lan. Phía tiếng Nhật vẫn giữ nguyên bất kể bạn nhập gì — nó lấy từ cùng một nhóm động vật/thiên nhiên/ngầu/từ vựng-làm-tên như trước đây. Tất cả các tùy chọn định dạng (CamelCase, có dấu cách, có dấu gạch nối, có dấu gạch dưới, chữ thường, có dấu gạch đứng) đều hoạt động theo cùng một cách. Không có tùy chọn kết hợp bằng tiếng Hindi hoặc Tagalog trong giao diện — người dùng xem trang web bằng các ngôn ngữ đó sẽ nhận được cùng trải nghiệm kết hợp bằng tiếng Anh.</p>
+      </details>
+      <details>
+        <summary>Điều này có an toàn cho OC hoặc handle của tôi không?</summary>
+        <p>Có. Chúng tôi không xuất ra bất kỳ tên nhân vật anime cụ thể nào, tên wiki người hâm mộ, hoặc tên liên quan đến các nhân vật hư cấu cụ thể. Tất cả đầu ra được tạo từ ngôn ngữ và văn hóa Nhật Bản thực sự. Bạn vẫn nên tìm kiếm nhanh tên bạn chọn để đảm bảo nó không vô tình xung đột với một nhân vật nổi tiếng trong fandom cụ thể của bạn.</p>
+      </details>
+      <details>
+        <summary>Tôi có thể dùng một trong những tên này làm tên người dùng trên Discord, TikTok hoặc Instagram không?</summary>
+        <p>Không có gì ngăn cản bạn. Chúng tôi không yêu cầu hay đăng ký bất kỳ tên nào được tạo, và chúng tôi không chạy kiểm tra khả dụng trực tiếp. Nếu bạn muốn dùng tên làm handle, hãy sao chép và tự tìm kiếm trên nền tảng — bằng cách đó bạn nhận được có/không dứt khoát mà không làm cháy giới hạn tốc độ của nền tảng hoặc vô tình kiểm tra tài khoản đã đặt trước tên nhưng vô hình với chúng tôi.</p>
+      </details>
+      <details>
+        <summary>Tại sao không có danh mục yandere/shonen/isekai?</summary>
+        <p>Theo thiết kế. Chúng tôi không xây dựng công cụ dựa trên trope vì (a) rủi ro IP trên các tên cụ thể theo archetype cao hơn mức chúng tôi mong muốn, và (b) bốn trình tạo bên dưới đã bao gồm các mẫu khiến tên có cảm giác "anime" mà không sao chép bất kỳ bộ truyện cụ thể nào. Cảm giác nằm ở âm thanh, không phải nhãn.</p>
+      </details>
+      <details>
+        <summary>Có gì trong tab Thần thoại?</summary>
+        <p>Tab Thần thoại lấy từ ba nguồn văn hóa Nhật Bản thực, có thể chọn qua menu thả xuống "Nguồn": 
+        <br><br><b>⛩️ Đền & Chùa</b> — các đền Thần đạo và chùa Phật giáo thực (Ise Jingu, Fushimi Inari, Tsurugaoka Hachimangu, v.v.) được sử dụng làm tên độc lập hoặc ghép với tên.
+        <br><br><b>👹 Nhân vật Thần thoại</b> — yokai thực, các vị thần Thần đạo, Tứ Tượng, và các anh hùng huyền thoại (Suzaku, Orochi, Inari, Tamamo, Bishamon, Kintaro, v.v.) rút từ Kojiki, Nihon Shoki và Wikipedia.
+        <br><br><b>⚔️ Thuật ngữ Võ thuật</b> — thuật ngữ võ thuật Nhật Bản thực và danh hiệu chiến binh (Kensei, Samurai, Katana, Budo, Kengo, v.v.).
+        <br><br>Tất cả các mục là tài liệu tham khảo văn hóa thực từ lịch sử, thần thoại và truyền thống võ thuật Nhật Bản — nhân vật lịch sử/thần thoại và địa điểm văn hóa thực, không bắt nguồn từ bất kỳ nhân vật cụ thể nào có bản quyền hoặc thương hiệu hiện đại.</p>
+      </details>
+      <details>
+        <summary>Tôi có thể tạo tên nhân vật anime nam hoặc nữ không?</summary>
+        <p>Có. Tab IRL Names có bộ chọn giới tính với ba tùy chọn: con trai (tên đầu nam tính + họ), con gái (tên đầu nữ tính + họ), và bất kỳ (hỗn hợp). Tất cả các tên đều là tên đầu và họ Nhật Bản thực từ sổ đăng ký công khai, không dành riêng cho anime. Đối với nhân vật anime nữ, hãy chọn "con gái"; đối với OC anime nam, hãy chọn "con trai".</p>
+      </details>
+      <details>
+        <summary>Tôi có thể lấy tên Nhật, tên nhân vật anime, hoặc biệt danh không?</summary>
+        <p>Có cho cả ba. Để có một tên Nhật thực (tên, họ, hoặc cả hai), tab Tên IRL lấy từ các sổ đăng ký tên công khai. Để có tên nhân vật anime, bất kỳ trong bốn tab nào cũng hoạt động — hãy chọn cái có hương vị phù hợp với bối cảnh nhân vật của bạn. Để có biệt danh anime ngắn hoặc dạng phù hợp với handle, tab Dễ thương với hậu tố ngắn (-chan, -maru, -kun) và tùy chọn định dạng "lowercase" hoặc "CamelCase" cho bạn các handle như "konekomaru" hoặc "YukiKitsune".</p>
+      </details>
+      <details>
+        <summary>Bạn có máy phát sinh tên kiểu saiyan, thợ săn ác quỷ, học viện hùng, hoặc thủy thủ cướp không?</summary>
+        <p>Không phải dưới dạng danh mục — trang web IP-safe theo thiết kế, nên chúng tôi không dùng nhãn hiệu đặc trưng cho franchise. Nhưng các mẫu tên mà những tên đó tuân theo đều được bao phủ: tab Thần thoại + nguồn Võ thuật cho bạn tên kiểu saiyan / shonen-warrior / hero-academy (Kensei, Tetsukage, Akatsuki, v.v.); tab Thần thoại + nguồn Nhân vật cho bạn tên kiểu demon-hunter / cursed-energy / sorcerer (yokai, oni, và các vị thần Shinto nghe như thợ săn siêu nhiên); tab Fusion với một từ vibe mạnh + từ Nhật cho bạn tên ghép kiểu isekai-protagonist và pirate-crew (ShadowKitsune, IronOnikiri, KaidoYuki, v.v.). Dùng bộ lọc vibe "Strong" hoặc "Dark" trong Fusion để có kết quả gần nhất.</p>
+      </details>
+      <details>
+        <summary>Đây có phải là trình tạo tên kawaii không?</summary>
+        <p>Có — tab Cute chính là điều đó. Nó lấy từ các từ tiếng Nhật thực về động vật, thiên nhiên, cây cối, thời tiết và hình ảnh dịu dàng (mèo 猫, sakura 桜, yuki 雪, momo 桃, v.v.) và ghép với các hậu tố thân thiện với kawaii như <code>-chan</code> và <code>-maru</code>. Nếu bạn muốn một tên kawaii, hãy nhấp vào tab Cute, chọn hậu tố "Dễ thương" hoặc "Kawaii" và nhấp Tạo.</p>
+      </details>
+      <details>
+        <summary>Tôi có thể có họ hoặc tên gia tộc phong cách Nhật Bản không?</summary>
+        <p>Có — tab IRL Names lấy từ 100 họ phổ biến nhất của Nhật Bản (Sato, Suzuki, Takahashi, Tanaka, Watanabe, v.v., xếp hạng theo dữ liệu tần suất hiện tại của chính phủ Nhật Bản). Đối với tên gia tộc anime, hãy thử tab Thần thoại với Nguồn = Đền, tạo ra các tên ghép như "Fushimi Akihiko" nghe như tên gia tộc hoặc nhà. Đối với thứ gì đó được sáng tạo hơn, tab Fusion với đầu vào từ tiếng Nhật mạnh cho bạn các tên ghép có cảm giác như tên gia tộc.</p>
+      </details>
+      <details>
+        <summary>Bạn có trình tạo tên kiểu isekai hoặc chiến binh shonen không?</summary>
+        <p>Không phải dưới dạng danh mục được gắn nhãn — trang web an toàn IP theo thiết kế, nên chúng tôi không sử dụng nhãn cụ thể của thương hiệu. Nhưng các mẫu mà những tên đó tuân theo đã được bao phủ: tab Thần thoại + nguồn Võ thuật cho bạn tên mang phong cách kensei / samurai / kiếm sĩ; tab Fusion với từ vibe mạnh cho bạn tên ghép như "ShadowKitsune" hoặc "IronOnikiri" đọc như tên chiến binh shonen hoặc nhân vật chính isekai. Bộ lọc vibe "Mạnh" hoặc "Tối" trong Fusion là kết quả gần nhất.</p>
+      </details>
+      <details>
+        <summary>Đây có phải là trình tạo tên weeb / otaku không?</summary>
+        <p>Nếu bạn có ý "một trình tạo tên cho weeb/otaku, được xây dựng bởi ai đó thực sự quan tâm đến độ chính xác tiếng Nhật" — có. Nguồn dữ liệu là tiếng Nhật thực (JMdict, sổ đăng ký tên công khai, danh sách đền Thần đạo, thần thoại Kojiki / Nihon Shoki), kanji là thực, hiragana là thực, romaji là phiên âm Hepburn tiêu chuẩn. Không có gì là vô nghĩa được tạo tự động hoặc cách điệu hóa của một từ tiếng Anh.</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'none';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Trình Tạo Handle Anime là một phần của anime.gethandlenames.com. Miễn phí, không cần đăng ký, không theo dõi ngoài phân tích tiêu chuẩn.</p>
+      <p class="muted small">Data sources: JMdict (CC BY-SA 4.0), JLPT community vocab (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). See <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">Riêng tư</a> ·
+        <a href="../about/">Giới thiệu</a> ·
+        <a href="../contact/">Liên hệ</a> ·
+        <a href="#" data-cc-settings>Cài đặt cookie</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">📤 Chia sẻ tên này</h3>
+        <button class="iconbtn" data-close title="Đóng">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ Tải PNG</button>
+        <button class="btn btn--ghost"   id="share-native">📱 Chia sẻ…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 Sao chép hình ảnh</button>
+      </div>
+      <p class="share-modal__note muted small">
+        Mẹo: PNG có kích thước 1200×630 — kích thước tiêu chuẩn cho Twitter/X, Discord, Pinterest và bản xem trước OG.
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"vi":{"affectionate suffix":"hậu tố trìu mến","apple":"táo","arrow":"mũi tên","aster / remembrance of sound":"aster / remembrance of sound","bamboo":"tre","bear":"gấu","bee":"ong","bird":"chim","black":"đen","blue":"xanh","blue sky":"bầu trời xanh","brave":"dũng cảm","bright / clear":"sáng / rõ","butterfly":"bướm","calm (of the sea)":"yên (biển)","camellia":"trà","camellia flower":"hoa trà","carp":"cá chép","carp streamer":"cá chép bay","castle":"lâu đài","cat":"mèo","cherry blossom":"hoa anh đào","cicada":"ve sầu","circle/pet suffix":"hậu tố tròn","claw":"vuốt","cloud":"mây","cloud (also: spider)":"mây (hoặc: nhện)","cold wintry wind":"gió lạnh mùa đông","cool sound / refreshing tone":"âm thanh tuyệt / giọng sảng khoái","cow":"bò","cruel":"tàn nhẫn","cute":"dễ thương","cute suffix (sound)":"hậu tố dễ thương","dark":"tối","darkness":"bóng tối","dawn":"bình minh","deer":"hươu","demon/ogre":"demon/ogre","dog":"chó","dove/pigeon":"dove/pigeon","dragon":"rồng","dragon god":"thần rồng","dream":"giấc mơ","ear":"tai","evening glow / sunset":"evening glow / sunset","fang":"răng nanh","far / distant":"xa / xa xôi","fire":"lửa","firefly":"đom đóm","fireworks":"pháo hoa","fish":"cá","flame":"ngọn lửa","flower":"hoa","forest":"rừng","formal dress / attire":"formal dress / attire","fox":"cáo","fox (mythic)":"cáo thần thoại","fox (mythical)":"cáo huyền thoại","ghost":"ma","glitter / silk (glamour)":"glitter / silk (glamour)","goldfish":"cá vàng","good fortune":"may mắn","green / verdure":"xanh lá","hawk":"diều hâu","heart":"trái tim","heart (on'yomi)":"trái tim (on'yomi)","heart / spirit":"trái tim / tinh thần","heavenly moon / new moon":"trăng thiên thể / trăng non","hollyhock / mallow":"hollyhock / mallow","horse":"ngựa","hydrangea":"cẩm tú cầu","ice":"băng","infinity":"vô tận","iris (the flower)":"iris (hoa)","king":"vua","king (loanword)":"vua (mượn)","knight":"hiệp sĩ","koala":"gấu túi","light":"ánh sáng","light / lamp":"light / lamp","light / radiance":"ánh sáng / hào quang","lightning":"sét","lily of the valley":"linh lan","long (of time)":"lâu (thời gian)","long-lasting sky / eternity":"long-lasting sky / eternity","lotus":"hoa sen","love":"tình yêu","mandarin orange":"quýt","mandarin orange tree":"cây quýt","mist":"sương mù","monkey":"khỉ","moon":"trăng","mountain":"núi","night sky":"bầu trời đêm","orchid":"phong lan","panda":"gấu trúc","peaceful / easy":"yên bình / dễ dàng","peach":"đào","pheasant":"gà lôi","pig":"lợn","pink (dianthus) / 'lovely girl'":"pink (dianthus) / 'lovely girl'","rabbit":"thỏ","raccoon dog (mythic)":"chó mèo rửa thần thoại","radiance":"rạng rỡ","rain":"mưa","rainbow":"cầu vồng","red":"đỏ","remains/corpse":"remains/corpse","river":"sông","rose":"hoa hồng","rustic, impermanent beauty":"rustic, impermanent beauty","sake cup":"chén sake","scattered / falling cherry blossoms":"scattered / falling cherry blossoms","sea":"biển","sea / ocean":"biển","sea/ocean":"sea/ocean","shadow":"bóng","sheep":"cừu","shoreline / beach":"bờ biển / bãi biển","sincerity / truth":"sincerity / truth","sky":"bầu trời","small path / lane":"small path / lane","small/tiny":"small/tiny","snow":"tuyết","soul/spirit":"soul/spirit","sparkle/glitter":"sparkle/glitter","sparrow":"chim sẻ","star":"ngôi sao","storm":"bão","strawberry":"dâu tây","strong":"mạnh","subtle, mysterious profundity":"sâu thẳm tinh tế, bí ẩn","summer hope":"hy vọng mùa hè","sun":"mặt trời","sunflower":"hoa hướng dương","sunlight filtering through leaves":"ánh nắng xuyên qua lá","sword":"kiếm","sword (alt)":"kiếm (thay thế)","thousand":"nghìn","thread / string":"thread / string","thrush (bird)":"chim hoét (chim)","thunder":"sấm","tiger":"hổ","tolerant / generous":"tolerant / generous","tonight":"tối nay","tree":"cây","violet":"tím","violet (the flower)":"hoa tím","water":"nước","wave":"sóng","white":"trắng","white-crested waves":"sóng bạc đầu","wide truth":"sự thật rộng lớn","wind":"gió","wisdom / friend":"wisdom / friend","wolf":"sói","young leaves / fresh leaves":"lá non","bell":"chuông","bridge":"cầu","rice":"gạo","rice field":"ruộng lúa","village":"làng","base":"cơ sở","middle":"giữa","side":"bên","add":"thêm","crossing":"ngã tư","that":"đó","small":"nhỏ","tall":"cao","soar":"bay","land":"đất","harbor":"cảng","swift":"nhanh","great":"vĩ đại","seven":"bảy","well":"giếng","barrier":"rào cản","sound":"âm thanh","helper":"người giúp","wisteria":"tử đằng","sun + soar":"mặt trời + bay","February (traditional)":"Tháng Hai (truyền thống)","artisan/craftsman":"thợ thủ công","achieve + also":"đạt + cũng","assist + tree":"hỗ trợ + cây","beautiful + bloom":"đẹp + nở","beautiful + moon":"đẹp + trăng","bell + tree":"chuông + cây","blessed + child":"phúc + con","blessing + beauty":"phúc + đẹp","bright":"sáng","bright + village":"sáng + làng","calm (sea)":"yên (biển)","crossing + side":"bên ngã tư","festival + tree":"lễ hội + cây","Mt. Fuji + view":"núi Phú Sĩ + cảnh","helper + wisteria (Fujiwara branch)":"người giúp + tử đằng (nhánh Fujiwara)","add + wisteria":"thêm + tử đằng","middle + village":"giữa + làng","mountain + base":"chân núi","rice field + middle":"giữa ruộng lúa","small + forest":"rừng nhỏ","tall + bridge":"cao + cầu","that + wisteria":"đó + tử đằng","land + sun":"đất + mặt trời","harbor + view":"cảng + cảnh","seven + sea":"bảy + biển","well + barrier":"giếng + rào cản","flower + sound":"hoa + âm thanh","good":"tốt","courage":"dũng cảm","second":"thứ hai","noir":"đen","mouth":"miệng","happiness":"hạnh phúc","young":"trẻ","leaves":"lá","fresh":"tươi","helping":"giúp","shining":"sáng chói","autumn":"mùa thu","spring":"mùa xuân","winter":"mùa đông","summer":"mùa hè","pure":"thuần khiết","gentle":"dịu dàng","kind":"tốt bụng","wonderful":"tuyệt vời","eternal":"vĩnh cửu","mysterious":"bí ẩn","peaceful":"yên bình","calm":"yên tĩnh","wisdom":"trí tuệ","peace":"hòa bình","prosperity":"thịnh vượng","abundance":"sung túc","beautiful":"đẹp","pretty":"xinh","graceful":"duyên dáng","fragrant":"thơm","happy":"vui","joyful":"vui vẻ","crystal":"pha lê","jade":"ngọc","pearl":"ngọc trai","plum":"mận","cherry":"anh đào","pine":"thông","willow":"liễu","autumn leaf":"lá thu","lucky":"may mắn","twilight":"hoàng hôn","nap":"ngủ trưa","greens":"rau xanh","mar":"biển","correct":"đúng","will":"ý chí","view":"cảnh","field":"cánh đồng","eight":"tám","nine":"chín","ten":"mười","gold":"vàng","above":"phía trên","ancient":"cổ đại","achieve":"đạt","also":"cũng","assist":"hỗ trợ","beach":"bãi biển","beauty":"vẻ đẹp","beauty + cherry blossom":"vẻ đẹp + hoa anh đào","blessed":"được phúc","bloom":"nở","bookmark":"dấu trang","cape":"mũi đất","celebrate":"kỷ niệm","child":"trẻ em","clear":"rõ ràng","colorful":"nhiều màu","cool":"mát","corpse":"xác chết","demon":"quỷ","design":"thiết kế","distant":"xa","easy":"dễ","eternity":"vĩnh cửu","excellent":"xuất sắc","far":"xa","february":"tháng Hai","february (traditional)":"Tháng Hai (truyền thống)","first":"đầu tiên","festival":"lễ hội","falling cherry blossoms":"hoa anh đào rơi","falcon person":"người ưng","artisan":"thợ thủ công","aster":"cúc","attire":"trang phục","blessing":"phúc lành","circle":"vòng tròn","craftsman":"thợ thủ công","dianthus":"cẩm chướng","dignified":"uy nghi","dove":"bồ câu","evening glow":"ánh chiều","friend":"bạn","fragrance":"hương thơm","garment":"quần áo","gauze":"gạc","generous":"hào phóng","guardian":"người gác","hill":"đồi","intelligent":"thông minh","lake":"hồ","plain":"đồng bằng","young leaves":"lá non","wisteria (Fujiwara branch)":"tử đằng (nhánh Fujiwara)","happiness + light, radiance":"hạnh phúc + ánh sáng, rạng rỡ","good + rice field":"tốt + ruộng lúa","twilight + nap + greens":"chạng vạng + ngủ trưa + rau xanh","ancient clan":"gia tộc cổ","ancient name for japan":"tên cổ của Nhật Bản","flat":"phẳng","fresh leaves":"lá tươi","grass":"cỏ","great harmony":"hòa hợp lớn","grass + leaf":"cỏ + lá","flame + sandalwood":"ngọn lửa + đàn hương","beautiful + cherry blossom":"đẹp + hoa anh đào","study/repair":"học/sửa","heaven + field":"trời + cánh đồng","brighten + bird":"làm sáng + chim","tall / high / lofty":"cao","mountain + village":"núi + làng","bamboo + grove":"tre + rừng nhỏ","tolerant":"khoan dung","morning sun":"nắng sớm","new moon":"trăng non","heavenly moon":"trăng thiên đàng","two":"hai","three":"ba","four":"bốn","five":"năm","six":"sáu","heaven":"thiên đường","mochi":"mochi","iris":"diên vĩ","jasmine":"hoa nhài","mirror":"gương","phoenix":"phượng hoàng","earth":"đất","silver":"bạc","stone":"đá","dusk":"hoàng hôn","night":"đêm","fortress":"pháo đài","palace":"cung điện","maple":"phong","phoenix / peace":"phượng hoàng / hòa bình","palace (royal)":"cung điện (hoàng gia)","spring (season)":"mùa xuân","tiny":"rất nhỏ","queen":"nữ hoàng","queen (loanword)":"nữ hoàng (mượn)","cute (loanword)":"dễ thương (mượn)","moss":"rêu","leaf":"lá","verdure":"cây xanh","ocean":"đại dương","sunset":"hoàng hôn","shoreline":"đường bờ biển","valley":"thung lũng","island":"đảo","long-lasting sky":"trời vĩnh cửu","soul":"linh hồn","spirit":"tinh thần","phantom":"bóng ma","phantom/illusion":"ảo mộng/ảo tưởng","ogre":"quỷ khổng lồ","pigeon":"bồ câu","falcon":"ưng","thrush":"chim hoét","raccoon dog":"chó mèo rửa","'lovely girl'":"\"cô gái dễ thương\"","cool sound":"âm thanh tuyệt","refreshing tone":"giọng sảng khoái","remembrance of sound":"ký ức âm thanh","remains":"tàn tích","cute suffix":"hậu tố dễ thương","pet suffix":"hậu tố cưng","scattered":"rải rác","formal dress":"trang phục trang trọng","glitter":"lấp lánh","sparkle":"lấp lánh","silk":"lụa","silk (glamour)":"lụa (quyến rũ)","string":"sợi dây","thread":"sợi chỉ","subtle":"tinh tế","hollyhock":"cây thục quỳ","impermanent beauty":"vẻ đẹp vô thường","lamp":"đèn","lane":"con đường nhỏ","small path":"đường nhỏ","mallow":"cây dâm bụt","mysterious profundity":"chiều sâu bí ẩn","long":"dài","green":"xanh lá","pink":"hồng","pink (dianthus)":"hồng (cẩm chướng)","truth":"sự thật","sincerity":"sự chân thành","rustic":"mộc mạc","one":"một","moth":"bướm đêm","clam":"nghêu","sailboat":"thuyền buồm","Mandarin orange tree":"cây quýt","castle (ancient clan)":"lâu đài (cổ tộc)","eight-branch(ed)":"tám nhánh","helpful; helping":"hữu ích","shrine":"đền","grove":"rừng nhỏ","reason":"lý do","words":"từ ngữ","helping; helper":"trợ giúp","axe":"rìu","shield":"khiên","spear":"giáo","helmet":"mũ bảo hiểm","gate":"cổng","crown":"vương miện","indigo":"chàm","brown":"nâu","silver (glamour)":"bạc (quyến rũ)","bear (the animal)":"gấu (con vật)","thoughts":"suy nghĩ","daytime":"ban ngày","dawn (time)":"bình minh","sunset (time)":"hoàng hôn","rest":"nghỉ ngơi","play":"chơi","sing":"hát","dance":"nhảy","secluded place":"nơi hẻo lánh","base + village":"nền + làng","hillside":"sườn đồi","gentle (rain)":"dịu dàng (mưa)","grand":"vĩ đại","bright (light)":"sáng (ánh sáng)","dawn (light)":"bình minh (ánh sáng)","help":"giúp đỡ","brighten":"làm sáng","honest":"trung thực","rapids":"thác nước","four seasons":"bốn mùa","long-lasting sky / eternal sky":"trời vĩnh cửu / trời lâu dài","together / paired":"cùng nhau / theo cặp","double / pair":"đôi / cặp","plain (ancient clan)":"đồng bằng (cổ tộc)","kinds":"loại","hakama":"hakama","healthy":"khỏe mạnh","dignified, cold-crisp":"đáng trọng, lạnh-giòn","zero, spirit":"không, tinh thần","purple":"tím","house":"nhà","pongee (hand-spun silk)":"pongee (lụa kéo tay)","paulownia":"paulownia","life":"sự sống","hakama + rice field":"hakama + ruộng lúa","kudzu":"kudzu","inside":"bên trong","far, distant":"xa, xa xôi","wing":"cánh","sunny place":"nơi nắng","cool + great":"hay + vĩ đại","healthy + second":"khỏe mạnh + thứ hai","kudzu + castle (ancient clan)":"kudzu + lâu đài (cổ tộc)","three + house + pink (dianthus) / 'lovely girl'":"ba + nhà + hồng (cẩm chướng) / 'cô gái dễ thương'","pure + water + painting + village + fragrance":"thuần khiết + nước + tranh + làng + hương thơm","hakama + rice field + calm (of the sea)":"hakama + ruộng lúa + yên tĩnh (biển)","mirror + zero, spirit":"gương + không, tinh thần","purple + heart + spring":"tím + tim + mùa xuân","grass + mow (legendary sword clan)":"cỏ + cắt (giống kiếm huyền thoại)","star + river + healthy + second":"sao + sông + khỏe mạnh + thứ hai","hakama + rice field + light / radiance":"hakama + ruộng lúa + ánh sáng / hào quang","thousand + kinds":"nghìn + loại","thousand + kinds + light / lamp":"nghìn + loại + ánh sáng / đèn","thousand + kinds + rustic, impermanent beauty":"nghìn + loại + vẻ đẹp mộc mạc, không vĩnh cửu","happiness + flat + bright / clear":"hạnh phúc + phẳng + sáng / rõ","happiness + flat":"hạnh phúc + phẳng","wisteria + plain (ancient clan) + dream":"tử đằng + đồng bằng (cổ tộc) + mơ","wisteria + plain (ancient clan) + blessed + child":"tử đằng + đồng bằng (cổ tộc) + phúc lành + trẻ em","wisteria + plain (ancient clan) + peaceful / easy":"tử đằng + đồng bằng (cổ tộc) + yên bình / dễ","wisteria + plain (ancient clan) + night sky":"tử đằng + đồng bằng (cổ tộc) + bầu trời đêm","wisteria + plain (ancient clan) + tree":"tử đằng + đồng bằng (cổ tộc) + cây","mountain + base + dignified, cold-crisp":"núi + cơ sở + đáng trọng, lạnh-giòn","pine + base + gauze + good":"thông + cơ sở + gạc + tốt","mountain + mouth + sea / ocean":"núi + miệng + biển / đại dương","grove + great + radiance":"rừng nhỏ + vĩ đại + hào quang","shrine + cape + wind":"đền + mũi đất + gió","paulownia + life + iris (the flower)":"paulownia + sự sống + iris (hoa)","tie + love":"cà vạt + tình yêu","tie + garment":"cà vạt + quần áo","leisurely + truth":"thư thái + sự thật","sprout + rely":"mầm + dựa","jujube":"táo tàu","voyage + peace":"hành trình + hòa bình","great harmony (ancient name for Japan)":"đại hòa (tên cổ của Nhật Bản)","heaven + valley + tie + love":"trời + thung lũng + cà vạt + tình yêu","paulownia + life + wide truth":"paulownia + sự sống + sự thật rộng lớn","paulownia + life + lotus":"paulownia + sự sống + hoa sen","paulownia + life + pongee (hand-spun silk)":"paulownia + sự sống + pongee (lụa kéo tay)","rice + leaf + dignified, cold-crisp":"gạo + lá + đáng trọng, lạnh-giòn","tall + bridge + tie + love":"cao + cầu + cà vạt + tình yêu","tall + mountain + harbor":"cao + núi + cảng","mirror + thread / string":"gương + sợi / dây","well + above + achieve + also":"giếng + phía trên + đạt được + cũng","well + barrier + painting + village + fragrance":"giếng + rào cản + tranh + làng + hương thơm","pure + water + leisurely + truth":"thuần khiết + nước + thư thái + sự thật","middle + village + tie + love":"giữa + làng + cà vạt + tình yêu","mountain + mouth + leisurely + truth":"núi + miệng + thư thái + sự thật","mountain + rice field + sprout + rely":"núi + ruộng lúa + mầm + dựa","crossing + side + tie + love":"qua + bên + cà vạt + tình yêu","grove + sun + hollyhock":"rừng nhỏ + mặt trời + thục quỳ","jujube + long-lasting sky / eternity":"táo tàu + bầu trời vĩnh cửu / vĩnh hằng","one + rapids + great harmony (ancient name for Japan)":"một + thác + đại hòa (tên cổ của Nhật Bản)","heaven + valley + voyage + peace":"trời + thung lũng + hành trình + hòa bình","small + forest + great harmony (ancient name for Japan)":"nhỏ + rừng + đại hòa (tên cổ của Nhật Bản)","wisteria + plain (ancient clan) + tonight":"tử đằng + đồng bằng (cổ tộc) + tối nay","tall + mountain + subtle, mysterious profundity":"cao + núi + sâu thẳm tinh tế, bí ẩn","help + brighten + truth + I":"giúp đỡ + chiếu sáng + sự thật + tôi","tree + village + rustic, impermanent beauty":"cây + làng + vẻ đẹp mộc mạc, không vĩnh cửu","ship channel":"kênh tàu","ga":"ga","gauze + good":"gạc + tốt","celebrate + great":"kỷ niệm + vĩ đại","courage (alt reading)":"dũng cảm (alt đọc)","pine + base + aster / remembrance of sound":"thông + cơ sở + aster / kỷ niệm âm thanh","rice + leaf + love":"gạo + lá + tình yêu","hill + side + cool sound / refreshing tone":"đồi + bên + âm thanh mát / tông mát mẻ","transparent":"trong suốt","silk, glisten":"lụa, lấp lánh","sea + ladle":"biển + muỗng","jujube + camellia flower":"táo tàu + hoa trà my","seven + sea + gauze + good":"bảy + biển + gạc + tốt","that + wisteria + swift wind + mediate":"đó + tử đằng + gió nhanh + trung gian","swift wind + mediate":"gió nhanh + trung gian","hill + side":"đồi + bên","shrine + cape + tie + greens":"đền + mũi đất + cà vạt + rau xanh","shrine + cape + silk, glisten":"đền + mũi đất + lụa, lấp lánh","thousand + kinds + sea + ladle":"nghìn + loại + biển + muỗng","rice + leaf + gauze + good":"gạo + lá + gạc + tốt","well + above + blessed + child":"giếng + phía trên + phúc lành + trẻ em","tall + mountain + flower":"cao + núi + hoa","paulownia + life + celebrate + great":"paulownia + sự sống + kỷ niệm + vĩ đại","paulownia + life + fireworks":"paulownia + sự sống + pháo hoa","grove + courage (alt reading)":"rừng nhỏ + dũng cảm (alt đọc)","rice field + middle + ship channel":"ruộng lúa + giữa + kênh tàu","wisteria + plain (ancient clan) + ship channel":"tử đằng + đồng bằng (cổ tộc) + kênh tàu","swift wind":"gió nhanh","mediate":"trung gian","jasmine + child":"hoa nhài + trẻ em","mountain + mouth + snow":"núi + miệng + tuyết","design + rapids + courage + second":"thiết kế + thác + dũng cảm + thứ hai","silver + jasmine + child":"bạc + hoa nhài + trẻ em","tall + mountain + spring":"cao + núi + mùa xuân","tree + village + tie + love":"cây + làng + cà vạt + tình yêu","paulownia + life + dawn":"paulownia + sự sống + bình minh","inside + rice field + colorful + flower":"bên trong + ruộng lúa + đầy màu sắc + hoa","colorful + flower":"đầy màu sắc + hoa","rice + leaf + shoreline / beach":"gạo + lá + bờ biển / bãi biển","wisteria + plain (ancient clan) + falcon person":"tử đằng + đồng bằng (cổ tộc) + người ưng","long + swamp + tolerant / generous":"dài + đầm lầy + khoan dung / hào phóng","long + swamp + sea + gentle":"dài + đầm lầy + biển + dịu dàng","long + swamp + soar + great":"dài + đầm lầy + bay lên + vĩ đại","long + swamp + forest":"dài + đầm lầy + rừng","mountain + base + rustic, impermanent beauty":"núi + cơ sở + vẻ đẹp mộc mạc, không vĩnh cửu","people":"mọi người","helper + wisteria (Fujiwara branch) + people":"trợ giúp + tử đằng (chi nhánh Fujiwara) + mọi người","well + above + tie + greens":"giếng + phía trên + cà vạt + rau xanh","grass + mow (legendary sword clan) + tie + greens":"cỏ + cắt (giống kiếm huyền thoại) + cà vạt + rau xanh","jujube + blessed + child":"táo tàu + phúc lành + trẻ em","help + brighten + light, radiance":"giúp đỡ + chiếu sáng + ánh sáng, hào quang","tree + village + light, radiance":"cây + làng + ánh sáng, hào quang","middle + village + jasmine + child":"giữa + làng + hoa nhài + trẻ em","wing + mist":"cánh + sương mù","well + above + sake cup":"giếng + phía trên + chén sake","paulownia + life + mist":"paulownia + sự sống + sương mù","good + rice field + apple":"tốt + ruộng lúa + táo","long + swamp + hollyhock":"dài + đầm lầy + thục quỳ","mountain + mouth + cool sound / refreshing tone":"núi + miệng + âm thanh mát / tông mát mẻ","good + rice field + leisurely + person":"tốt + ruộng lúa + thư thái + người","leisurely + person":"thư thái + người","one + rapids + painting + village + fragrance":"một + thác + tranh + làng + hương thơm","mountain + base + bell":"núi + cơ sở + chuông","seven + sea + bookmark":"bảy + biển + dấu trang","mirror + love + child":"gương + tình yêu + trẻ em","happiness + cool + great":"hạnh phúc + hay + vĩ đại","well + above + moon":"giếng + phía trên + mặt trăng","rice + leaf + peaceful / easy":"gạo + lá + yên bình / dễ","long + swamp + cold wintry wind":"dài + đầm lầy + gió mùa đông lạnh","mist + sun + hollyhock":"sương mù + mặt trời + thục quỳ","shrine + base + light, radiance":"đền + cơ sở + ánh sáng, hào quang","well + barrier + light, radiance":"giếng + rào cản + ánh sáng, hào quang","tall + bridge + gentle, excellent":"cao + cầu + dịu dàng, xuất sắc","gentle, excellent":"dịu dàng, xuất sắc","rice + leaf + rustic, impermanent beauty":"gạo + lá + vẻ đẹp mộc mạc, không vĩnh cửu","shrine + base + painting + village + fragrance":"đền + cơ sở + tranh + làng + hương thơm","mochi + koala":"mochi + gấu túi"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "TRÌNH TẠO TÊN ANIME";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  trình tạo tên anime";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — xem tại anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"dễ thương","cool":"chất","dark":"tối","elegant":"thanh lịch","epic":"sử thi","strong":"mạnh","mysterious":"bí ẩn","nature":"thiên nhiên","animal":"động vật","adjective":"tính từ","vocab":"từ vựng","mythic":"thần thoại","martial":"võ thuật","shrine":"đền","temple":"chùa","gentle":"dịu dàng","light":"sáng","dreamy":"mơ mộng","playful":"vui nhộn","plush":"mềm","pure":"thuần khiết","romance":"lãng mạn","moody":"cáu kỉnh","peace":"hòa bình","sweet":"ngọt","pet":"thú cư","night":"đêm","sky":"bầu trời","spring":"mùa xuân","summer":"mùa hè","winter":"mùa đông","place":"nơi","noun":"danh từ","prefix":"tiền tố","suffix":"hậu tố","male":"nam","female":"nữ","masculine":"nam tính","feminine":"nữ tính","gender-neutral":"trung lập giới","neutral":"trung lập","family-name":"họ","surname":"họ","with-given":"kèm tên","real":"thật","cultural":"văn hóa"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'english';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'none';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use Cute/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">No results — try changing your options.</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="Copy"  aria-label="Copy"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">Sao chép</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="Share" aria-label="Share"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">Chia sẻ</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="Save"  aria-label="Save"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">Lưu</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="Swap order"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">Hoán đổi</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('Saved ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">Chưa có tên nào được lưu. Nhấp ⭐ trên bất kỳ kết quả nào để thêm vào đây.</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="Copy">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('Xóa tất cả tên đã lưu?')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / Copy image buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('Chia sẻ thất bại — đang mở tùy chọn');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('Đã tải xuống ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("Shared via" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('Chia sẻ không được hỗ trợ — hãy thử Tải xuống');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('Đã sao chép hình ảnh vào bộ nhớ tạm 📋');
+        } else {
+          toast('Sao chép không được hỗ trợ — hãy thử Tải xuống');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
