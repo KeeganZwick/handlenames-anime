@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security headers (CSP, HSTS, X-Frame-Options, COOP, etc.) are served
+       via the _headers file at the deploy root for Cloudflare Pages hosts.
+       Don't re-add them as <meta> tags — HTTP headers take precedence and
+       some directives (frame-ancestors) are ignored in <meta> anyway. -->
+  <title>和風ハンドルジェネレーター — 創作・TRPG・世界観構築に | anime.gethandlenames.com</title>
+  <link rel="canonical" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <link rel="alternate" hreflang="en" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="x-default" href="https://anime.gethandlenames.com/anime-names/">
+  <link rel="alternate" hreflang="nl" href="https://anime.gethandlenames.com/nl/anime-names/">
+  <link rel="alternate" hreflang="de" href="https://anime.gethandlenames.com/de/anime-names/">
+  <link rel="alternate" hreflang="es" href="https://anime.gethandlenames.com/es/anime-names/">
+  <link rel="alternate" hreflang="fr" href="https://anime.gethandlenames.com/fr/anime-names/">
+  <link rel="alternate" hreflang="pt" href="https://anime.gethandlenames.com/pt/anime-names/">
+  <link rel="alternate" hreflang="pl" href="https://anime.gethandlenames.com/pl/anime-names/">
+  <link rel="alternate" hreflang="id" href="https://anime.gethandlenames.com/id/anime-names/">
+  <link rel="alternate" hreflang="ms" href="https://anime.gethandlenames.com/ms/anime-names/">
+  <link rel="alternate" hreflang="vi" href="https://anime.gethandlenames.com/vi/anime-names/">
+  <link rel="alternate" hreflang="hi" href="https://anime.gethandlenames.com/hi/anime-names/">
+  <link rel="alternate" hreflang="ur" href="https://anime.gethandlenames.com/ur/anime-names/">
+  <link rel="alternate" hreflang="ar" href="https://anime.gethandlenames.com/ar/anime-names/">
+  <link rel="alternate" hreflang="zh" href="https://anime.gethandlenames.com/zh/anime-names/">
+  <link rel="alternate" hreflang="ko" href="https://anime.gethandlenames.com/ko/anime-names/">
+  <link rel="alternate" hreflang="ru" href="https://anime.gethandlenames.com/ru/anime-names/">
+  <link rel="alternate" hreflang="uk" href="https://anime.gethandlenames.com/uk/anime-names/">
+  <link rel="alternate" hreflang="yo" href="https://anime.gethandlenames.com/yo/anime-names/">
+  <link rel="alternate" hreflang="bn" href="https://anime.gethandlenames.com/bn/anime-names/">
+  <link rel="alternate" hreflang="th" href="https://anime.gethandlenames.com/th/anime-names/">
+  <link rel="alternate" hreflang="hu" href="https://anime.gethandlenames.com/hu/anime-names/">
+  <link rel="alternate" hreflang="ja" href="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta name="description" content="創作キャラクター、和風ファン名、世界観構築、和風創作ネーミングのための名前データベース。実在の和名・妖怨・神話・神社・古典語彙から自由に組み合わせ可能。かわいい・神話・実在・融合の4カテゴリ。無料、登録不要。">
+
+  <!-- Favicon: SVG primary (sharp at any DPR), PNG fallbacks for older browsers / iOS -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#ec4899">
+
+  <!-- Open Graph (Facebook, Discord, Reddit, iMessage, Slack, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="gethandlenames">
+  <meta property="og:title" content="和風ハンドルジェネレーター — 創作・TRPG・世界観構築に | anime.gethandlenames.com">
+  <meta property="og:description" content="創作キャラクター、和風ファン名、世界観構築、和風創作ネーミングのための名前データベース。実在の和名・妖怨・神話・神社・古典語彙から自由に組み合わせ可能。かわいい・神話・実在・融合の4カテゴリ。無料、登録不要。">
+  <meta property="og:url" content="https://anime.gethandlenames.com/ja/anime-names/">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji. クール Japanese-style names for OCs, fan personas, and online handles in kawaii, Japanese, mythology, and shonen-warrior flavors.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pl_PL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="和風ハンドルジェネレーター — 創作・TRPG・世界観構築に | anime.gethandlenames.com">
+  <meta name="twitter:description" content="創作キャラクター、和風ファン名、世界観構築、和風創作ネーミングのための名前データベース。実在の和名・妖怨・神話・神社・古典語彙から自由に組み合わせ可能。かわいい・神話・実在・融合の4カテゴリ。無料、登録不要。">
+  <meta name="twitter:image" content="/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anime Handle Generator — three example names (Yuki, Hikari, Amaterasu) on a dark background with pink kanji">
+
+  <!-- Self-hosted Quicksand font. Loading from our own origin (no DNS+TLS
+       round-trip to fonts.gstatic.com) saves the 460ms critical path PageSpeed
+       flagged. All three weights are preloaded because all three are used
+       in above-the-fold content:
+         500 — body text (.hero__sub paragraph — the LCP element)
+         600 — tab labels, buttons, h3s
+         700 — H1 title, error/strong text
+       font-display:swap is set per @font-face in generator.css — text
+       renders in fallback immediately, then re-renders when Quicksand loads. -->
+  <link rel="preload" href="../../assets/fonts/quicksand-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/quicksand-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../styles/generator.min.css">
+
+  <!-- Plausible Analytics — cookie-free, no consent banner integration needed.
+       Plausible uses IP+UA hashing for unique-visitor counting (no cookies, no
+       localStorage, no fingerprinting). Excluded from the cookie consent flow
+       on purpose. The data-domain is the production root, so all subpaths are
+       tracked together. See https://plausible.io/data-policy -->
+  <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="/">gethandlenames<span class="topbar__dot">.</span>com</a>
+      <nav class="topbar__nav">
+        <a href="https://anime.gethandlenames.com/">TikTok Handle Checker</a>
+        <a href="../../anime-names/" class="active">和風ハンドル</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="lang-switcher-select" class="lang-switcher__select" aria-label="Site language">
+    <option value="en">English</option>
+    <option value="nl">🇳🇱 Nederlands</option>
+    <option value="de">🇩🇪 Deutsch</option>
+    <option value="es">🇪🇸 Español</option>
+    <option value="fr">🇫🇷 Français</option>
+    <option value="pt">🇵🇹 Português (BR)</option>
+    <option value="pl">🇵🇱 Polski</option>
+    <option value="id">🇮🇩 Bahasa Indonesia</option>
+    <option value="ms">🇲🇾 Bahasa Melayu</option>
+    <option value="vi">🇻🇳 Tiếng Việt</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="ur">🇵🇰 اردو</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="zh">🇹🇼 中文 (繁體)</option>
+    <option value="ko">🇰🇷 한국어</option>
+    <option value="ru">🇷🇺 Русский</option>
+    <option value="uk">🇺🇦 Українська</option>
+    <option value="yo">🇳🇴 Yorùbá</option>
+    <option value="bn">🇧🇩 বাংলা</option>
+    <option value="th">🇹🇭 ภาษาไทย</option>
+    <option value="hu">🇺🇬 Magyar</option>
+    <option value="ja" selected>🇯🇵 日本語</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>和風ハンドルジェネレーター</h1>
+      <p class="hero__sub">
+        創作・同人・TRPG・ゲームの世界観構築に使える和風ハンドルのインスピレーション集。かわいい響きから神話・妖怪・古典神社の名前まで、4つのデータベースから自由に組み合わせ。実在の和名辞典も録録。
+      </p>
+    </section>
+
+    <section class="generator">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="animal"    role="tab">🐾 かわいい（OC向け）</button>
+        <button class="tab"           data-tab="fusion"    role="tab">⚡ 融合（創作用）</button>
+        <button class="tab"           data-tab="irl"       role="tab">👤 和名辞典（参考用）</button>
+        <button class="tab"           data-tab="mythology" role="tab">⛩️ 神話（世界観用）</button>
+      </div>
+
+      <!-- ANIMAL / CUTE -->
+      <div class="tabpanel is-active" data-panel="animal">
+        <h2 class="tabpanel__title">かわいい & kawaii names</h2>
+        <p class="tabpanel__desc">動物・自然・優しい意象を表す実在の日本語単語から組み合わせる、かわいい響きの和風ハンドル。アニメ文化の柔らかく可愛い側面で、ペット・OC・遊び心のあるハンドルネームにぴったり。</p>
+        <div class="opts">
+          <label>Results <input type="number" id="animal-count" min="1" max="30" value="8"></label>
+          <label>接尾語
+            <select id="animal-suffix">
+              <option value="なし">なし</option>
+              <option value="chan">-chan（かわいい）</option>
+              <option value="maru">-まる（ペット）</option>
+              <option value="pon">-ぽん（遊び心）</option>
+              <option value="なし,chan,maru,pon">すべて混在</option>
+            </select>
+          </label>
+          <label class="opt-check">
+            <input type="checkbox" id="animal-english"> 時々英語の接頭語を追加 (かわいいNekoスタイル)
+          </label>
+          <button class="btn btn--primary" id="animal-go">生成する</button>
+        </div>
+      </div>
+
+      <!-- FUSION -->
+      <div class="tabpanel" data-panel="fusion">
+        <h2 class="tabpanel__title">融合（フュージョン）和風名</h2>
+        <p class="tabpanel__desc">あなたの言語から単語を入力してください（または空欄のままにするとランダムな単語が選択されます）。日本語の単語と組み合わせて、シャドウキツネやムーンダンスなど、アニメ風のかっこいい和風ハンドルを生成します。フォーマットオプション（キャメルケース、スペース、ハイフン、アンダースコア、小文字、パイプ区切り）で、konekomaru や YukiKitsune のようなハンドルネーム風の名前にできます。</p>
+
+        <div class="opts">
+          <label class="fusion-word-label">Your word
+            <input type="text" id="fusion-user-word" maxlength="24" placeholder="例：Shadow, Dream, Star, Fire, 炎, 月, ..." autocomplete="off" spellcheck="false">
+          </label>
+          <label>生成数 <input type="number" id="fusion-count" min="1" max="30" value="8"></label>
+          <label>書式
+            <select id="fusion-style">
+              <option value="camel">キャメルケース (ShadowKitsune)</option>
+              <option value="space">スペース区切り (Shadow Kitsune)</option>
+              <option value="hyphen">ハイフン区切り (Shadow-Kitsune)</option>
+              <option value="under">アンダースコア (Shadow_Kitsune)</option>
+              <option value="lower">すべて小文字 (shadowkitsune)</option>
+              <option value="pipe">パイプ区切り (Shadow | Kitsune)</option>
+            </select>
+          </label>
+          <label>雲囲気
+            <select id="fusion-vibe">
+              <option value="all">すべて</option>
+              <option value="cute">かわいい</option>
+              <option value="cool">クール</option>
+              <option value="dark">ダーク／神秘的</option>
+              <option value="strong">力強い／壮大</option>
+              <option value="elegant">上品（語彙を名前に）</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="fusion-go">生成する</button>
+        </div>
+        <p class="fusion-hint muted small">ヒント: 各結果の ⇄ ボタンで順序を反転できます（モチル検索キーワードが先 ↔ 日本語が先）。再生成は不要です。</p>
+      </div>
+
+      <!-- IRL -->
+      <div class="tabpanel" data-panel="irl">
+        <h2 class="tabpanel__title">実在の和名辞典</h2>
+        <p class="tabpanel__desc">男性・女性・性別中立のキャラクター向けに、実在する日本人の名と姓を提供。文化的に本物で、アニメとの直接的な関連はありません。日本で多い100の姓（家族名）と性別タグ付きの名を含み、すべての名前は日常的に使われている実在の日本人名です。</p>
+        <div class="opts">
+          <label>Results <input type="number" id="irl-count" min="1" max="30" value="8"></label>
+          <label>Gender
+            <select id="irl-gender">
+              <option value="any">指定なし</option>
+              <option value="male">男性</option>
+              <option value="female">女性</option>
+              <option value="neutral">性別中立</option>
+            </select>
+          </label>
+          <label>Order
+            <select id="irl-order">
+              <option value="japanese">日本語順（田中ゆき）</option>
+              <option value="western">西洋順（ゆき田中）</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="irl-go">生成する</button>
+        </div>
+      </div>
+
+      <!-- MYTHOLOGY -->
+      <div class="tabpanel" data-panel="mythology">
+        <h2 class="tabpanel__title">Mythology names</h2>
+        <p class="tabpanel__desc">神道神社、仏教寺院、妖怪、神々、伝説の戦士、武道用語から組み合わせる和風・神話創作名。出典: 古事記、日本書紀、Wikipedia、Wiktionary。すべて実在の文化資料由来で、特定作品に紐づきません。神社風姓、氏族風複合名、日本の精神性と武道の伝統に根ざした神秘的で古風な雰囲気を纏う「古き世の戦士」風キャラクター名に。</p>
+        <div class="opts">
+          <label>Source
+            <select id="myth-source">
+              <option value="figure" selected>👹 神話上の人物（妖怪、神々、伝説の英雄）</option>
+              <option value="shrine">⛩️ 神社・お寺（実在する文化遺産）</option>
+              <option value="martial">⚔️ 武道の用語 (剣聖、武士、刀など)</option>
+            </select>
+          </label>
+          <label>Results <input type="number" id="myth-count" min="1" max="30" value="8"></label>
+          <label>Mode
+            <select id="myth-mode">
+              <option value="standalone">単独（元の名前をそのまま使用）</option>
+              <option value="with_given">実在する名と組み合わせる</option>
+            </select>
+          </label>
+          <label class="opt-shown-when" data-show-when="with_given">Given-name gender
+            <select id="myth-gender">
+              <option value="any">指定なし</option>
+              <option value="male">男性</option>
+              <option value="female">女性</option>
+              <option value="neutral">性別中立</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" id="myth-go">生成する</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" aria-live="polite">
+        <p class="results__empty">上のタブを選んで「生成する」を押してください</p>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__head">
+        <h3>💾 保存した名前 <span class="muted" id="saved-count">(0)</span></h3>
+        <button class="btn btn--ghost btn--sm" id="saved-clear">すべて削除</button>
+      </div>
+      <div class="saved__list" id="saved-list">
+        <p class="saved__empty">まだ保存された名前がありません。任意の結果の ⭐ をクリックしてここに追加できます。</p>
+      </div>
+      <p class="muted small">保存した名前はこのブラウザ内のみに保存されます（localStorage）。サーバーには同期されません。</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>これらの名前はどこから来ていますか？</summary>
+        <p>動物・融合（フュージョン）名は実際の日本語語彙（JMdict、 JLPT語彙リスト）から取得しています。IRL Names は公開されている日本人名・姓のデータから取得。神社・お寺の名称は日本の実在する文化施設です。詳細は <code>ATTRIBUTIONS.md</code> をご覧ください。</p>
+      </details>
+      <details>
+        <summary>融合（フュージョン）タブはどのように動作しますか？</summary>
+        <p>融合タブは、あなたの言語の単語と日本語の単語を組み合わせる方式です。あなたの言語の単語を最初に入力欄に入力し（例：「Shadow」「Dream」「Star」）、次に語彙を選択するか、組み合わせ方のオプションを選んでください。生成ボタンを押すと、あなたの単語と日本語の単語を組み合わせた名前（例：ShadowAozora = Shadow + 青空）が表示されます。各ページは独自の言語を持ちます：英語ページでは英語、オランダ語ページではオランダ語、ドイツ語ページではドイツ語、スペイン語ページではスペイン語、フランス語ページではフランス語、ポルトガル語ページではポルトガル語、ポーランド語ページではポーランド語。日本語側は入力に関わらず同じで、動物・自然・クール・単語そのまま名前の語彙プールから取得します。フォーマットオプション（キャメルケース、スペース、ハイフン、アンダースコア、小文字、パイプ）はすべて同じ動作をします。UIにはヒンディー語やタガログ語の融合オプションはなく、これらのロケールで閲覧しているユーザーには同じ英語の融合体験が表示されます。</p>
+      </details>
+      <details>
+        <summary>自分のオリジナルキャラクター（OC）やハンドルネームに使っても安全ですか？</summary>
+        <p>はい。特定のアニメキャラクター名、ファンWikiの名前、特定のフランチャイズに紐づく名前は出力しません。出力は一般的な日本語語彙、公開されている名前登録、神社・神話・武道の用語、そしてあなたの入力した単語から構成されています。意図的に著作権キャラクターに合致する名前を組み立てた場合のIPリスクはユーザー側にありますが、ジェネレーター自体はそのようなターゲットを狙う設計ではありません。</p>
+      </details>
+      <details>
+        <summary>これらの名前を Discord、TikTok、Instagram のユーザー名として使えますか？</summary>
+        <p>問題ありません。生成された名前の所有権や登録は一切行っておらず、リアルタイムの空き状況確認もしていません。ハンドルネームとして使いたい場合は、名前をコピーして各プラットフォームで直接検索してください。</p>
+      </details>
+      <details>
+        <summary>ヤンデレ／少年漫画／異世界のようなカテゴリーがないのはなぜですか？</summary>
+        <p>設計上の方針です。これらのジャンルは特定の作品・原作者に紐づいており、商標・著作権の侵害を避けるため、既存作品から直接名称を引用することは避けています。一般的な日本語語彙・文化・神話・武道の要素をベースにした、IP的に安全な名称に特化しています。</p>
+      </details>
+      <details>
+        <summary>神話タブには何がありますか？</summary>
+        <p>神話タブは、以下の3つの実際の日本文化ソースから名称を生成します：「Source」ドロップダウンで切り替え可能。<br><br><b>⛩️ 神社・お寺</b> — 伊勢神宮、伏見稲荷大社、鶴岡八幡宮などの実在する神社・お寺。単独の名としても、姓としても使えます。<br><br><b>👹 神話上の人物</b> — 朱雀、オロチ、稲荷、玉藻、毘沙門、金太郎などの妖怪・神道神・四象・伝説の英雄。古事記、日本書紀、Wikipedia から取得。<br><br><b>⚔️ 武道用語</b> — 剣聖、侍、刀、武道、剣豪などの実在する日本の武道用語と戦士の称号。<br><br>いずれの名称も日本の歴史・神話・武道伝承に実在する文化参照であり、特定の著作権キャラクターや現代作品から派生したものではありません。</p>
+      </details>
+      <details>
+        <summary>男性・女性キャラクターの名前を生成できますか？</summary>
+        <p>はい。IRL Names タブには性別選択機能（男性／女性／指定なしの3オプション）があります。男性（太郎、健一、翔）、女性（花子、美咲、陽菜）、または性別中立的な名前（葵、樹、陽）を選べます。</p>
+      </details>
+      <details>
+        <summary>日本人名、アニメキャラクター名、ニックネームを取得できますか？</summary>
+        <p>3つとも可能です。実在の日本人名（名・姓・両方）が必要な場合は、IRL Names タブで公開されている名前登録から取得。アニメ風のニックネームには、「かわいい」タブで動物・自然・優しい意象の日本語語彙を使用。日本語とあなたの言語をブレンドしたカスタム OC ハンドルには、「融合」タブ（最も一般的）であなたが入力した単語と日本語の単語を組み合わせます。</p>
+      </details>
+      <details>
+        <summary>サイヤ人風、鬼滅の刃風、英雄学科風、海賊団風の名前ジェネレーターはありますか？</summary>
+        <p>ラベル付きカテゴリーとしては用意していません。サイトはIP的に安全な設計のため、特定の作品や商標から直接名前を引用することは避けています。ただし「融合」タブ + 「神話」タブを組み合わせれば、サイヤ人風の強そうな和風名（例：雷神 + 龍 = 雷龍）や、鬼滅風の大和魂を連想させる和名（例：斬月 + 暁 = 斬暁）を生成できます。</p>
+      </details>
+      <details>
+        <summary>これは「かわいい」名前ジェネレーターですか？</summary>
+        <p>Yes — the かわいい tab is exactly that. It pulls from real Japanese words for animals, nature, plants, weather, and gentle imagery (cat 猫, sakura 桜, yuki 雪, momo 桃, etc.) and pairs them with kawaii-friendly suffixes like <code>-chan</code> and <code>-maru</code>. If you want a kawaii name, click the かわいい tab, pick "かわいい" or "Kawaii" suffix, and hit Generate.</p>
+      </details>
+      <details>
+        <summary>和風姓・一族名を取得できますか？</summary>
+        <p>はい — IRL Names タブは日本で多い100の姓（佐藤、鈴木、田中、渡辺、伊藤など）と性別タグ付きの名を提供します。複合的な一族・部族風の名前には、融合タブで姓と姓または姓と神社名を組み合わせてください（例：影 + 一族 = 影一族）。</p>
+      </details>
+      <details>
+        <summary>異世界風・少年漫画戦士風の名前ジェネレーターはありますか？</summary>
+        <p>ラベル付きカテゴリーとしては用意していません。サイトはIP的に安全な設計のため、特定のアニメ・マンガのジャンル名や商標から直接名前を引用することは避けています。「融合」タブ + 「神話」タブ（武士、剣豪、武道用語）を組み合わせれば、異世界・少年漫画的な響きを持つ和風ハンドルを生成できます。</p>
+      </details>
+      <details>
+        <summary>これはオタク／ウェッブ向け名前ジェネレーターですか？</summary>
+        <p>「オタクが作った、オタクの気持が分かるウェッブ向け名前ジェネレーター」という意味であれば、はい。このサイトはアニメ・漫画・和風文化が好きなユーザーが、自分のオリジナルキャラクターやハンドルネームに使える名前を探すために作りました。</p>
+      </details>
+    </section>
+
+    <!-- Ad slot: in-feed, after FAQ.
+         Hidden via CSS until body[data-cc-ads="1"] is set (cookie consent given).
+         The inner content swaps to a real <ins class="adsbygoogle"> tag
+         automatically when window.ADSENSE_CLIENT is defined (set by you after
+         AdSense approval). Until then, a visible placeholder explains the
+         delay to anyone inspecting the source. -->
+    <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+      <span class="ad-slot__label">Advertisement</span>
+      <span class="ad-slot__note" data-adsense-placeholder>
+        This space will display a Google AdSense ad unit once the site is approved
+        and you've added the AdSense code snippet. We won't load any ad network
+        scripts until the visitor accepts non-essential cookies via the banner at
+        the bottom of the page.
+      </span>
+      <ins class="adsbygoogle ad-slot__ins"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client=""
+           data-ad-slot=""
+           data-adsbygoogle-status="0"></ins>
+    </aside>
+    <script>
+      // If the publisher set a client ID, swap the placeholder for the real ad
+      // and fire the loader (which is also gated on consent in cookie-consent.js).
+      (function () {
+        if (typeof window === 'undefined' || !window.ADSENSE_CLIENT) return;
+        var placeholder = document.querySelector('[data-adsense-placeholder]');
+        if (placeholder) placeholder.style.display = 'なし';
+        var ins = document.querySelector('ins.adsbygoogle');
+        if (ins) {
+          ins.setAttribute('data-ad-client', window.ADSENSE_CLIENT);
+          if (window.ADSENSE_SLOT) ins.setAttribute('data-ad-slot', window.ADSENSE_SLOT);
+        }
+        if (window.loadAdSense) window.loadAdSense();
+      })();
+    </script>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>和風ハンドルジェネレーターは <a href="/">anime.gethandlenames.com</a> の一部です。無料、登録不要、基本的な解析以外の跡跡なし。</p>
+      <p class="muted small">Data sources: JMdict (CC BY-SA 4.0), JLPT community vocab (MIT), Wiktionary (CC BY-SA 4.0), Wikipedia (CC BY-SA 4.0). See <code>ATTRIBUTIONS.md</code>.</p>
+      <p class="footer__legal muted small">
+        <a href="../privacy/">Privacy</a> ·
+        <a href="../about/">About</a> ·
+        <a href="../contact/">Contact</a> ·
+        <a href="#" data-cc-settings>Cookie 設定</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="share-modal" id="share-modal" hidden role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+    <div class="share-modal__backdrop" data-close></div>
+    <div class="share-modal__panel">
+      <div class="share-modal__head">
+        <h3 id="share-modal-title">この名前を共有</h3>
+        <button class="iconbtn" data-close title="閉じる">✕</button>
+      </div>
+      <div class="share-modal__preview">
+        <canvas id="share-canvas" width="1200" height="630"></canvas>
+      </div>
+      <p class="share-modal__caption muted small" id="share-caption"></p>
+      <div class="share-modal__actions">
+        <button class="btn btn--primary" id="share-download">⬇️ PNG をダウンロード</button>
+        <button class="btn btn--ghost"   id="share-native">📱 Share…</button>
+        <button class="btn btn--ghost"   id="share-copy">📋 画像をコピー</button>
+      </div>
+      <p class="share-modal__note muted small">
+        ヒント：PNG は 1200×630 — Twitter/X、Discord、Pinterest、OG プレビュー用の標準サイズです。
+      </p>
+    </div>
+  </div>
+
+  <script>window.FUSION_I18N = {"language_labels":{"en":{"English":"English","German":"German","Dutch":"Dutch","Spanish":"Spanish","French":"French","Portuguese":"Portuguese","Polish":"Polish"},"de":{"English":"Englisch","German":"Deutsch","Dutch":"Niederländisch","Spanish":"Spanisch","French":"Französisch","Portuguese":"Portugiesisch","Polish":"Polnisch"},"es":{"English":"Inglés","German":"Alemán","Dutch":"Neerlandés","Spanish":"Español","French":"Francés","Portuguese":"Portugués","Polish":"Polaco"},"fr":{"English":"Anglais","German":"Allemand","Dutch":"Néerlandais","Spanish":"Espagnol","French":"Français","Portuguese":"Portugais","Polish":"Polonais"},"nl":{"English":"Engels","German":"Duits","Dutch":"Nederlands","Spanish":"Spaans","French":"Frans","Portuguese":"Portugees","Polish":"Pools"},"pt":{"English":"Inglês","German":"Alemão","Dutch":"Holandês","Spanish":"Espanhol","French":"Francês","Portuguese":"Português","Polish":"Polonês"},"pl":{"English":"angielski","German":"niemiecki","Dutch":"holenderski","Spanish":"hiszpański","French":"francuski","Portuguese":"portugalski","Polish":"polski"},"ar":{"English":"إنجليزي","German":"ألماني","Dutch":"هولندي","Spanish":"إسباني","French":"فرنسي","Portuguese":"برتغالي","Polish":"بولندي"},"id":{"English":"Inggris","German":"Jerman","Dutch":"Belanda","Spanish":"Spanyol","French":"Prancis","Portuguese":"Portugis","Polish":"Polandia"},"ms":{"English":"Inggeris","German":"Jerman","Dutch":"Belanda","Spanish":"Sepanyol","French":"Perancis","Portuguese":"Portugis","Polish":"Poland"},"vi":{"English":"Tiếng Anh","German":"Tiếng Đức","Dutch":"Tiếng Hà Lan","Spanish":"Tiếng Tây Ban Nha","French":"Tiếng Pháp","Portuguese":"Tiếng Bồ Đào Nha","Polish":"Tiếng Ba Lan"},"hi":{"English":"अंग्रेज़ी","German":"जर्मन","Dutch":"डच","Spanish":"स्पेनिश","French":"फ़्रेंच","Portuguese":"पुर्तगाली","Polish":"पोलिश"},"ur":{"English":"انگریزی","German":"جرمن","Dutch":"ڈچ","Spanish":"ہسپانوی","French":"فرانسیسی","Portuguese":"پرتگالی","Polish":"پولش"},"zh":{"English":"英语","German":"德语","Dutch":"荷兰语","Spanish":"西班牙语","French":"法语","Portuguese":"葡萄牙语","Polish":"波兰语"},"ko":{"English":"영어","German":"독일어","Dutch":"네덜란드어","Spanish":"스페인어","French":"프랑스어","Portuguese":"포르투갈어","Polish":"폴란드어"},"ru":{"English":"английский","German":"немецкий","Dutch":"голландский","Spanish":"испанский","French":"французский","Portuguese":"португальский","Polish":"польский"},"uk":{"English":"англійська","German":"німецька","Dutch":"голландська","Spanish":"іспанська","French":"французька","Portuguese":"португальська","Polish":"польська"},"yo":{"English":"Gẹ̀ẹ́sì","German":"Jámánì","Dutch":"Dúkì","Spanish":"Sípéénì","French":"Faránsé","Portuguese":"Pọtúgí","Polish":"Pólàndì"},"bn":{"English":"ইংরেজি","German":"জার্মান","Dutch":"ওলন্দাজ","Spanish":"স্প্যানিশ","French":"ফরাসি","Portuguese":"পর্তুগিজ","Polish":"পোলিশ"},"th":{"English":"อังกฤษ","German":"เยอรมัน","Dutch":"ดัตช์","Spanish":"สเปน","French":"ฝรั่งเศส","Portuguese":"โปรตุเกส","Polish":"โปแลนด์"},"hu":{"English":"angol","German":"német","Dutch":"holland","Spanish":"spanyol","French":"francia","Portuguese":"portugál","Polish":"lengyel"},"ja":{"English":"英語","German":"ドイツ語","Dutch":"オランダ語","Spanish":"スペイン語","French":"フランス語","Portuguese":"ポルトガル語","Polish":"ポーランド語"}},"meanings":{"ja":{"affectionate suffix":"親愛を込めた接尾辞","apple":"りんご","arrow":"矢","bear":"熊","bee":"蜂","bird":"鳥","butterfly":"蝶","cat":"猫","cherry blossom":"桜","cicada":"蝉","cloud":"雲","cow":"牛","deer":"鹿","demon/ogre":"鬼","dog":"犬","dove/pigeon":"鳩","dragon":"龍","dragon god":"龍神","dream":"夢","ear":"耳","fang":"牙","fire":"火","firefly":"蛍","fireworks":"花火","flame":"炎","flower":"花","fox (mythic)":"狐（神話的）","fox (mythical)":"狐（神話）","fox":"狐","forest":"森","ghost":"幽霊","goldfish":"金魚","hawk":"鷹","heart":"心","heart (on'yomi)":"心（音読み）","heart / spirit":"心・精神","horse":"馬","iris (the flower)":"アイリス（花）","koala":"コアラ","lightning":"稲妻","lotus":"蓮","love":"愛","mandarin orange":"みかん","mandarin orange tree":"蜜柑の木","mist":"霧","monkey":"猿","moon":"月","orchid":"蘭","panda":"パンダ","peach":"桃","pheasant":"雉","pig":"豚","rabbit":"兎","raccoon dog (mythic)":"狸（神話的）","rain":"雨","rainbow":"虹","rose":"薔薇","sea":"海","sea / ocean":"海・大洋","sea/ocean":"海/大洋","shadow":"影","sheep":"羊","sky":"空","snow":"雪","sparrow":"雀","star":"星","storm":"嵐","strawberry":"苺","sunflower":"向日葵","sword":"剣","sword (alt)":"剣（別）","thousand":"千","thunder":"雷","tonight":"今夜","tree":"木","violet":"菫","violet (the flower)":"菫（花）","water":"水","wave":"波","white":"白","wind":"風","wolf":"狼","black":"黒","blue":"青","blue sky":"青空","green / verdure":"緑・緑地","red":"赤","pink (dianthus) / 'lovely girl'":"ピンク（撫子）・「可愛い少女」","brave":"勇敢","bright / clear":"明るい・澄んだ","calm (of the sea)":"穏やか（海の）","cool":"涼しい","cool sound / refreshing tone":"涼やかな音・さわやかな音色","cool sound":"涼やかな音","cruel":"残酷","cute":"かわいい","cute suffix (sound)":"かわいい接尾辞（響き）","cute suffix":"かわいい接尾辞","circle/pet suffix":"円・ペット接尾辞","pet suffix":"ペット接尾辞","dark":"闇","darkness":"暗黒","dawn":"夜明け","far / distant":"遠い・遠くの","far":"遠い","distant":"遠くの","gentle (rain)":"優しい（雨）","glitter / silk (glamour)":"輝き・絹（魅力）","sparkle/glitter":"煌めき・輝き","silk (glamour)":"絹（魅力）","gold":"金","jade":"翡翠","silver":"銀","silver (glamour)":"銀（魅力）","indigo":"藍","brown":"茶","tall":"背が高い","tall + bridge":"高い・橋","tall / high / lofty":"高い・高い・高貴な","small + forest":"小さい・森","small path / lane":"小道・路地","small/tiny":"小さい・とても小さい","long (of time)":"長い（時間の）","long-lasting sky / eternity":"永遠の空・永遠","long-lasting sky":"永遠の空","long-lasting sky / eternal sky":"永遠の空・果てしない空","infinity":"無限","eternity":"永遠","together / paired":"一緒・対","double / pair":"二つ・対","ancient":"古代の","young leaves / fresh leaves":"新芽・若葉","young leaves":"新葉","fresh leaves":"若葉","bamboo":"竹","plum":"梅","pine":"松","camellia":"椿","camellia flower":"椿の花","lily of the valley":"鈴蘭","hydrangea":"紫陽花","hollyhock / mallow":"葵・錦葵","good fortune":"幸運","wisdom / friend":"知恵・友","wisdom":"知恵","friend":"友","peaceful / easy":"穏やか・優しい","easy":"易しい","shrine":"神社","helpful; helping":"助ける","grove":"森","reason":"理由","words":"言葉","helping; helper":"助ける手","axe":"斧","shield":"盾","spear":"槍","helmet":"兜","gate":"門","crown":"王冠","study/repair":"学ぶ・修繕する","seven + sea":"七つの海","seven":"七","eight":"八","nine":"九","ten":"十","two":"二","three":"三","four":"四","five":"五","six":"六","first":"最初","achieve":"達成する","achieve + also":"達成・さらに","also":"また","assist":"助力する","celebrate":"祝う","beach":"浜辺","beautiful":"美しい","beauty + cherry blossom":"美・桜","beautiful + cherry blossom":"美しい・桜","beauty":"美","bell + tree":"鈴・木","blessed":"祝福された","blessed + child":"祝福された・子","blessing":"祝福","bloom":"開花","bookmark":"しおり","cape":"岬","child":"子","clear":"澄んだ","colorful":"色とりどりの","corpse":"死体","demon":"鬼","design":"設計","dignified":"威厳のある","dove":"鳩","evening glow / sunset":"夕焼け・夕日","evening glow":"夕焼け","excellent":"秀でた","february (traditional)":"二月（和名）","february":"二月","festival":"祭り","festival + tree":"祭・木","falling cherry blossoms":"散る桜","scattered / falling cherry blossoms":"散る・落ちる桜","falcon person":"隼人","autumn leaf":"紅葉","artisan":"職人","craftsman":"職人","dianthus":"撫子","attire":"衣服","formal dress / attire":"正装・衣服","garment":"衣服","gauze":" gauze","good + rice field":"良い・稲田","guardian":"守護者","hill":"丘","hillside":"丘陵の斜面","intelligent":"聡明な","lake":"湖","fragrance":"香り","mountain":"山","mountain + base":"山・麓","mountain + village":"山・村","morning sun":"朝日","new moon":"新月","heavenly moon":"天の月","heavenly moon / new moon":"天の月・新月","well":"井戸","pure":"清い","wisteria (Fujiwara branch)":"藤（藤原氏）","plain":"平野","sun":"太陽","sun + soar":"太陽・舞い上がる","land":"土地","land + sun":"土地・太陽","courage":"勇気","middle + village":"中央・村","add + wisteria":"加える・藤","crossing + side":"交差点・側","greens":"野菜","night sky":"夜空","shoreline / beach":"海岸・浜辺","valley":"谷","soul/spirit":"魂・精神","thrush (bird)":"鶫（鳥）","four seasons":"四季","assist + tree":"助力・木","aster":"紫苑","aster / remembrance of sound":"紫苑・音の記憶","remembrance of sound":"音の記憶","remains":"残骸","remains/corpse":"残骸・死体","daytime":"日中","dawn (time)":"夜明け（時）","sunset (time)":"日没（時）","rest":"休息","play":"遊ぶ","sing":"歌う","dance":"踊る","secluded place":"人里離れた場所","base + village":"麓・村","grand":"壮大な","bright (light)":"明るい（光）","dawn (light)":"夜明け（光）","help":"助力","brighten":"照らす","honest":"正直","rapids":"急流","twilight":"黄昏","twilight + nap + greens":"黄昏・昼寝・野菜","nap":"昼寝","field":"野原","mar":"泥","correct":"正しい","will":"意志","view":"眺め","ancient clan":"古代氏族","ancient name for japan":"日本の古名","flat":"平らな","grass":"草","great harmony":"大和","harbor + view":"港・眺め","heaven":"天","heaven + field":"天・野","grass + leaf":"草・葉","flame + sandalwood":"炎・白檀","bamboo + grove":"竹・森","tolerant":"寛容な","well + barrier":"井戸・垣","tolerant / generous":"寛容・気前の良い","generous":"気前の良い","above":"上","wide truth":"広い真","sincerity / truth":"誠・真","castle":"城","river":"川","happiness + light, radiance":"幸福・光、輝き","thread / string":"糸・弦","that + wisteria":"それ・藤","subtle, mysterious profundity":"微かな神秘的な深さ","spring (season)":"春","autumn":"秋","summer":"夏","winter":"冬","Mt. Fuji + view":"富士・眺め","bright + village":"明るい・村","flower + sound":"花・音","rice field + middle":"稲田・中央","helper + wisteria (Fujiwara branch)":"助力・藤（藤原氏）","carp":"鯉","carp streamer":"鯉のぼり","claw":"爪","cloud (also: spider)":"雲（くも：くも、雲）","cold wintry wind":"冷たい冬の風","ice":"氷","king":"王","king (loanword)":"キング（外来語）","knight":"騎士","light":"光","light / lamp":"光・灯火","light / radiance":"光・光芒","radiance":"光芒","rustic, impermanent beauty":"素朴、無常の美","sake cup":"酒杯","summer hope":"夏の希望","sunlight filtering through leaves":"木漏れ日","white-crested waves":"白波","fish":"魚","tiger":"虎","strong":"強い","circle":"円","brighten + bird":"照らす・鳥","impermanent beauty":"無常の美","bear (the animal)":"熊（動物）","thoughts":"思い","refreshing tone":"清涼な音色","soar":"舞い上がる","harbor":"港","swift wind":"疾風","great":"大","leisurely":"悠々","truth":"真","ladle":"ひしゃく","person":"人","mediate":"仲介","spring":"春","alt reading":"別読み","healthy":"健康","second":"次","warrior":"戦士","bright":"明るい","voyage":"旅","peace":"平和","i":"私","hollyhock":"葵","dignified, cold-crisp":"凛とした","tie":"結ぶ","pongee":"紬","hand-spun silk":"手織り絹","one":"一","ship channel":"水路","sprout":"芽","rely":"頼る","good":"良","gentle":"優しい","nara":"奈良","far, distant":"遠い","painting":"絵画","village":"村","sound":"音","jasmine":"ジャスミン","zero, spirit":"零・精神","calm":"穏やか","light, radiance":"光・輝き","silk, glisten":"絹・光沢","thread":"糸","bell":"鈴","gentle, excellent":"優しい・秀でた","people":"人々","transparent":"透明","helper":"助力","wisteria":"藤","fujiwara branch":"藤原氏分流","bridge":"橋","rice field":"田","middle":"中","crossing":"交差点","side":"側","that":"それ","base":"基","small":"小","add":"加える","mouth":"口","kinds":"種類","mt. fuji":"富士山","hakama":"袴","sunny place":"日向","rice":"稲","leaf":"葉","barrier":"垣","mirror":"鏡","kudzu":"葛","paulownia":"桐","life":"命","traditional":"伝統的","mow":"刈る","legendary sword clan":"伝説の刀剣一族","phantom":"幻","illusion":"幻影","house":"家","purple":"紫","long":"長い","swamp":"沼","jujube":"ナツメ","study":"学ぶ","repair":"修繕","wing":"翼","island":"島","inside":"内側","happiness":"幸福","I":"私","Fujiwara branch":"藤原氏分流","Mt. Fuji":"富士山","February":"二月","Nara":"奈良","ancient name for Japan":"日本の古名","February (traditional)":"二月（伝統的）","great harmony (ancient name for Japan)":"大和（日本の古名）","mow (legendary sword clan)":"刈る（伝説の刀剣一族）","pongee (hand-spun silk)":"紬（手織り絹）","plain (ancient clan)":"平野（古代氏族）","courage (alt reading)":"勇気（別読み）","calm (sea)":"穏やか（海）","castle (ancient clan)":"城（古代氏族）"}}};</script>
+  <script defer src="../../js/generator.min.js"></script>
+  <script defer src="../../js/share-card.min.js"></script>
+  <script defer src="../../js/cookie-consent.min.js"></script>
+  <script>
+    const $  = (sel) => document.querySelector(sel);
+    const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+    // Share card labels: localized values for the share-card.png canvas text.
+    // The share-card.js looks for these window globals and falls back to English.
+    window.SHARE_CARD_LABEL    = "和風ハンドルジェネレーター";
+    window.SHARE_CARD_WATERMARK = "anime.gethandlenames.com  ·  anime handle generator";
+    window.SHARE_CARD_CAPTION  = "${name.romaji} — check out anime.gethandlenames.com/anime-names";
+
+    // Tag labels: localized values for the small pink tag pills on result cards.
+    // Populated from the page's locale translations; falls back to the raw English tag.
+    const TAG_LABELS = {"cute":"かわいい","cool":"クール","dark":"ダーク","elegant":"上品","epic":"壮大","strong":"力強い","mysterious":"神秘的","nature":"自然","animal":"動物","adjective":"形容詞","vocab":"語彙","mythic":"神話的","martial":"武道的","shrine":"神社","temple":"寺院","gentle":"優しい","light":"光","dreamy":"夢のような","playful":"遊び心","plush":"ふわふわ","pure":"清い","romance":"恋愛","moody":"物憂げ","peace":"平和","sweet":"甘い","pet":"ペット","night":"夜","sky":"空","spring":"春","summer":"夏","winter":"冬","place":"場所","noun":"名詞","prefix":"接頭辞","suffix":"接尾辞","male":"男性","female":"女性","masculine":"男性的","feminine":"女性的","gender-neutral":"性別中立","neutral":"中立","family-name":"姓","surname":"姓","with-given":"名と組み合わせ","real":"実在","cultural":"文化的","figure":"神話上の人物","name":"名前","shrine-inspired":"神社風","standalone":"単独"};
+
+    let DATA_READY = false;
+
+    async function init() {
+      try {
+        await JapaneseNameGenerator.loadDataFromUrls('../../data/');
+        DATA_READY = true;
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        $('#results').innerHTML = '<p class="results__error">Couldn\'t load name data. Please refresh.</p>';
+        return;
+      }
+      wireTabs();
+      wireGenerateButtons();
+      wireClearSaved();
+      wireShrineModeToggle();
+      wireFusionSubtabs();
+      wireShareModal();
+      renderSaved();
+    }
+
+    function wireTabs() {
+      $$('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          $$('.tab').forEach(b => b.classList.remove('is-active'));
+          $$('.tabpanel').forEach(p => p.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          $(`.tabpanel[data-panel="${btn.dataset.tab}"]`).classList.add('is-active');
+        });
+      });
+    }
+
+    // FUSION_LANG is now per-page (set at build time from LANG_META[loc].fusionLang).
+    // The in-panel language picker is removed — each localized page uses its own language.
+    let FUSION_LANG = 'english';
+
+    function wireFusionSubtabs() {
+      // No-op kept for backward compat with the existing init() flow.
+      // The Fusion tab now has a free-text input (#fusion-user-word) and uses
+      // FUSION_LANG (set at build time) as the fallback word-bank language.
+    }
+
+    function wireShrineModeToggle() {
+      const modeSel = $('#myth-mode');
+      const handler = () => {
+        const isPaired = modeSel.value === 'with_given';
+        $$('.opt-shown-when').forEach(el => {
+          el.style.display = (el.dataset.showWhen === 'with_given' && isPaired) ? '' : 'なし';
+        });
+      };
+      modeSel.addEventListener('change', handler);
+      handler();
+    }
+
+    function wireGenerateButtons() {
+      $('#animal-go').addEventListener('click',  () => runGenerator('animal'));
+      $('#fusion-go').addEventListener('click',  () => runGenerator('fusion'));
+      $('#irl-go').addEventListener('click',     () => runGenerator('irl'));
+      $('#myth-go').addEventListener('click',    () => runGenerator('mythology'));
+    }
+
+    function runGenerator(kind) {
+      if (!DATA_READY) return;
+      // For mythology, lazy-load the data first if not already loaded —
+      // saves ~45KB on initial paint for users who only use かわいい/IRL.
+      if (kind === 'mythology') {
+        return JapaneseNameGenerator.loadMythology('../../data/').then(() => {
+          const results = JapaneseNameGenerator.generateMythology({
+            count: +$('#myth-count').value || 8,
+            source: $('#myth-source').value,
+            mode: $('#myth-mode').value,
+            withGivenGender: $('#myth-gender').value,
+          });
+          renderResults(results);
+        });
+      }
+      let results = [];
+      switch (kind) {
+        case 'animal':
+          results = JapaneseNameGenerator.generateAnimal({
+            count: +$('#animal-count').value || 8,
+            suffixes: $('#animal-suffix').value.split(','),
+            includeEnglish: $('#animal-english').checked,
+          });
+          break;
+        case 'fusion':
+          results = JapaneseNameGenerator.generateFusion({
+            count: +$('#fusion-count').value || 8,
+            style: $('#fusion-style').value,
+            // Order is per-card now — see swap handler below. The generate
+            // call still defaults to "lang-first" (your-word first) since
+            // each result carries both renderings.
+            order: 'lang-first',
+            language: FUSION_LANG,
+            userWord: ($('#fusion-user-word')?.value || '').trim(),
+            vibeFilter: $('#fusion-vibe').value,
+          });
+          break;
+        case 'irl':
+          results = JapaneseNameGenerator.generateRealistic({
+            count: +$('#irl-count').value || 8,
+            gender: $('#irl-gender').value,
+            order: $('#irl-order').value,
+          });
+          break;
+      }
+      renderResults(results);
+    }
+
+    function renderResults(results) {
+      const el = $('#results');
+      if (!results || results.length === 0) {
+        el.innerHTML = '<p class="results__empty">結果がありません — 条件を変更して再度お試しください。</p>';
+        return;
+      }
+      el.innerHTML = results.map((r, i) => `
+        <article class="card" data-idx="${i}"${r.type === 'fusion' ? ' data-fusion="1"' : ''}>
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(r.romaji)}</div>
+            ${r.kanji   ? `<div class="card__kanji">${escapeHtml(r.kanji)}</div>` : ''}
+            ${r.hiragana? `<div class="card__hira">${escapeHtml(r.hiragana)}</div>` : ''}
+            ${Array.isArray(r.tags) && r.tags.length ? `<div class="card__tags">${r.tags.slice(0, 4).map(t => `<span class="tag">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('')}</div>` : ''}
+            ${r.meaning ? `<div class="card__meaning">${escapeHtml(r.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn iconbtn--labeled" data-action="copy"  title="コピー"  aria-label="コピー"><span class="iconbtn__icon">📋</span><span class="iconbtn__label">コピー</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="share" title="共有" aria-label="共有"><span class="iconbtn__icon">📤</span><span class="iconbtn__label">共有</span></button>
+            <button class="iconbtn iconbtn--labeled" data-action="save"  title="保存"  aria-label="保存"><span class="iconbtn__icon">⭐</span><span class="iconbtn__label">保存</span></button>
+            ${r.type === 'fusion' ? `<button class="iconbtn iconbtn--labeled" data-action="swap" title="Flip order: your-word-first ↔ Japanese-first" aria-label="順序を入れ替え"><span class="iconbtn__icon">⇄</span><span class="iconbtn__label">入れ替え</span></button>` : ''}
+          </div>
+        </article>
+      `).join('');
+
+      el.querySelectorAll('.card').forEach((cardEl, idx) => {
+        const name = results[idx];
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(name.romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          await shareOrFallback(name);
+        });
+        cardEl.querySelector('[data-action="save"]').addEventListener('click', () => {
+          JapaneseNameGenerator.addSaved(name);
+          renderSaved();
+          toast('保存しました ⭐');
+        });
+        // Fusion-only: per-card order swap (your-word-first ↔ Japanese-first)
+        const swapBtn = cardEl.querySelector('[data-action="swap"]');
+        if (swapBtn) {
+          swapBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Flip between the two pre-rendered strings stored on the result.
+            const flipped = (name._order === 'lang-first') ? name._japaneseFirst : name._langFirst;
+            if (!flipped) return;
+            name.romaji = flipped;
+            name._order = (name._order === 'lang-first') ? 'japanese-first' : 'lang-first';
+            name.kanji  = (name._order === 'lang-first') ? name._kanjiLangFirst  : name._kanjiJapaneseFirst;
+            name.hiragana = (name._order === 'lang-first') ? name._hiraLangFirst : name._hiraJapaneseFirst;
+            // Re-render this card
+            const main = cardEl.querySelector('.card__main');
+            main.innerHTML = `
+              <div class="card__romaji">${escapeHtml(name.romaji)}</div>
+              ${name.kanji   ? `<div class="card__kanji">${escapeHtml(name.kanji)}</div>` : ''}
+              ${name.hiragana? `<div class="card__hira">${escapeHtml(name.hiragana)}</div>` : ''}
+              ${name.meaning ? `<div class="card__meaning">${escapeHtml(name.meaning)}</div>` : ''}
+            `;
+            toast('Order flipped ↔');
+          });
+        }
+      });
+    }
+
+    function renderSaved() {
+      const list = JapaneseNameGenerator.getSaved();
+      $('#saved-count').textContent = `(${list.length})`;
+      const wrap = $('#saved-list');
+      if (list.length === 0) {
+        wrap.innerHTML = '<p class="saved__empty">まだ保存された名前がありません。任意の結果の ⭐ をクリックしてここに追加できます。</p>';
+        return;
+      }
+      wrap.innerHTML = list.map(n => `
+        <article class="card card--compact" data-romaji="${escapeHtml(n.romaji)}">
+          <div class="card__main">
+            <div class="card__romaji">${escapeHtml(n.romaji)}</div>
+            ${n.kanji    ? `<div class="card__kanji">${escapeHtml(n.kanji)}</div>` : ''}
+            ${n.hiragana ? `<div class="card__hira">${escapeHtml(n.hiragana)}</div>` : ''}
+            ${n.meaning  ? `<div class="card__meaning small">${escapeHtml(n.meaning)}</div>` : ''}
+          </div>
+          <div class="card__actions">
+            <button class="iconbtn" data-action="copy" title="コピー">📋</button>
+            <button class="iconbtn" data-action="share" title="Share card">📤</button>
+            <button class="iconbtn" data-action="remove" title="Remove">🗑️</button>
+          </div>
+        </article>
+      `).join('');
+      wrap.querySelectorAll('.card').forEach(cardEl => {
+        const romaji = cardEl.dataset.romaji;
+        const item = list.find(n => n.romaji === romaji);
+        cardEl.querySelector('[data-action="copy"]').addEventListener('click', () => {
+          JapaneseNameGenerator.copyToClipboard(romaji).then(ok => toast(ok ? "toast('Copied!')" : "toast('Copy failed')"));
+        });
+        cardEl.querySelector('[data-action="share"]').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openShareModal(item);
+        });
+        cardEl.querySelector('[data-action="remove"]').addEventListener('click', () => {
+          JapaneseNameGenerator.removeSaved(romaji);
+          renderSaved();
+        });
+      });
+    }
+
+    function wireClearSaved() {
+      $('#saved-clear').addEventListener('click', () => {
+        if (JapaneseNameGenerator.getSaved().length === 0) return;
+        if (confirm('保存した名前をすべて削除しますか？')) {
+          JapaneseNameGenerator.clearSaved();
+          renderSaved();
+          toast('Cleared');
+        }
+      });
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      const el = $('#toast');
+      el.textContent = msg;
+      el.classList.add('is-show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('is-show'), 1500);
+    }
+
+    let CURRENT_SHARE = null;
+
+    // -----------------------------------------------------------------
+    //  Share-or-fallback: on mobile browsers that support the Web Share
+    //  API with file attachments (iOS Safari 12.1+, Android Chrome 75+),
+    //  tapping Share on a card opens the native OS share sheet directly
+    //  with the rendered PNG + a short caption. On desktop browsers
+    //  (where navigator.canShare({ files }) is false), we fall back to
+    //  the modal with Download / Share... / 画像をコピー buttons.
+    //
+    //  We do the support check synchronously on first share click and
+    //  cache the result so the second card share is instant.
+    // -----------------------------------------------------------------
+    let _nativeShareCapable = null;   // null = not checked yet
+    async function isNativeShareCapable() {
+      if (_nativeShareCapable !== null) return _nativeShareCapable;
+      _nativeShareCapable = await ShareCard.supportsNativeFileShare();
+      return _nativeShareCapable;
+    }
+
+    async function shareOrFallback(name) {
+      const capable = await isNativeShareCapable();
+      if (capable) {
+        // Render the share-card canvas and hand it to the OS share sheet
+        const canvas = ShareCard.render(name);
+        const result = await ShareCard.nativeShare(canvas, name);
+        if (result.shared) {
+          toast("共有しました（" + ` ${result.method === 'native-files' ? "share sheet" : "link"} ✨`);
+        } else if (result.cancelled) {
+          // user dismissed the sheet — no toast
+        } else {
+          // Share API was reported available but the call failed for some
+          // other reason (e.g. permission). Fall back to the modal.
+          toast('Share failed — opening options');
+          openShareModal(name);
+        }
+      } else {
+        openShareModal(name);
+      }
+    }
+
+    function openShareModal(name) {
+      const modal   = $('#share-modal');
+      const canvas  = $('#share-canvas');
+      const caption = $('#share-caption');
+
+      const generated = ShareCard.render(name);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(generated, 0, 0);
+
+      const cap = (name.kanji ? `${name.kanji} · ` : '') + name.romaji + (name.hiragana ? ` · ${name.hiragana}` : '');
+      caption.textContent = cap;
+
+      CURRENT_SHARE = { name, canvas: generated };
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeShareModal() {
+      $('#share-modal').hidden = true;
+      document.body.classList.remove('modal-open');
+      CURRENT_SHARE = null;
+    }
+
+    function wireShareModal() {
+      const modal = $('#share-modal');
+      modal.querySelectorAll('[data-close]').forEach(el => {
+        el.addEventListener('click', closeShareModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeShareModal();
+      });
+
+      $('#share-download').addEventListener('click', () => {
+        if (!CURRENT_SHARE) return;
+        const safe = (CURRENT_SHARE.name.romaji || 'anime-name')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        ShareCard.download(CURRENT_SHARE.canvas, `anime-name-${safe}.png`);
+        toast('ダウンロードしました ⬇️');
+      });
+
+      $('#share-native').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.nativeShare(CURRENT_SHARE.canvas, CURRENT_SHARE.name);
+        if (result.shared) {
+          toast("共有しました（" + ` ${result.method === 'native-files' ? "share sheet" : "text"} ✨`);
+        } else if (result.cancelled) {
+          // no toast
+        } else {
+          toast('共有に対応していません — ダウンロードをお試しくだずい');
+        }
+      });
+
+      $('#share-copy').addEventListener('click', async () => {
+        if (!CURRENT_SHARE) return;
+        const result = await ShareCard.copyToClipboard(CURRENT_SHARE.canvas);
+        if (result.copied) {
+          toast('画像をクリップボードにコピーしました 📋');
+        } else {
+          toast('コピーに対応していません — ダウンロードをお試しください');
+        }
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, "'")
+    }
+
+    
+    (function() {
+      const sel = document.getElementById('lang-switcher-select');
+      if (!sel) return;
+      const KNOWN_LOCALES = ['en', 'nl', 'de', 'es', 'fr', 'pt', 'pl', 'id', 'ms', 'vi', 'hi', 'bn', 'th', 'hu', 'zh', 'ko', 'ru', 'uk', 'yo', 'ur', 'ar', 'ja'];
+      sel.addEventListener('change', function() {
+        const target = sel.value;
+        if (!KNOWN_LOCALES.includes(target)) return;
+        const currentPath = window.location.pathname;
+        const segments = currentPath.split('/').filter(s => s.length > 0);
+        let currentLocale = 'en';
+        let pageSegments = segments;
+        if (segments.length > 0 && KNOWN_LOCALES.includes(segments[0])) {
+          currentLocale = segments[0];
+          pageSegments = segments.slice(1);
+        }
+        const pagePath = pageSegments.length > 0
+          ? '/' + pageSegments.join('/') + '/'
+          : '/';
+        const origin = window.location.origin;
+        const targetUrl = (target === 'en')
+          ? origin + pagePath
+          : origin + '/' + target + pagePath;
+        window.location.href = targetUrl;
+      });
+    })();
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
