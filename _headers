@@ -1,0 +1,83 @@
+# Cloudflare Pages _headers file
+# Format: path pattern, then one or more Header: value lines, blank line separator.
+# Comments start with # (Cloudflare Pages ignores them at runtime).
+# Reference: https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Path patterns:
+#   /*           — every URL on the site
+#   /anime-names/— exact match
+#   /de/*        — wildcard, every path under /de/
+# More specific paths override less specific ones.
+
+# =============================================================================
+#  Global security headers (apply to every URL on the site)
+# =============================================================================
+/*
+  # --- HSTS (HTTP Strict Transport Security) ---
+  # Tells browsers "only ever talk to this site over HTTPS for the next N seconds".
+  # Triggers HTTPS-only mode, prevents SSL-stripping downgrade attacks.
+  # ROLLOUT (bump in stages — only the max-age value changes between stages):
+  #   Stage 1 (now):  max-age=300         (5 minutes, easy to undo)
+  #   Stage 2 (~1 wk): max-age=86400      (1 day)
+  #   Stage 3 (~2 wk): max-age=2592000    (30 days)
+  #   Stage 4 (~1 mo): max-age=15552000   (180 days, recommended for production)
+  #                    + add "; preload" once you're fully committed
+  # includeSubDomains ensures every subdomain (e.g. tiktok.gethandlenames.com) is HTTPS-only too.
+  Strict-Transport-Security: max-age=300; includeSubDomains
+
+  # --- Clickjacking protection (X-Frame-Options) ---
+  # Old-school defense. SAMEORIGIN allows framing only by this site.
+  # Modern browsers (and our CSP frame-ancestors below) supersede this, but
+  # X-Frame-Options still has wider compatibility with very old user agents.
+  # Use DENY if you never want any framing (including same-origin).
+  X-Frame-Options: SAMEORIGIN
+
+  # --- MIME-type sniffing protection ---
+  # Stops browsers from guessing content types from file contents. Prevents
+  # upload-then-serve-as-script attacks. Safe to set everywhere.
+  X-Content-Type-Options: nosniff
+
+  # --- Referrer policy ---
+  # strict-origin-when-cross-origin: send full URL for same-origin, just origin
+  # for cross-origin HTTPS, nothing for downgrade. Best balance for SEO + privacy.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # --- COOP (Cross-Origin-Opener-Policy) ---
+  # Isolates browsing context from cross-origin popups. Required for some
+  # cross-origin-isolated features and prevents window.opener-based attacks.
+  # Use "same-origin-allow-popups" if you need to keep cross-origin window.open refs.
+  Cross-Origin-Opener-Policy: same-origin
+
+  # --- CORP (Cross-Origin-Resource-Policy) ---
+  # Stops this site's resources from being embedded by other origins.
+  # Same-site allows subdomains to use them.
+  Cross-Origin-Resource-Policy: same-site
+
+  # --- Permissions-Policy (was Feature-Policy) ---
+  # Disable powerful browser features this site doesn't need. Reduces attack
+  # surface if a future XSS or compromised dependency tries to use them.
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+
+  # --- CSP (Content-Security-Policy) ---
+  # The full CSP now lives here (HTTP header) instead of in a <meta> tag, so
+  # the frame-ancestors directive and any future nonce/strict-dynamic config
+  # will actually fire.
+  #
+  # Directives in plain English:
+  #   default-src 'self'                  — only load same-origin by default
+  #   script-src 'self' 'unsafe-inline'   — same-origin scripts + inline <script>
+  #                      'unsafe-eval'    — eval/Function (needed for the share-card canvas logic)
+  #                      plausible.io     — our privacy-friendly analytics
+  #                      agent.minimax.io — hosting platform's analytics widget
+  #                      *.googlesyndication.com / *.google.com — Google AdSense (when activated)
+  #                      *.doubleclick.net — AdSense back-end
+  #   style-src 'self' 'unsafe-inline'    — same-origin styles + inline <style> + Google Fonts CSS
+  #                      fonts.googleapis.com
+  #   font-src 'self' fonts.gstatic.com   — same-origin fonts + Google Fonts files
+  #   img-src 'self' data: blob: https:   — any HTTPS image, plus data: URIs (e.g. inline SVGs)
+  #   connect-src 'self' + analytics + AdSense endpoints — for fetch/XHR
+  #   frame-src https:                    — allow iframes from any HTTPS origin (AdSense needs this)
+  #   frame-ancestors 'none'              — equivalent of X-Frame-Options: DENY at CSP layer
+  #   base-uri 'self'                     — stop <base href> injection attacks
+  #   form-action 'self'                  — stop form submissions to attacker domains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io https://agent.minimax.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' ; img-src 'self' data: blob: https:; connect-src 'self' https://plausible.io https://agent.minimax.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; frame-src https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'

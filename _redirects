@@ -1,0 +1,32 @@
+# Cloudflare Pages _redirects file
+# Format: <source> <destination> [<status>]
+# Reference: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# Locale-specific 404 fallbacks: any 404 under /de/, /es/, /fr/ etc.
+# gets the locale-prefixed 404 page (we ship one per locale so users
+# stay in their language when they hit a dead link).
+
+/de/*        /de/404.html    404
+/es/*        /es/404.html    404
+/fr/*        /fr/404.html    404
+/pt/*        /pt/404.html    404
+/pl/*        /pl/404.html    404
+/nl/*        /nl/404.html    404
+/ar/*        /ar/404.html    404
+/bn/*        /bn/404.html    404
+/hi/*        /hi/404.html    404
+/ur/*        /ur/404.html    404
+/zh/*        /zh/404.html    404
+/ko/*        /ko/404.html    404
+/ru/*        /ru/404.html    404
+/uk/*        /uk/404.html    404
+/yo/*        /yo/404.html    404
+/th/*        /th/404.html    404
+/hu/*        /hu/404.html    404
+/vi/*        /vi/404.html    404
+/id/*        /id/404.html    404
+/ms/*        /ms/404.html    404
+/ja/*        /ja/404.html    404
+
+# Catch-all 404: anything else falls back to the English 404.
+/*            /404.html       404
