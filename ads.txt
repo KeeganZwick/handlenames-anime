@@ -1,0 +1,16 @@
+# ads.txt for AdSense / Google Ad Manager
+#
+# Instructions (from the AdSense dashboard):
+#   1. Sign in to https://www.google.com/adsense/
+#   2. Go to Account → Sites → Add site (or use the domain you registered)
+#   3. The dashboard will show a line like:
+#        google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#   4. Copy that exact line and REPLACE the placeholder below.
+#   5. Verify at https://www.google.com/adsense/ → Sites → your site
+#      shows a green check next to "ads.txt status: Authorized"
+#
+# Format reference: https://support.google.com/adsense/answer/7531585
+#                   (one record per line: domain, publisher_id, type, cert_id)
+#
+# PLACEHOLDER (replace with your real values from the AdSense dashboard):
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
