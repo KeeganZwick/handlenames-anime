@@ -30,7 +30,6 @@
     { "romaji": "cho",        "hiragana": "ちょう",   "kanji": "蝶",     "meaning": "butterfly",            "tags": ["animal", "cute", "nature"] },
     { "romaji": "hotaru",     "hiragana": "ほたる",   "kanji": "蛍",     "meaning": "firefly",              "tags": ["animal", "nature", "cute", "light"] },
     { "romaji": "hachi",      "hiragana": "はち",     "kanji": "蜂",     "meaning": "bee",                  "tags": ["animal", "cute"] },
-    { "romaji": "kumo",       "hiragana": "くも",     "kanji": "雲",     "meaning": "cloud (also: spider)", "tags": ["nature", "cute", "sky"] },
     { "romaji": "tsuki",      "hiragana": "つき",     "kanji": "月",     "meaning": "moon",                 "tags": ["nature", "cute", "night"] },
     { "romaji": "hoshi",      "hiragana": "ほし",     "kanji": "星",     "meaning": "star",                 "tags": ["nature", "cute", "sky", "light"] },
     { "romaji": "sora",       "hiragana": "そら",     "kanji": "空",     "meaning": "sky",                  "tags": ["nature", "cute", "sky"] },
