@@ -1,0 +1,28 @@
+name: Merge Schedule
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+  schedule:
+    # Every day at 13:00 UTC (9:00 AM New York time)
+    - cron: '0 13 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  merge_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gr2m/merge-schedule-action@v2
+        with:
+          merge_method: merge
+          time_zone: 'America/New_York'
+          require_statuses_success: 'false'
+          automerge_fail_label: 'merge-schedule-failed'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
