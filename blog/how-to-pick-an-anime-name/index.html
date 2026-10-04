@@ -53,6 +53,8 @@
   .site-footer__inner { max-width: 720px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
   .site-footer__links a { color: #888; text-decoration: none; margin-right: 1rem; }
   .site-footer__links a:hover { color: #ff9bb5; }
+  /* Ad slots stay hidden until AdSense is live and the visitor has consented. */
+  .ad-slot { display: none; }
 </style>
 </head>
 <body>
@@ -86,6 +88,18 @@
   You want <em>your</em> character to have a name that fits <em>them</em>. The way to get there is a
   short, repeatable method — pick the character first, then let the name follow.
 </p>
+
+      <!-- Ad slot 1: after intro, before Step 1. Hidden by default (CSS), shown only when
+           (a) AdSense is configured (window.ADSENSE_CLIENT is set) AND (b) the user has
+           consented to non-essential cookies via the banner. -->
+      <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+        <span class="ad-slot__label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </aside>
 
 <div class="step">
   <div class="step-label">Step 1</div>
@@ -252,7 +266,19 @@
   <p><a href="/anime-names/">Open the Anime Name Generator →</a></p>
 </div>
 
-<p class="footnote">
+
+      <!-- Ad slot 2: at the end, before the footnote + closing </article>.
+           Same gating rules. This is the template for future blog posts. -->
+      <aside class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+        <span class="ad-slot__label">Advertisement</span>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </aside>
+
+    <p class="footnote">
     All names and mythological figures referenced in this post are drawn from the anime site's
     public word-bank data (<code>data/given-names.json</code>, <code>data/mythology.json</code>,
     <code>data/animals-nature.json</code>, <code>data/martial.json</code>). No invented or
@@ -276,6 +302,7 @@
 
 <!-- Site scripts (cookie consent + plausible analytics) — only site + Google/Plausible domains -->
 <script defer data-domain="anime.gethandlenames.com" src="https://plausible.io/js/script.js"></script>
-<script defer src="/js/cookie-consent.min.js"></script>
+<script src="../../js/ads-config.js"></script>
+    <script defer src="/js/cookie-consent.min.js"></script>
 </body>
 </html>
