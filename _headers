@@ -68,7 +68,6 @@
   #   script-src 'self' 'unsafe-inline'   — same-origin scripts + inline <script>
   #                      'unsafe-eval'    — eval/Function (needed for the share-card canvas logic)
   #                      plausible.io     — our privacy-friendly analytics
-  #                      agent.minimax.io — hosting platform's analytics widget
   #                      *.googlesyndication.com / *.google.com — Google AdSense (when activated)
   #                      *.doubleclick.net — AdSense back-end
   #   style-src 'self' 'unsafe-inline'    — same-origin styles + inline <style> + Google Fonts CSS
@@ -80,4 +79,4 @@
   #   frame-ancestors 'none'              — equivalent of X-Frame-Options: DENY at CSP layer
   #   base-uri 'self'                     — stop <base href> injection attacks
   #   form-action 'self'                  — stop form submissions to attacker domains
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io https://agent.minimax.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' ; img-src 'self' data: blob: https:; connect-src 'self' https://plausible.io https://agent.minimax.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; frame-src https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' ; img-src 'self' data: blob: https:; connect-src 'self' https://plausible.io https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net; frame-src https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
