@@ -16,4 +16,4 @@
 # Until you replace the line below, no AdSense traffic will be served —
 # see /patches/anime/js/ads-config.js for the gating on the JS side.
 
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-3477009677814503, DIRECT, f08c47fec0942fa0
