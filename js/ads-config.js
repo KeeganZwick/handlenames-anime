@@ -16,5 +16,5 @@
 // state, the ads.js loader returns early and NEVER injects the AdSense
 // script. Ad slots render as empty zero-height containers, invisible.
 
-window.ADSENSE_CLIENT = "";       // e.g. "ca-pub-1234567890123456" — leave "" until AdSense is approved
+window.ADSENSE_CLIENT = "ca-pub-3477009677814503"; // approved on gethandlenames.com (covers this subdomain)
 window.USE_GOOGLE_CMP = false;    // set true only after a Google-certified CMP is integrated
