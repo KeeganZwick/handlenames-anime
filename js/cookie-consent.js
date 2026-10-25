@@ -190,6 +190,8 @@
     hideBanner();
     // Tell the page that consent changed (useful for ad scripts to lazy-load).
     document.dispatchEvent(new CustomEvent('cookieconsent:change', { detail: pref }));
+    // Load ads right away when this choice allows them (first-visit accept).
+    if ((pref.cat && pref.cat.ads) || pref.dec === 'accept') setTimeout(loadAdSense, 100);
   }
 
   // --------- footer "Cookie settings" link ----------
