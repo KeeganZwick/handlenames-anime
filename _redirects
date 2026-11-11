@@ -6,6 +6,16 @@
 # gets the locale-prefixed 404 page (we ship one per locale so users
 # stay in their language when they hit a dead link).
 
+# Legal pages are English-only. Old localized URLs like /zh/about/
+# 301 to the English page so Search Console stops flagging them as 404s.
+# Must stay ABOVE the locale 404 rules (first match wins).
+/:lang/about/     /about/     301
+/:lang/about      /about/     301
+/:lang/privacy/   /privacy/   301
+/:lang/privacy    /privacy/   301
+/:lang/contact/   /contact/   301
+/:lang/contact    /contact/   301
+
 /de/*        /de/404.html    404
 /es/*        /es/404.html    404
 /fr/*        /fr/404.html    404
